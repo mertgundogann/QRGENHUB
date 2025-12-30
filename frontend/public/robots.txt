@@ -1,0 +1,22 @@
+# -----------------------------------------------------------
+# Modern robots.txt - Tüm botlar için optimize edilmiş
+# -----------------------------------------------------------
+
+# Tüm arama motoru botlarına izin ver
+User-agent: *
+Allow: /
+
+# Özel alanlar / sayfalar varsa, buraya ekleyebilirsin
+# Örnek:
+# Disallow: /admin/
+# Disallow: /private/
+
+# Site haritasının yerini bildir (SEO için önemli)
+Sitemap: https://qrgenhub.com/sitemap.xml
+
+# -----------------------------------------------------------
+# Notlar:
+# - 'Allow: /' tüm siteyi taranabilir hale getirir.
+# - Disallow ile gelecekte ekleyeceğin gizli bölümleri engelleyebilirsin.
+# - robots.txt güvenlik aracı değildir; hassas veriler sunucuda korunmalıdır.
+# -----------------------------------------------------------

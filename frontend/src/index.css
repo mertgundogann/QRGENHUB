@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+
+@layer base {
+  html, body {
+    @apply h-screen m-0 p-0;
+  }
+
+  body {
+    @apply bg-gradient-to-br from-blue-500 to-purple-200;
+  }
+}
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.animate-fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+
+
