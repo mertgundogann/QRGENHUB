@@ -6,7 +6,7 @@ import initMiddleware from "../../utils/init-middleware.js";
 // 1️⃣ CORS Middleware
 const cors = initMiddleware(
   Cors({
-    origin: ["https://qrgenhub.com", "https://www.qrgenhub.com"],
+    origin: ["https://qrgenhub.com", "https://www.qrgenhub.com","http://localhost:5173"],
     methods: ["POST", "OPTIONS"],
   })
 );

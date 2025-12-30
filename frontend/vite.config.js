@@ -1,35 +1,40 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
-import sitemap from 'vite-plugin-sitemap'
+import { defineConfig, loadEnv } from 'vite';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
+import sitemap from 'vite-plugin-sitemap';
+import { blogPosts } from './blogPosts'; // Blog verilerini import et
 
-// Sitemap'e dahil edilecek sayfalar (5 dil için)
-const paths = [
-  '/tr/url', '/en/url', '/fr/url', '/de/url', '/es/url',
-  '/tr/blog', '/en/blog', '/fr/blog', '/de/blog', '/es/blog',
-  '/tr/blog/qr-kod-nasil-olusturulur',
-  '/en/blog/qr-kod-nasil-olusturulur',
-  '/fr/blog/qr-kod-nasil-olusturulur',
-  '/de/blog/qr-kod-nasil-olusturulur',
-  '/es/blog/qr-kod-nasil-olusturulur',
-  '/tr/blog/restoran-qr-menu-avantajlari',
-  '/en/blog/restoran-qr-menu-avantajlari',
-  '/fr/blog/restoran-qr-menu-avantajlari',
-  '/de/blog/restoran-qr-menu-avantajlari',
-  '/es/blog/restoran-qr-menu-avantajlari'
-];
+export default defineConfig(({ mode }) => {
+  // .env dosyasını yükle
+  const env = loadEnv(mode, process.cwd(), '');
 
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [
-    react(), 
-    tailwindcss(),
-    sitemap({ 
-      hostname: 'https://qrgen.pro', // Sitenin gerçek domainini buraya yazmalısın
-      dynamicRoutes: paths,
-      generateRobotsTxt: true,
-      changefreq: 'weekly',
-      priority: 0.8
-    })
-  ],
-})
+  // Temel sayfalar (5 dil)
+  const paths = [
+    '/tr/url', '/en/url', '/fr/url', '/de/url', '/es/url',
+    '/tr/blog', '/en/blog', '/fr/blog', '/de/blog', '/es/blog',
+  ];
+
+  // Dinamik blog sayfalarını ekle
+  blogPosts.forEach(post => {
+    Object.entries(post.languages).forEach(([lang, data]) => {
+      paths.push(`/${lang}/blog/${data.slug}`);
+    });
+  });
+
+  return {
+    plugins: [
+      react(),
+      tailwindcss(),
+      sitemap({
+        hostname: env.VITE_HOSTNAME || 'https://qrgenhub.com',
+        dynamicRoutes: paths,
+        generateRobotsTxt: true,
+        changefreq: 'weekly',
+        priority: 0.8,
+      }),
+    ],
+    define: {
+      
+    },
+  };
+});
