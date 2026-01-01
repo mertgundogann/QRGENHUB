@@ -31,23 +31,38 @@ const limiter = initMiddleware(
 );
 
 export default async function handler(req, res) {
+  
  
+  const allowedOrigins = [
+    'https://qrgenhub.com', 
+    'https://www.qrgenhub.com', 
+    'http://localhost:5173' 
+  ];
+
+  const origin = req.headers.origin;
+
+ 
+  if (allowedOrigins.includes(origin)) {
+    res.setHeader('Access-Control-Allow-Origin', origin);
+  }
+
+  
   if (req.method === 'OPTIONS') {
-    res.setHeader('Access-Control-Allow-Origin', '*'); 
+    
     res.setHeader('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With');
     return res.status(200).end();
   }
-
+  
   if (req.method !== "POST") return res.status(405).json({ error: "Method not allowed" });
 
-  
+ 
   await cors(req, res);
   await limiter(req, res);
 
   const { value, fgColor = "#000000", bgColor = "#ffffff" } = req.body;
 
-  
+ 
   if (!value || typeof value !== "string") {
     return res.status(400).json({ error: "Invalid data type or missing value" });
   }
@@ -57,7 +72,7 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: "Content is too long (Max 2000 chars)" });
   }
 
-
+ 
   if (!isValidHex(fgColor) || !isValidHex(bgColor)) {
     return res.status(400).json({ error: "Invalid color format. Use Hex codes." });
   }
@@ -70,7 +85,7 @@ export default async function handler(req, res) {
       color: { dark: fgColor, light: bgColor },
     });
 
-    
+  
     res.setHeader("X-Content-Type-Options", "nosniff");
     res.setHeader("X-QR-Engine", "QRGenHub-Core");
     res.setHeader("Cache-Control", "private, no-cache, no-store, must-revalidate");
