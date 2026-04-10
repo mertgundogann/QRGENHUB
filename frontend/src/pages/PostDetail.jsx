@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { blogPosts } from "../data/posts";
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
+import DOMPurify from 'dompurify';
+
+const DOMAIN = "https://qrgenhub.com";
 
 const PostDetail = () => {
   const { postId, lng } = useParams(); // postId = URL'deki mevcut slug
@@ -66,30 +68,39 @@ const PostDetail = () => {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 bg-white/50 min-h-screen">
-      <Helmet>
-        <title>{langContent.title} | QRGEN HUB</title>
-        <meta name="description" content={langContent.excerpt} />
-        
-        {/* SEO: Hreflang Linkleri */}
-        {SUPPORTED_LANGS.map((sLang) => {
-          const sSlug = post.languages[sLang]?.slug;
-          return sSlug ? (
-            <link 
-              key={sLang}
-              rel="alternate" 
-              hreflang={sLang} 
-              href={`${window.location.origin}/${sLang}/blog/${sSlug}`} 
-            />
-          ) : null;
-        })}
-        
-        <link 
-          rel="alternate" 
-          hreflang="x-default" 
-          href={`${window.location.origin}/en/blog/${post.languages['en']?.slug}`} 
-        />
-        <link rel="canonical" href={`${window.location.origin}/${lng}/blog/${postId}`} />
-      </Helmet>
+      <title>{langContent.title} | QRGEN HUB</title>
+      <meta name="description" content={langContent.excerpt} />
+      <meta property="og:title" content={`${langContent.title} | QRGEN HUB`} />
+      <meta property="og:description" content={langContent.excerpt} />
+      <meta property="og:type" content="article" />
+      <meta property="og:url" content={`${DOMAIN}/${lng}/blog/${postId}`} />
+      <meta property="og:image" content={post.image} />
+      <meta name="twitter:title" content={`${langContent.title} | QRGEN HUB`} />
+      <meta name="twitter:description" content={langContent.excerpt} />
+      <meta name="twitter:image" content={post.image} />
+      {SUPPORTED_LANGS.map((sLang) => {
+        const sSlug = post.languages[sLang]?.slug;
+        return sSlug ? (
+          <link key={sLang} rel="alternate" hreflang={sLang} href={`${DOMAIN}/${sLang}/blog/${sSlug}`} />
+        ) : null;
+      })}
+      <link rel="alternate" hreflang="x-default" href={`${DOMAIN}/en/blog/${post.languages['en']?.slug}`} />
+      <link rel="canonical" href={`${DOMAIN}/${lng}/blog/${postId}`} />
+      <script type="application/ld+json">{JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": langContent.title,
+        "description": langContent.excerpt,
+        "image": post.image,
+        "author": { "@type": "Person", "name": post.author },
+        "datePublished": post.date,
+        "url": `${DOMAIN}/${lng}/blog/${postId}`,
+        "publisher": {
+          "@type": "Organization",
+          "name": "QRGEN HUB",
+          "logo": { "@type": "ImageObject", "url": `${DOMAIN}/favicon-96x96.png` }
+        }
+      })}</script>
 
       {/* Geri Dön Butonu */}
       <button 
@@ -125,7 +136,7 @@ const PostDetail = () => {
       <article className="prose prose-indigo lg:prose-xl max-w-none px-2 md:px-6">
         <div 
           className="text-gray-600 leading-relaxed font-medium blog-content"
-          dangerouslySetInnerHTML={{ __html: langContent.content }} 
+          dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(langContent.content) }}
         />
       </article>
 

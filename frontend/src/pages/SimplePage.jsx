@@ -1,15 +1,19 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
+import { useParams, useLocation } from 'react-router-dom';
+
+const DOMAIN = "https://qrgenhub.com";
 
 const SimplePage = ({ titleKey, contentKey }) => {
   const { t } = useTranslation();
+  const { lng } = useParams();
+  const location = useLocation();
 
   return (
     <div className="min-h-[70vh] flex flex-col items-center px-4 py-16 bg-gray-50/30">
-      <Helmet>
-        <title>{t(titleKey)} - QRGENHUB</title>
-      </Helmet>
+      <title>{t(titleKey)} - QRGENHUB</title>
+      <meta name="description" content={t(contentKey, '').slice(0, 160)} />
+      <link rel="canonical" href={`${DOMAIN}${location.pathname}`} />
 
       <div className="w-full max-w-3xl">
         {/* Başlık Alanı */}

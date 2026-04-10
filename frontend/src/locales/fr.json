@@ -91,5 +91,7 @@
 "privacy.content": "Chez QRGENHUB, nous respectons votre vie privée. Les données utilisées pour créer des codes QR (URL, vCard, Wi-Fi, etc.) ne sont pas stockées sur nos serveurs. Le traitement est instantané et vos données sont supprimées après la session. Les cookies sont uniquement utilisés pour les préférences linguistiques.",
 "terms.title": "Conditions d'Utilisation",
 "terms.content": "Le service de QRGENHUB est fourni 'en l'état'. L'utilisateur est seul responsable du contenu des codes générés. Notre service est gratuit pour un usage commercial et personnel, mais nous nous réservons le droit de restreindre l'accès en cas d'abus.",
-"footer_tagline": "Des codes QR puissants pour des produits modernes"
+"footer_tagline": "Des codes QR puissants pour des produits modernes",
+  "blog_description": "Derniers articles sur la technologie QR, le marketing digital et les stratégies d'entreprise.",
+  "meta_description_pattern": "Créez des QR codes {{type}} gratuits en ligne. Personnalisez couleurs et logo. Téléchargez en PNG ou SVG."
 }

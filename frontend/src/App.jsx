@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate, useParams, useLocation } from "react-router-dom";
-import { HelmetProvider, Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import CreateQR from "./pages/CreateQR";
 import Blog from "./pages/Blog";
@@ -11,6 +10,24 @@ import Footer from "./components/Footer";
 
 const SUPPORTED_LANGS = ['tr', 'en', 'fr', 'de', 'es'];
 const DOMAIN = "https://qrgenhub.com";
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "QRGEN HUB",
+  "url": DOMAIN,
+  "logo": `${DOMAIN}/favicon-96x96.png`,
+};
+
+const webAppSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "QRGEN HUB",
+  "url": DOMAIN,
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Web",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+};
 
 const getBrowserLang = () => {
   const lang = navigator.language.split('-')[0];
@@ -48,18 +65,14 @@ function AppContent() {
 
   return (
     <div className="min-h-screen w-full bg-[#f1f5f9] flex flex-col items-center pt-12 md:pt-20 relative overflow-x-hidden">
-      <Helmet>
-        <html lang={lng} />
-        <title>{pageTitle} | QRGEN HUB</title>
-        <link rel="canonical" href={`${DOMAIN}${location.pathname}`} />
-
-        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="QRGENHUB" />
-  <link rel="manifest" href="/site.webmanifest" />
-      </Helmet>
+      <title>{pageTitle} | QRGEN HUB</title>
+      <link rel="canonical" href={`${DOMAIN}${location.pathname}`} />
+      <meta property="og:site_name" content="QRGEN HUB" />
+      <meta property="og:locale" content={lng} />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@qrgenhub" />
+      <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
+      <script type="application/ld+json">{JSON.stringify(webAppSchema)}</script>
 
       <Header navLinks={navLinks} />
 
@@ -88,15 +101,13 @@ function AppContent() {
 function App() {
   const browserLang = getBrowserLang();
   return (
-    <HelmetProvider>
-      <Router>
+    <Router>
         <Routes>
           <Route path="/" element={<Navigate to={`/${browserLang}/url`} replace />} />
           <Route path="/:lng/*" element={<AppContent />} />
           <Route path="*" element={<Navigate to={`/${browserLang}/url`} replace />} />
         </Routes>
       </Router>
-    </HelmetProvider>
   );
 }
 
