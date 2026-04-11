@@ -69,14 +69,14 @@ const PostDetail = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-12 bg-white/50 min-h-screen">
       <title>{langContent.title} | QRGEN HUB</title>
-      <meta name="description" content={langContent.excerpt} />
+      <meta name="description" content={langContent.metaDescription || langContent.excerpt} />
       <meta property="og:title" content={`${langContent.title} | QRGEN HUB`} />
-      <meta property="og:description" content={langContent.excerpt} />
+      <meta property="og:description" content={langContent.metaDescription || langContent.excerpt} />
       <meta property="og:type" content="article" />
       <meta property="og:url" content={`${DOMAIN}/${lng}/blog/${postId}`} />
       <meta property="og:image" content={post.image} />
       <meta name="twitter:title" content={`${langContent.title} | QRGEN HUB`} />
-      <meta name="twitter:description" content={langContent.excerpt} />
+      <meta name="twitter:description" content={langContent.metaDescription || langContent.excerpt} />
       <meta name="twitter:image" content={post.image} />
       {SUPPORTED_LANGS.map((sLang) => {
         const sSlug = post.languages[sLang]?.slug;
@@ -90,7 +90,7 @@ const PostDetail = () => {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": langContent.title,
-        "description": langContent.excerpt,
+        "description": langContent.metaDescription || langContent.excerpt,
         "image": post.image,
         "author": { "@type": "Person", "name": post.author },
         "datePublished": post.date,
@@ -126,8 +126,8 @@ const PostDetail = () => {
 
       <div className="rounded-[2.5rem] overflow-hidden shadow-2xl mb-12 border-8 border-white bg-gray-100">
         <img 
-          src={post.image} 
-          alt={langContent.title} 
+          src={post.image}
+          alt={post.imageAlt || langContent.title}
           className="w-full h-auto object-cover min-h-[300px]"
           loading="lazy"
         />
