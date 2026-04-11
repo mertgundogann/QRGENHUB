@@ -3,7 +3,21 @@ import cors from "cors";
 import QRCode from "qrcode";
 
 const app = express();
-app.use(cors());
+
+const allowedOrigins = [
+  'https://qrgenhub.com',
+  'http://localhost:5173',
+  'http://localhost:4173',
+];
+app.use(cors({
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
+}));
 app.use(express.json({ limit: '5mb' }));
 
 app.post("/api/qr/create", async (req, res) => {

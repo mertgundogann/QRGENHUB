@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { blogPosts } from "../data/posts"; 
+import { blogPosts } from "../data/posts";
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async';
+
+const DOMAIN = "https://qrgenhub.com";
 
 const Blog = () => {
   const { t } = useTranslation();
@@ -10,10 +11,16 @@ const Blog = () => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-16 bg-gray-50/30">
-      <Helmet>
-        <title>Blog | {t('brand') || 'QRGEN HUB'}</title>
-        <meta name="description" content="QR kod teknolojileri, dijital pazarlama ve SEO hakkında en güncel yazılar." />
-      </Helmet>
+      <title>Blog | {t('brand') || 'QRGEN HUB'}</title>
+      <meta name="description" content={t('blog_description')} />
+      <meta property="og:title" content="Blog | QRGEN HUB" />
+      <meta property="og:description" content={t('blog_description')} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={`${DOMAIN}/${lng}/blog`} />
+      <meta property="og:image" content={`${DOMAIN}/og-image.png`} />
+      <meta name="twitter:title" content="Blog | QRGEN HUB" />
+      <meta name="twitter:description" content={t('blog_description')} />
+      <meta name="twitter:image" content={`${DOMAIN}/og-image.png`} />
 
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-black text-gray-900 mb-4 tracking-tighter uppercase italic">

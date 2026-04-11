@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import axios from "axios";
-import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { qrTypes } from "../components/QRConstants";
 import QRSettings from "../components/QRSettings";
@@ -45,11 +44,17 @@ const CreateQR = ({ defaultType }) => {
     }
   };
 
+  const DOMAIN = "https://qrgenhub.com";
+
   const getDynamicTitle = () => {
-    return t('title_pattern', { 
-      type: t(`qr.type.${type}`), 
-      suffix: t('title_suffix') 
+    return t('title_pattern', {
+      type: t(`qr.type.${type}`),
+      suffix: t('title_suffix')
     });
+  };
+
+  const getDynamicDescription = () => {
+    return t('meta_description_pattern', { type: t(`qr.type.${type}`) });
   };
 
   // --- Backend isteği
@@ -212,9 +217,15 @@ const CreateQR = ({ defaultType }) => {
   return (
     <div className="flex flex-col items-center w-full px-4 pt-10 pb-20 bg-gray-50/30">
       <Toaster position="top-center" />
-      <Helmet>
-        <title>{getDynamicTitle()}</title>
-      </Helmet>
+      <title>{getDynamicTitle()} | QRGEN HUB</title>
+      <meta name="description" content={getDynamicDescription()} />
+      <meta property="og:title" content={`${getDynamicTitle()} | QRGEN HUB`} />
+      <meta property="og:description" content={getDynamicDescription()} />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content={`${DOMAIN}/og-image.png`} />
+      <meta name="twitter:title" content={`${getDynamicTitle()} | QRGEN HUB`} />
+      <meta name="twitter:description" content={getDynamicDescription()} />
+      <meta name="twitter:image" content={`${DOMAIN}/og-image.png`} />
       
       <div className="bg-white p-6 md:p-10 rounded-[3.5rem] shadow-2xl w-full max-w-xl border border-gray-100 relative z-10">
         <h1 className="text-2xl font-black text-center mb-8 tracking-tighter text-gray-800 uppercase italic">

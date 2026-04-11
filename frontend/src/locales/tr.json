@@ -91,5 +91,7 @@
 "privacy.content": "QRGENHUB olarak gizliliğinize önem veriyoruz. Servisimiz aracılığıyla oluşturduğunuz QR kod verileri (URL, vCard bilgileri, Wi-Fi şifreleri vb.) sunucularımızda saklanmaz. Tüm işlemler anlık olarak gerçekleştirilir ve işlem bittiğinde verileriniz sistemimizden silinir. Çerezler sadece dil tercihleriniz ve site trafiğini anonim olarak analiz etmek için kullanılır.",
 "terms.title": "Kullanım Koşulları",
 "terms.content": "QRGENHUB tarafından sunulan ücretsiz QR kod oluşturma hizmeti 'olduğu gibi' sağlanmaktadır. Oluşturulan kodların içeriğinden ve yanlış kullanımından doğabilecek sorumluluk kullanıcıya aittir. Servisimiz ticari veya kişisel kullanım için ücretsizdir; ancak yazılımın kötüye kullanımı durumunda erişim kısıtlama hakkını saklı tutarız.",
-"footer_tagline": "Modern projeler için güçlü QR kodlar"
+"footer_tagline": "Modern projeler için güçlü QR kodlar",
+  "blog_description": "QR kod teknolojileri, dijital pazarlama ve iş stratejileri hakkında en güncel yazılar.",
+  "meta_description_pattern": "Ücretsiz {{type}} QR kodu oluşturun. Renk ve logo özelleştirme. PNG veya SVG olarak indirin."
 }
