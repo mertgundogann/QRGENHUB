@@ -2,26 +2,16 @@ import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import sitemap from 'vite-plugin-sitemap';
-import { blogPosts } from "../frontend/src/data/posts.js"
+import { blogPosts } from "./src/data/posts.js";
 
 export default defineConfig(({ mode }) => {
-  // .env dosyasını yükle
   const env = loadEnv(mode, process.cwd(), '');
 
-  const langs = ['tr', 'en', 'fr', 'de', 'es'];
-  const qrTypes = ['url', 'wifi', 'vcard', 'text', 'sms', 'email', 'tel'];
-  const staticPages = ['privacy', 'terms'];
+  const paths = [
+    '/tr/url', '/en/url', '/fr/url', '/de/url', '/es/url',
+    '/tr/blog', '/en/blog', '/fr/blog', '/de/blog', '/es/blog',
+  ];
 
-  const paths = [];
-
-  // QR generator pages for all languages
-  langs.forEach(lang => {
-    qrTypes.forEach(type => paths.push(`/${lang}/${type}`));
-    staticPages.forEach(page => paths.push(`/${lang}/${page}`));
-    paths.push(`/${lang}/blog`);
-  });
-
-  // Dynamic blog post pages
   blogPosts.forEach(post => {
     Object.entries(post.languages).forEach(([lang, data]) => {
       paths.push(`/${lang}/blog/${data.slug}`);
@@ -33,15 +23,29 @@ export default defineConfig(({ mode }) => {
       react(),
       tailwindcss(),
       sitemap({
-        hostname: env.VITE_HOSTNAME || 'https://qrgenhub.com',
+        hostname: env.VITE_HOSTNAME || 'https://www.qrgenhub.com',
         dynamicRoutes: paths,
-        generateRobotsTxt: true,
+        generateRobotsTxt: false,
         changefreq: 'weekly',
         priority: 0.8,
       }),
     ],
-    define: {
-      
+    build: {
+      chunkSizeWarningLimit: 1000,
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            // Sadece devasa ikon paketini ayırıyoruz
+            if (id.includes('node_modules/react-icons')) {
+              return 'icons';
+            }
+            // Diğer her şey vendor (Güvenlik için)
+            if (id.includes('node_modules')) {
+              return 'vendor';
+            }
+          },
+        },
+      },
     },
   };
 });

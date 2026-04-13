@@ -8,6 +8,7 @@
   "qr.type.sms": "SMS",
   "qr.type.email": "E-mail",
   "qr.type.tel": "Téléphone",
+  "qr.type.blog": "Blog",
   "qr.field.url": "Adresse URL",
   "qr.placeholder.url": "https://google.com",
   "qr.field.ssid": "Nom du réseau (SSID)",
@@ -40,7 +41,7 @@
   "background_color": "Arrière-plan",
   "footer_text": "Texte sous le QR",
   "add_logo": "Ajouter un Logo",
-  "placeholder_text": "Commencez à saisir des données, votre code QR apparaîtra ici instantanément.",
+  "placeholder_text": "Commencez à saisir des données et votre code QR apparaîtra instantanément.",
   "feat1_t": "Rapide & Illimité",
   "feat1_d": "Créez autant de codes QR que vous le souhaitez en quelques secondes, sans inscription.",
   "feat2_t": "Personnalisation Totale",
@@ -48,14 +49,6 @@
   "feat3_t": "Haute Qualité",
   "feat3_d": "Téléchargez le format SVG pour l'impression ou PNG haute résolution pour le numérique.",
   "faq_title": "Questions Fréquemment Posées",
-  "q1": "Qu'est-ce qu'un code QR ?",
-  "a1": "Des codes-barres qui stockent des informations dans une matrice carrée.",
-  "q2": "Est-ce gratuit ?",
-  "a2": "Oui, tous les codes QR statiques sont entièrement gratuits.",
-  "q3": "Est-ce sûr d'ajouter un logo ?",
-  "a3": "Oui, les codes QR fonctionnent avec une tolérance d'erreur de 30%.",
-  "q4": "PNG ou SVG ?",
-  "a4": "Le PNG est recommandé pour le numérique, le SVG pour l'impression.",
   "download_png": "Télécharger PNG",
   "download_svg": "Télécharger SVG",
   "copy": "Copier le lien",
@@ -63,14 +56,20 @@
   "footer_text_placeholder": "Écrivez une note sous le QR...",
   "blog_title_main": "ACTUALITÉS QR",
   "blog_subtitle": "Tout sur la technologie QR",
+  "blog_title_seo": "Blog QRGenHub - Tech, Conseils et Guides",
+  "blog_desc_seo": "Derniers articles sur la technologie des codes QR, les stratégies marketing et les guides étape par étape.",
   "read_more": "Lire la suite",
   "author": "Auteur",
+  
+  "Rehber": "Guide",
+  "Business": "Affaires",
+
   "category_guide": "Guide",
   "category_business": "Affaires",
-  "blog_post_1_title": "Guide 2026 : Comment créer un code QR gratuit ?",
-  "blog_post_1_desc": "Nous examinons étape par étape les moyens les plus rapides de créer un code QR personnalisé avec un logo.",
-  "blog_post_2_title": "5 avantages de l'utilisation des menus QR pour les restaurants",
-  "blog_post_2_desc": "Les menus numériques n'assurent pas seulement l'hygiène ; ils réduisent également vos coûts.",
+  "blog_post_1_title": "Comment créer un code QR Wi-Fi gratuit ?",
+  "blog_post_1_desc": "Plus besoin de partager votre mot de passe. Découvrez comment offrir une connexion sécurisée.",
+  "blog_post_2_title": "Guide 2026 : Codes QR avec Logo",
+  "blog_post_2_desc": "Le guide étape par étape pour créer des codes QR personnalisés et fiables pour votre marque.",
   "footer_rights": "CONÇU POUR LA VITESSE",
   "back_to_blog": "RETOUR AU BLOG",
   "post_not_found": "Article non trouvé",
@@ -78,20 +77,83 @@
   "cta_blog_desc": "Utilisez notre outil pour créer votre code QR gratuit et personnalisé dès maintenant.",
   "cta_blog_button": "Commencer maintenant",
   "qr.field.job": "Titre Poste",
-"qr.placeholder.job": "Ingénieur Logiciel",
-"qr.field.company": "Nom de l'entreprise",
-"qr.placeholder.company": "QRGEN HUB",
-"qr.field.website": "URL du site web",
-"qr.placeholder.website": "https://qrgenhub.com",
-"qr.field.address": "Adresse",
-"qr.placeholder.address": "Paris, France",
-"recommended": "CONSEILLÉ",
-"qr.hint.vcard_complexity": "💡 Plus les infos vCard sont nombreuses, plus le code est dense. Utilisez le format SVG pour une qualité d'impression optimale.",
-"privacy.title": "Politique de Confidentialité",
-"privacy.content": "Chez QRGENHUB, nous respectons votre vie privée. Les données utilisées pour créer des codes QR (URL, vCard, Wi-Fi, etc.) ne sont pas stockées sur nos serveurs. Le traitement est instantané et vos données sont supprimées après la session. Les cookies sont uniquement utilisés pour les préférences linguistiques.",
-"terms.title": "Conditions d'Utilisation",
-"terms.content": "Le service de QRGENHUB est fourni 'en l'état'. L'utilisateur est seul responsable du contenu des codes générés. Notre service est gratuit pour un usage commercial et personnel, mais nous nous réservons le droit de restreindre l'accès en cas d'abus.",
-"footer_tagline": "Des codes QR puissants pour des produits modernes",
-  "blog_description": "Derniers articles sur la technologie QR, le marketing digital et les stratégies d'entreprise.",
-  "meta_description_pattern": "Créez des QR codes {{type}} gratuits en ligne. Personnalisez couleurs et logo. Téléchargez en PNG ou SVG."
+  "qr.placeholder.job": "Ingénieur Logiciel",
+  "qr.field.company": "Nom de l'entreprise",
+  "qr.placeholder.company": "QRGEN HUB",
+  "qr.field.website": "URL du site web",
+  "qr.placeholder.website": "https://qrgenhub.com",
+  "qr.field.address": "Adresse",
+  "qr.placeholder.address": "Paris, France",
+  "recommended": "CONSEILLÉ",
+  "qr.hint.vcard_complexity": "💡 Utilisez le format SVG pour une qualité d'impression optimale.",
+  "privacy.title": "Politique de Confidentialité",
+  "privacy.content": "Chez QRGENHUB, nous respectons votre vie privée. Les données ne sont pas stockées sur nos serveurs.",
+  "terms.title": "Conditions d'Utilisation",
+  "terms.content": "Le service de QRGENHUB est fourni 'en l'état'.",
+  "footer_tagline": "Des codes QR puissants pour le monde moderne",
+  "404_title": "OUPS ! VOUS ÊTES PERDU ?",
+  "404_desc": "La page que vous recherchez a peut-être été déplacée ou supprimée.",
+  "back_to_home": "RETOUR À L'ACCUEIL",
+  "read_blog": "LIRE LE BLOG",
+  "faq_items": [
+    {
+      "q": "Mes données sont-elles stockées ?",
+      "a": "Non. Les données ne sont pas stockées sur nos serveurs."
+    },
+    {
+      "q": "Ce générateur est-il gratuit ?",
+      "a": "Oui, QRGENHUB est un **générateur de code QR gratuit**."
+    },
+    {
+      "q": "Puis-je ajouter un logo ?",
+      "a": "Absolument ! Vous pouvez **créer des codes QR avec logo**."
+    },
+    {
+      "q": "Les codes QR expirent-ils ?",
+      "a": "Non, les codes QR statiques n'ont **aucune date d'expiration**."
+    },
+    {
+      "q": "Y a-t-il une limite ?",
+      "a": "Il n'y a **aucune limite**."
+    },
+    {
+      "q": "Quels formats choisir ?",
+      "a": "Nous recommandons **PNG** pour le web et **SVG** pour l'impression."
+    }
+  ],
+  "seo": {
+    "url": {
+      "title": "Créer un Code QR Gratuit avec Logo | Générateur QRGenHub",
+      "desc": "Créez un code QR personnalisé pour n'importe quel lien (URL) en quelques secondes. Générateur 100% gratuit, sans inscription ni expiration."
+    },
+    "wifi": {
+      "title": "Créer un Code QR WiFi Gratuit - Connexion Sans Mot de Passe",
+      "desc": "Générez un code QR gratuit pour votre réseau WiFi. Vos invités se connectent instantanément et en toute sécurité, sans inscription."
+    },
+    "vcard": {
+      "title": "Créer un Code QR vCard - Carte de Visite Numérique Gratuite",
+      "desc": "Créez votre carte de visite numérique sous forme de code QR. Partagez vos coordonnées instantanément. 100% gratuit et illimité."
+    },
+    "text": {
+      "title": "Générateur de Code QR Texte Gratuit | Sans Inscription",
+      "desc": "Convertissez n'importe quel texte, note ou message en code QR. Outil gratuit, rapide et sans limite d'utilisation."
+    },
+    "sms": {
+      "title": "Générateur de Code QR SMS - Message Automatique Gratuit",
+      "desc": "Créez un code QR qui rédige et envoie un SMS automatiquement. Parfait pour le service client. Gratuit et sans expiration."
+    },
+    "email": {
+      "title": "Créer un Code QR Email Gratuit | Courriel Automatique",
+      "desc": "Générez un code QR qui prépare un e-mail avec un destinataire et un sujet prédéfinis. Rapide, 100% gratuit et facile à utiliser."
+    },
+    "tel": {
+      "title": "Créer un Code QR Téléphone - Appel Direct | QRGenHub",
+      "desc": "Générez un code QR pour que vos clients vous appellent en un seul scan. Créez un code QR téléphonique gratuit et sans inscription."
+    },
+    "home": {
+      "title": "Créer un Code QR Gratuit avec Logo | Générateur QRGenHub",
+      "desc": "Le meilleur générateur pour créer des codes QR personnalisés en quelques secondes. 100% gratuit, illimité et sans inscription."
+    }
+  },
+  "meta_description": "Le meilleur générateur pour créer des codes QR personnalisés en quelques secondes. 100% gratuit, illimité et sans inscription. Supporte URL, WiFi, vCard, etc."
 }

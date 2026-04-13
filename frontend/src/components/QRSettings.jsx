@@ -1,5 +1,3 @@
-import React from "react";
-
 const QRSettings = ({ 
   fgColor, setFgColor, 
   bgColor, setBgColor, 

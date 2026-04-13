@@ -8,6 +8,7 @@
   "qr.type.sms": "SMS",
   "qr.type.email": "E-Posta",
   "qr.type.tel": "Telefon",
+  "qr.type.blog": "Blog",
   "qr.field.url": "URL Adresi",
   "qr.placeholder.url": "https://google.com",
   "qr.field.ssid": "Ağ Adı (SSID)",
@@ -40,7 +41,7 @@
   "background_color": "Arka Plan",
   "footer_text": "QR Altı Metin",
   "add_logo": "Logo Ekle",
-  "placeholder_text": "Veri girmeye başlayın, QR kodunuz anında burada görünecek.",
+  "placeholder_text": "Veri girmeye başlayın; QR kodunuz anında burada belirecektir.",
   "feat1_t": "Hızlı & Limitsiz",
   "feat1_d": "Kayıt olmadan, saniyeler içinde dilediğiniz kadar QR kod oluşturun.",
   "feat2_t": "Tam Özelleştirme",
@@ -48,14 +49,6 @@
   "feat3_t": "Yüksek Kalite",
   "feat3_d": "Baskı için SVG, dijital kullanım için yüksek çözünürlüklü PNG indirin.",
   "faq_title": "Sıkça Sorulan Sorular",
-  "q1": "QR Kod Nedir?",
-  "a1": "Bilgileri kare bir matris içinde saklayan barkodlardır.",
-  "q2": "Ücretsiz mi?",
-  "a2": "Evet, tüm statik QR kodlar tamamen ücretsizdir.",
-  "q3": "Logo eklemek güvenli mi?",
-  "a3": "Evet, QR kodlar %30 hata toleransı ile çalışır.",
-  "q4": "PNG mi SVG mi?",
-  "a4": "Dijital için PNG, baskı için SVG önerilir.",
   "download_png": "PNG İndir",
   "download_svg": "SVG İndir",
   "copy": "Bağlantıyı Kopyala",
@@ -63,14 +56,22 @@
   "footer_text_placeholder": "QR altına not yazın...",
   "blog_title_main": "QR BİLGİ MERKEZİ",
   "blog_subtitle": "QR Teknolojileri Hakkında Her Şey",
+  "blog_title_seo": "QR Blog - İpuçları, Rehberler ve Stratejiler",
+  "blog_desc_seo": "QR kod kullanımı, dijital pazarlama ipuçları ve ücretsiz oluşturma rehberleri. İşletmenizi büyütmek için en güncel içerikler.",
   "read_more": "Devamını Oku",
   "author": "Yazar",
+  
+  "// --- DÜZELTİLEN KISIM ---": "",
+  "Rehber": "Rehber",
+  "Business": "İş Dünyası",
+  "// -----------------------": "",
+
   "category_guide": "Rehber",
   "category_business": "İş Dünyası",
-  "blog_post_1_title": "2026 Rehberi: Ücretsiz QR Kod Nasıl Oluşturulur?",
-  "blog_post_1_desc": "Logolu ve özelleştirilmiş bir QR kod oluşturmanın en hızlı yollarını adım adım inceliyoruz.",
-  "blog_post_2_title": "Restoranlar İçin QR Menü Kullanmanın 5 Avantajı",
-  "blog_post_2_desc": "Dijital menüler sadece hijyen sağlamaz, maliyetlerinizi de düşürür.",
+  "blog_post_1_title": "Ücretsiz Wi-Fi QR Kodu Nasıl Oluşturulur?",
+  "blog_post_1_desc": "Şifre paylaşma derdine son. Misafirleriniz için güvenli ve hızlı bağlantı sağlayan QR kodları inceleyin.",
+  "blog_post_2_title": "2026 Rehberi: Logolu QR Kod Tasarımı",
+  "blog_post_2_desc": "Marka kimliğinizi yansıtan, güvenilir ve şık QR kodlar oluşturmanın püf noktaları.",
   "footer_rights": "HIZ İÇİN TASARLANDI",
   "back_to_blog": "GERİ DÖN",
   "post_not_found": "Yazı bulunamadı",
@@ -78,20 +79,83 @@
   "cta_blog_desc": "Hemen ücretsiz ve logolu QR kodunu oluşturmak için aracımızı kullan.",
   "cta_blog_button": "Şimdi Başla",
   "qr.field.job": "İş Ünvanı",
-"qr.placeholder.job": "Yazılım Mühendisi",
-"qr.field.company": "Şirket Adı",
-"qr.placeholder.company": "QRGEN HUB",
-"qr.field.website": "Web Sitesi URL",
-"qr.placeholder.website": "https://qrgenhub.com",
-"qr.field.address": "Adres",
-"qr.placeholder.address": "İstanbul, Türkiye",
-"recommended": "ÖNERİLEN",
-"qr.hint.vcard_complexity": "💡 vCard bilgileri arttıkça kod karmaşıklaşabilir. En net baskı kalitesi için SVG formatını tercih edin.",
-"privacy.title": "Gizlilik Politikası",
-"privacy.content": "QRGENHUB olarak gizliliğinize önem veriyoruz. Servisimiz aracılığıyla oluşturduğunuz QR kod verileri (URL, vCard bilgileri, Wi-Fi şifreleri vb.) sunucularımızda saklanmaz. Tüm işlemler anlık olarak gerçekleştirilir ve işlem bittiğinde verileriniz sistemimizden silinir. Çerezler sadece dil tercihleriniz ve site trafiğini anonim olarak analiz etmek için kullanılır.",
-"terms.title": "Kullanım Koşulları",
-"terms.content": "QRGENHUB tarafından sunulan ücretsiz QR kod oluşturma hizmeti 'olduğu gibi' sağlanmaktadır. Oluşturulan kodların içeriğinden ve yanlış kullanımından doğabilecek sorumluluk kullanıcıya aittir. Servisimiz ticari veya kişisel kullanım için ücretsizdir; ancak yazılımın kötüye kullanımı durumunda erişim kısıtlama hakkını saklı tutarız.",
-"footer_tagline": "Modern projeler için güçlü QR kodlar",
-  "blog_description": "QR kod teknolojileri, dijital pazarlama ve iş stratejileri hakkında en güncel yazılar.",
-  "meta_description_pattern": "Ücretsiz {{type}} QR kodu oluşturun. Renk ve logo özelleştirme. PNG veya SVG olarak indirin."
+  "qr.placeholder.job": "Yazılım Mühendisi",
+  "qr.field.company": "Şirket Adı",
+  "qr.placeholder.company": "QRGEN HUB",
+  "qr.field.website": "Web Sitesi URL",
+  "qr.placeholder.website": "https://qrgenhub.com",
+  "qr.field.address": "Adres",
+  "qr.placeholder.address": "İstanbul, Türkiye",
+  "recommended": "ÖNERİLEN",
+  "qr.hint.vcard_complexity": "💡 vCard bilgileri arttıkça kod karmaşıklaşabilir. En net baskı kalitesi için SVG formatını tercih edin.",
+  "privacy.title": "Gizlilik Politikası",
+  "privacy.content": "QRGENHUB olarak gizliliğinize önem veriyoruz. Servisimiz aracılığıyla oluşturduğunuz QR kod verileri sunucularımızda saklanmaz.",
+  "terms.title": "Kullanım Koşulları",
+  "terms.content": "QRGENHUB tarafından sunulan ücretsiz QR kod oluşturma hizmeti 'olduğu gibi' sağlanmaktadır.",
+  "footer_tagline": "Modern dünya için güçlü QR kodlar",
+  "404_title": "UPS! YOLUNU MU KAYBETTİN?",
+  "404_desc": "Aradığınız sayfa taşınmış, silinmiş veya hiç var olmamış olabilir.",
+  "back_to_home": "ANA SAYFAYA DÖN",
+  "read_blog": "BLOG'A GÖZ AT",
+  "faq_items": [
+    {
+      "q": "Girdiğim veriler sisteminizde saklanıyor mu?",
+      "a": "Hayır. Güvenliğiniz bizim için önceliklidir. Veriler sunucularımızda kaydedilmez."
+    },
+    {
+      "q": "Bu QR kod oluşturucu gerçekten ücretsiz mi?",
+      "a": "Evet, QRGENHUB tamamen **ücretsiz bir QR kod oluşturucudur**."
+    },
+    {
+      "q": "QR koduma logo eklemek güvenli mi?",
+      "a": "Kesinlikle! Markanızı güçlendirmek için **logolu QR kodlar** oluşturabilirsiniz."
+    },
+    {
+      "q": "Burada oluşturulan QR kodların süresi dolar mı?",
+      "a": "Hayır, statik QR kodların **son kullanma tarihi yoktur**."
+    },
+    {
+      "q": "QR kodların taranma sınırı var mı?",
+      "a": "Herhangi bir **tarama sınırı yoktur**."
+    },
+    {
+      "q": "Hangi dosya formatlarını tercih etmeliyim?",
+      "a": "Web için **PNG**, baskı için **SVG** öneriyoruz."
+    }
+  ],
+  "seo": {
+    "url": {
+      "title": "Ücretsiz QR Kod Oluşturucu - Logolu ve Sınırsız | QRGenHub",
+      "desc": "İstediğiniz linki (URL) saniyeler içinde ücretsiz QR koda dönüştürün. Kayıt olmadan, logolu ve sınırsız kullanım imkanıyla hemen oluşturun."
+    },
+    "wifi": {
+      "title": "Ücretsiz Wi-Fi QR Kod Oluşturucu | Şifresiz Bağlantı",
+      "desc": "Wi-Fi ağınız için ücretsiz QR kod oluşturun. Misafirleriniz şifre girmeden sadece taratarak anında internete bağlansın. Tamamen ücretsiz."
+    },
+    "vcard": {
+      "title": "Dijital Kartvizit (vCard) QR Kod Oluşturucu | Ücretsiz",
+      "desc": "Kendi dijital kartvizitinizi (vCard) QR kod olarak ücretsiz oluşturun. İletişim bilgilerinizi tek bir taramayla saniyeler içinde paylaşın."
+    },
+    "text": {
+      "title": "Ücretsiz Metin QR Kod Oluşturucu | Kayıt Olmadan Sınırsız",
+      "desc": "İstediğiniz metni, notu veya mesajı ücretsiz olarak QR koda dönüştürün. Sınır yok, süre sınırı yok, kayıt olmak yok."
+    },
+    "sms": {
+      "title": "Ücretsiz SMS QR Kod Oluşturucu | Otomatik Mesaj",
+      "desc": "Tarandığında alıcı ve mesaj içeriği hazır bir SMS oluşturan QR kod tasarlayın. Pazarlama ve müşteri hizmetleri için ücretsiz çözüm."
+    },
+    "email": {
+      "title": "Ücretsiz E-Posta QR Kod Oluşturucu | Otomatik Mail Gönder",
+      "desc": "Alıcısı ve konusu önceden belirlenmiş otomatik e-posta gönderen QR kodlar oluşturun. %100 ücretsiz ve kullanımı çok kolay."
+    },
+    "tel": {
+      "title": "Telefon Numarası QR Kod Oluşturucu | Tek Tıkla Arama",
+      "desc": "Müşterilerinizin kamerayı okutarak sizi anında aramasını sağlayacak telefon QR kodunu ücretsiz oluşturun. Süresiz kullanım."
+    },
+    "home": {
+      "title": "Ücretsiz QR Kod Oluşturucu - Logolu, Hızlı ve Sınırsız",
+      "desc": "En iyi ücretsiz QR kod oluşturucu ile saniyeler içinde logolu ve özelleştirilmiş QR kodlar tasarlayın. Kayıt yok, süre sınırı yok. URL, Wi-Fi, vCard."
+    }
+  },
+  "meta_description": "En iyi ücretsiz QR kod oluşturucu ile saniyeler içinde logolu ve özelleştirilmiş QR kodlar tasarlayın. Kayıt yok, süre sınırı yok. URL, Wi-Fi, vCard."
 }

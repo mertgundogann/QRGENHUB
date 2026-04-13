@@ -1,15 +1,16 @@
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback, useRef, Suspense, lazy } from "react";
 import axios from "axios";
+import SEO from "../components/SEO"; 
 import { useTranslation } from "react-i18next";
 import { qrTypes } from "../components/QRConstants";
-import QRSettings from "../components/QRSettings";
 import QRDisplay from "../components/QRDisplay";
 import toast, { Toaster } from 'react-hot-toast';
 import QRInputFields from "../components/QRInputFields";
 import SEOContent from "../components/SEOContent";
+import FaqSection from "../components/FaqSection";
 
-// API URL production ve development için
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const QRSettings = lazy(() => import("../components/QRSettings"));
+const API_BASE_URL = import.meta.env.VITE_API_URL || "https://qrgenhub.vercel.app";
 
 const CreateQR = ({ defaultType }) => {
   const { t } = useTranslation();
@@ -26,6 +27,8 @@ const CreateQR = ({ defaultType }) => {
   const canvasRef = useRef(null);
   const advancedSettingsRef = useRef(null);
   const fileInputRef = useRef(null);
+  
+  const abortControllerRef = useRef(null);
 
   useEffect(() => {
     if (defaultType) {
@@ -44,23 +47,28 @@ const CreateQR = ({ defaultType }) => {
     }
   };
 
-  const DOMAIN = "https://qrgenhub.com";
-
-  const getDynamicTitle = () => {
-    return t('title_pattern', {
-      type: t(`qr.type.${type}`),
-      suffix: t('title_suffix')
+  const getVisualTitle = () => {
+    return t('title_pattern', { 
+      type: t(`qr.type.${type}`), 
+      suffix: t('title_suffix') 
     });
   };
 
-  const getDynamicDescription = () => {
-    return t('meta_description_pattern', { type: t(`qr.type.${type}`) });
-  };
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": t('faq_items', { returnObjects: true }).map(item => ({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.a
+    }
+  }))
+};
 
-  // --- Backend isteği
-  const handleCreate = useCallback(async () => {
+  const handleCreate = useCallback(async (signal) => {
     const getV = (key) => inputs[key] || inputs[t(key)] || "";
-
     let value = "";
 
     switch (type) {
@@ -138,9 +146,17 @@ const CreateQR = ({ defaultType }) => {
         value,
         fgColor,
         bgColor
+      }, {
+        signal: signal
       });
+      
       setQr(res.data.qr);
     } catch (err) {
+      if (axios.isCancel(err)) {
+        console.log("Request canceled:", err.message);
+        return; 
+      }
+
       console.error("Backend Connection Error:", err);
       if (err.response?.status === 429) {
         toast.error(t('ERR_TOO_MANY_REQUESTS') || "Too many requests!");
@@ -148,16 +164,30 @@ const CreateQR = ({ defaultType }) => {
         toast.error(t('backend_error') || "Backend error occurred!");
       }
     } finally {
-      setLoading(false);
+      if (!signal?.aborted) {
+        setLoading(false);
+      }
     }
   }, [type, inputs, fgColor, bgColor, t]);
 
   useEffect(() => {
-    const timer = setTimeout(() => handleCreate(), 500);
-    return () => clearTimeout(timer);
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+    }
+
+    const controller = new AbortController();
+    abortControllerRef.current = controller;
+
+    const timer = setTimeout(() => {
+      handleCreate(controller.signal);
+    }, 800);
+
+    return () => {
+      clearTimeout(timer);
+      controller.abort(); 
+    };
   }, [handleCreate]);
 
-  // --- QR Çizimi ve indirme
   const drawFullQR = (callback) => {
     if (!qr) return;
     const canvas = canvasRef.current;
@@ -215,25 +245,24 @@ const CreateQR = ({ defaultType }) => {
   const currentTypeData = qrTypes.find((t_item) => t_item.value === type) || qrTypes[0];
 
   return (
-    <div className="flex flex-col items-center w-full px-4 pt-10 pb-20 bg-gray-50/30">
+    <div className="flex flex-col items-center w-full px-4 pt-10 pb-20 bg-gray-50/30 dark:bg-gray-900 transition-colors duration-300">
       <Toaster position="top-center" />
-      <title>{getDynamicTitle()} | QRGEN HUB</title>
-      <meta name="description" content={getDynamicDescription()} />
-      <meta property="og:title" content={`${getDynamicTitle()} | QRGEN HUB`} />
-      <meta property="og:description" content={getDynamicDescription()} />
-      <meta property="og:type" content="website" />
-      <meta property="og:image" content={`${DOMAIN}/og-image.png`} />
-      <meta name="twitter:title" content={`${getDynamicTitle()} | QRGEN HUB`} />
-      <meta name="twitter:description" content={getDynamicDescription()} />
-      <meta name="twitter:image" content={`${DOMAIN}/og-image.png`} />
       
-      <div className="bg-white p-6 md:p-10 rounded-[3.5rem] shadow-2xl w-full max-w-xl border border-gray-100 relative z-10">
-        <h1 className="text-2xl font-black text-center mb-8 tracking-tighter text-gray-800 uppercase italic">
-          {getDynamicTitle()}
+      <SEO 
+  title={t(`seo.${type}.title`)} 
+  description={t(`seo.${type}.desc`)}
+  structuredData={faqSchema}
+  toolType={type} 
+/>
+      
+      <div className="bg-white dark:bg-gray-800 p-6 md:p-10 rounded-[3.5rem] shadow-lg md:shadow-2xl w-full max-w-xl border border-gray-100 dark:border-gray-700 relative z-10 transition-colors duration-300">
+        
+        <h1 className="text-2xl font-black text-center mb-8 tracking-tighter text-gray-800 dark:text-white uppercase italic transition-colors">
+          {getVisualTitle()}
         </h1>
 
         <div className="flex flex-wrap gap-2 mb-8 justify-center">
-          <button onClick={() => {setFgColor("#000000"); setBgColor("#ffffff")}} className="px-5 py-2.5 bg-gray-100 rounded-2xl text-[10px] font-black uppercase transition-all hover:bg-gray-200">
+          <button onClick={() => {setFgColor("#000000"); setBgColor("#ffffff")}} className="px-5 py-2.5 bg-gray-100 dark:bg-gray-700 dark:text-gray-200 rounded-2xl text-[10px] font-black uppercase transition-all hover:bg-gray-200 dark:hover:bg-gray-600">
             {t('classic')}
           </button>
           <button onClick={() => {setFgColor("#D4AF37"); setBgColor("#1a1a1a")}} className="px-5 py-2.5 bg-gray-900 text-yellow-500 rounded-2xl text-[10px] font-black uppercase shadow-lg active:scale-95 transition-all">
@@ -246,20 +275,26 @@ const CreateQR = ({ defaultType }) => {
 
         <QRInputFields fields={currentTypeData.fields} inputs={inputs} setInputs={setInputs} />
 
-        <button onClick={toggleAdvanced} className="w-full py-4 text-xs font-black text-indigo-600 mb-6 bg-indigo-50/50 rounded-2xl hover:bg-indigo-100 transition-all uppercase tracking-widest border border-indigo-100/50">
+        <button onClick={toggleAdvanced} className="w-full py-4 text-xs font-black mb-6 rounded-2xl transition-all uppercase tracking-widest border flex items-center justify-center gap-2
+          bg-gray-100 text-gray-900 hover:bg-gray-200 border-gray-200
+          dark:bg-gray-800 dark:text-gray-100 dark:border-gray-700 dark:hover:bg-gray-700 dark:hover:border-gray-600">
           {showAdvanced ? `↑ ${t('close_settings')}` : `↓ ${t('adv_settings')}`}
         </button>
 
         {showAdvanced && (
-          <div ref={advancedSettingsRef} className="p-6 bg-gray-50/50 rounded-[2.5rem] mb-8 border border-gray-100">
-            <QRSettings 
-              fgColor={fgColor} setFgColor={setFgColor} 
-              bgColor={bgColor} setBgColor={setBgColor} 
-              frameText={frameText} setFrameText={setFrameText} 
-              logo={logo} setLogo={setLogo} 
-              fileInputRef={fileInputRef} 
-              t={t} 
-            />
+          <div ref={advancedSettingsRef} className="p-6 rounded-[2.5rem] mb-8 min-h-[100px] border transition-colors
+            bg-gray-50 border-gray-100 
+            dark:bg-gray-900/50 dark:border-gray-700">
+             <Suspense fallback={<div className="text-center text-xs text-gray-400">Loading settings...</div>}>
+                <QRSettings 
+                  fgColor={fgColor} setFgColor={setFgColor} 
+                  bgColor={bgColor} setBgColor={setBgColor} 
+                  frameText={frameText} setFrameText={setFrameText} 
+                  logo={logo} setLogo={setLogo} 
+                  fileInputRef={fileInputRef} 
+                  t={t} 
+                />
+             </Suspense>
           </div>
         )}
 
@@ -268,11 +303,15 @@ const CreateQR = ({ defaultType }) => {
           qr={qr} 
           handleDownloadPNG={handleDownloadPNG} 
           handleDownloadSVG={handleDownloadSVG}
-          handleCopy={() => toast.success(t('copied_to_clipboard'))}
+          // handleCopy ve handleShare SİLİNDİ (Artık Gerek Yok)
         />
       </div>
 
       <SEOContent />
+      <div className="w-full max-w-4xl mt-12">
+        <FaqSection />
+      </div>
+
       <canvas ref={canvasRef} style={{ display: "none" }} />
     </div>
   );

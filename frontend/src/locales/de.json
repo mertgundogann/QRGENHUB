@@ -8,6 +8,7 @@
   "qr.type.sms": "SMS",
   "qr.type.email": "E-Mail",
   "qr.type.tel": "Telefon",
+  "qr.type.blog": "Blog",
   "qr.field.url": "URL-Adresse",
   "qr.placeholder.url": "https://google.com",
   "qr.field.ssid": "Netzwerkname (SSID)",
@@ -40,7 +41,7 @@
   "background_color": "Hintergrund",
   "footer_text": "Text unter dem QR",
   "add_logo": "Logo hinzufügen",
-  "placeholder_text": "Geben Sie Daten ein, Ihr QR-Code erscheint sofort hier.",
+  "placeholder_text": "Geben Sie Daten ein; Ihr QR-Code erscheint sofort hier.",
   "feat1_t": "Schnell & Unbegrenzt",
   "feat1_d": "Erstellen Sie in Sekundenschnelle so viele QR-Codes wie Sie möchten, ohne Registrierung.",
   "feat2_t": "Volle Anpassung",
@@ -48,14 +49,6 @@
   "feat3_t": "Hohe Qualität",
   "feat3_d": "Laden Sie SVG für den Druck oder hochauflösendes PNG für die digitale Nutzung herunter.",
   "faq_title": "Häufig gestellte Fragen",
-  "q1": "Was ist ein QR-Code?",
-  "a1": "Barcodes, die Informationen in einer quadratischen Matrix speichern.",
-  "q2": "Ist es kostenlos?",
-  "a2": "Ja, alle statischen QR-Codes sind völlig kostenlos.",
-  "q3": "Ist es sicher, ein Logo hinzuzufügen?",
-  "a3": "Ja, QR-Codes arbeiten mit 30% Fehlertoleranz.",
-  "q4": "PNG oder SVG?",
-  "a4": "PNG wird für digital, SVG für den Druck empfohlen.",
   "download_png": "PNG herunterladen",
   "download_svg": "SVG herunterladen",
   "copy": "Link kopieren",
@@ -63,35 +56,104 @@
   "footer_text_placeholder": "Notiz unter QR schreiben...",
   "blog_title_main": "QR EINBLICKE",
   "blog_subtitle": "Alles über QR-Technologie",
+  "blog_title_seo": "QRGenHub Blog - Tipps, Tricks und Anleitungen",
+  "blog_desc_seo": "Neueste Artikel über QR-Code-Technologie, Marketingstrategien und Schritt-für-Schritt-Anleitungen.",
   "read_more": "Weiterlesen",
   "author": "Autor",
+  
+  "Rehber": "Ratgeber",
+  "Business": "Business",
+
   "category_guide": "Ratgeber",
   "category_business": "Business",
-  "blog_post_1_title": "Leitfaden 2026: Wie erstelle ich einen kostenlosen QR-Code?",
-  "blog_post_1_desc": "Wir untersuchen Schritt für Schritt die schnellsten Wege, um einen individuellen QR-Code mit Logo zu erstellen.",
-  "blog_post_2_title": "5 Vorteile von QR-Menüs für Restaurants",
-  "blog_post_2_desc": "Digitale Speisekarten sorgen nicht nur für Hygiene, sondern senken auch Ihre Kosten.",
-  "footer_rights": "DESIGNED FOR SPEED",
+  "blog_post_1_title": "Kostenlosen WLAN-QR-Code erstellen",
+  "blog_post_1_desc": "Nie wieder Passwörter buchstabieren. Ermöglichen Sie Gästen eine sichere und schnelle Verbindung.",
+  "blog_post_2_title": "Leitfaden 2026: QR-Codes mit Logo",
+  "blog_post_2_desc": "Wie Sie individuelle und vertrauenswürdige QR-Codes für Ihre Marke erstellen.",
+  "footer_rights": "ENTWICKELT FÜR GESCHWINDIGKEIT",
   "back_to_blog": "ZURÜCK ZUM BLOG",
   "post_not_found": "Beitrag nicht gefunden",
   "cta_blog_title": "Bereit, Ihren eigenen QR-Code zu erstellen?",
   "cta_blog_desc": "Nutzen Sie jetzt unser Tool, um Ihren kostenlosen QR-Code mit Logo zu erstellen.",
   "cta_blog_button": "Jetzt starten",
   "qr.field.job": "Berufsbezeichnung",
-"qr.placeholder.job": "Softwareentwickler",
-"qr.field.company": "Firmenname",
-"qr.placeholder.company": "QRGEN HUB",
-"qr.field.website": "Webseite URL",
-"qr.placeholder.website": "https://qrgenhub.com",
-"qr.field.address": "Adresse",
-"qr.placeholder.address": "Berlin, Deutschland",
-"recommended": "EMPFEHLUNG",
-"qr.hint.vcard_complexity": "💡 Je mehr vCard-Infos, desto dichter der Code. Nutzen Sie das SVG-Format für beste Druckqualität.",
-"privacy.title": "Datenschutzerklärung",
-"privacy.content": "Bei QRGENHUB legen wir Wert auf Ihren Datenschutz. Daten zur Erstellung von QR-Codes (URLs, vCards, WLAN-Passwörter usw.) werden nicht auf unseren Servern gespeichert. Die Verarbeitung erfolgt sofort, und die Daten werden nach der Sitzung gelöscht. Cookies dienen nur für Spracheinstellungen.",
-"terms.title": "Nutzungsbedingungen",
-"terms.content": "Der kostenlose QR-Code-Service von QRGENHUB wird 'wie besehen' bereitgestellt. Der Nutzer trägt die alleinige Verantwortung für den Inhalt der erstellten Codes. Die Nutzung ist kostenlos, wir behalten uns jedoch das Recht vor, den Zugriff bei Missbrauch einzuschränken.",
-"footer_tagline": "Leistungsstarke QR-Codes für moderne Produkte",
-  "blog_description": "Aktuelle Artikel zu QR-Code-Technologie, digitalem Marketing und Unternehmensstrategien.",
-  "meta_description_pattern": "Erstellen Sie kostenlose {{type}} QR-Codes online. Farben und Logo anpassen. PNG oder SVG herunterladen."
+  "qr.placeholder.job": "Softwareentwickler",
+  "qr.field.company": "Firmenname",
+  "qr.placeholder.company": "QRGEN HUB",
+  "qr.field.website": "Webseite URL",
+  "qr.placeholder.website": "https://qrgenhub.com",
+  "qr.field.address": "Adresse",
+  "qr.placeholder.address": "Berlin, Deutschland",
+  "recommended": "EMPFEHLUNG",
+  "qr.hint.vcard_complexity": "💡 Nutzen Sie das SVG-Format für beste Druckqualität.",
+  "privacy.title": "Datenschutzerklärung",
+  "privacy.content": "Bei QRGENHUB legen wir Wert auf Ihren Datenschutz. Daten werden nicht auf unseren Servern gespeichert.",
+  "terms.title": "Nutzungsbedingungen",
+  "terms.content": "Der Service von QRGENHUB wird 'wie besehen' bereitgestellt.",
+  "footer_tagline": "Leistungsstarke QR-Codes für die moderne Welt",
+  "404_title": "OOPS! VERIRRT?",
+  "404_desc": "Die gesuchte Seite wurde verschoben oder gelöscht.",
+  "back_to_home": "ZUR STARTSEITE",
+  "read_blog": "BLOG LESEN",
+  "faq_items": [
+    {
+      "q": "Werden meine Daten gespeichert?",
+      "a": "Nein. Ihre Daten werden nicht auf unseren Servern gespeichert."
+    },
+    {
+      "q": "Ist dieser QR-Code-Generator kostenlos?",
+      "a": "Ja, QRGENHUB ist ein **kostenloser QR-Code-Generator**."
+    },
+    {
+      "q": "Kann ich ein Logo hinzufügen?",
+      "a": "Absolut! Sie können **QR-Codes mit Logo** erstellen."
+    },
+    {
+      "q": "Laufen die QR-Codes ab?",
+      "a": "Nein, statische QR-Codes haben **kein Ablaufdatum**."
+    },
+    {
+      "q": "Gibt es ein Limit?",
+      "a": "Es gibt **kein Limit**."
+    },
+    {
+      "q": "Welche Formate soll ich wählen?",
+      "a": "Wir empfehlen **PNG** für Web und **SVG** für Druck."
+    }
+  ],
+  "seo": {
+    "url": {
+      "title": "QR-Code erstellen: Kostenloser URL Generator mit Logo | QRGenHub",
+      "desc": "Erstellen Sie kostenlos und ohne Anmeldung einen QR-Code für Ihre URL. Logo hinzufügen, anpassen und in Sekunden herunterladen."
+    },
+    "wifi": {
+      "title": "WLAN QR-Code erstellen - Kostenlos & Ohne Passwort | QRGenHub",
+      "desc": "Generieren Sie einen kostenlosen WLAN QR-Code. Gäste verbinden sich sofort und sicher, ganz ohne Passworteingabe. Ohne Registrierung."
+    },
+    "vcard": {
+      "title": "vCard QR-Code erstellen: Kostenlose digitale Visitenkarte",
+      "desc": "Erstellen Sie Ihre digitale Visitenkarte als QR-Code. Teilen Sie Kontaktdaten schnell, einfach und kostenlos mit nur einem Scan."
+    },
+    "text": {
+      "title": "Text QR-Code kostenlos erstellen | QRGenHub",
+      "desc": "Verwandeln Sie beliebigen Text in einen QR-Code. Kostenloses Tool, ohne Limits und ohne Anmeldung."
+    },
+    "sms": {
+      "title": "SMS QR-Code erstellen - Automatische Nachrichten",
+      "desc": "Generieren Sie einen QR-Code, der automatisch eine SMS mit Empfänger und Text verfasst. Kostenlos und sofort einsatzbereit."
+    },
+    "email": {
+      "title": "E-Mail QR-Code kostenlos erstellen | QRGenHub",
+      "desc": "Erstellen Sie blitzschnell einen QR-Code für E-Mails mit vordefiniertem Empfänger und Betreff. 100% kostenlos und ohne Limit."
+    },
+    "tel": {
+      "title": "Telefon QR-Code erstellen für Direktanrufe | QRGenHub",
+      "desc": "Generieren Sie einen QR-Code für Telefonnummern. Ein Scan genügt für den direkten Anruf. Kostenlos und ohne Ablaufdatum."
+    },
+    "home": {
+      "title": "QR-Code erstellen: Kostenloser Generator mit Logo | QRGenHub",
+      "desc": "Der beste kostenlose QR-Code Generator. Erstellen Sie in Sekunden unbegrenzte QR-Codes für WLAN, URL, vCard und Text. Ohne Anmeldung!"
+    }
+  },
+  "meta_description": "Der beste kostenlose QR-Code Generator. Erstellen Sie in Sekunden unbegrenzte QR-Codes für WLAN, URL, vCard und Text. Ohne Anmeldung!"
 }

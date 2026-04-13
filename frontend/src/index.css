@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-
+@variant dark (&:where(.dark, .dark *));
 @layer base {
   html, body {
     @apply h-screen m-0 p-0;
