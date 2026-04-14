@@ -309,7 +309,7 @@ const faqSchema = {
 
       <SEOContent />
       <div className="w-full max-w-4xl mt-12">
-        <FaqSection />
+        <FaqSection type={type} />
       </div>
 
       <canvas ref={canvasRef} style={{ display: "none" }} />

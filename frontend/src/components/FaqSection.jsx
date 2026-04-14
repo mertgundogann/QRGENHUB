@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const FaqSection = () => {
+const FaqSection = ({ type }) => {
   const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(null);
 
-  
-  const faqItems = t('faq_items', { returnObjects: true });
+  const typeKey = type ? `faq_items_${type}` : null;
+  const typeSpecific = typeKey ? t(typeKey, { returnObjects: true }) : null;
+  const faqItems = (Array.isArray(typeSpecific) ? typeSpecific : null) || t('faq_items', { returnObjects: true });
 
   const toggleFaq = (index) => {
     setActiveIndex(activeIndex === index ? null : index);

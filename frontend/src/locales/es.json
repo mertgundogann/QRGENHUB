@@ -95,6 +95,32 @@
   "404_desc": "Es posible que la página que busca haya sido movida o eliminada.",
   "back_to_home": "VOLVER AL INICIO",
   "read_blog": "LEER EL BLOG",
+  "faq_items_text": [
+    {
+      "q": "¿Para qué sirve un código QR de texto?",
+      "a": "Permite almacenar **mensajes, notas o instrucciones** que se muestran al instante al escanear, sin necesidad de internet."
+    },
+    {
+      "q": "¿El texto tiene límite de caracteres?",
+      "a": "Puedes incluir hasta **4.296 caracteres** en un código QR de texto estático."
+    },
+    {
+      "q": "¿Necesito internet para escanear el QR de texto?",
+      "a": "**No**. El texto está codificado directamente en el QR, funciona sin conexión a internet."
+    },
+    {
+      "q": "¿Puedo crear un QR de texto gratis?",
+      "a": "Sí, en QRGenHub es **100% gratuito**, sin registro ni límites de uso."
+    },
+    {
+      "q": "¿Los QR de texto caducan?",
+      "a": "**No caducan nunca**. Son estáticos y permanentes, puedes usarlos indefinidamente."
+    },
+    {
+      "q": "¿Para qué se usan los QR de texto en la práctica?",
+      "a": "Se usan para **etiquetas de productos, instrucciones de uso, contraseñas Wi-Fi escritas, tarjetas de visita** y mucho más."
+    }
+  ],
   "faq_items": [
     {
       "q": "¿Se guardan mis datos?",
