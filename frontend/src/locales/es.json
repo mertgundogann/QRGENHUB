@@ -181,5 +181,12 @@
       "desc": "El mejor generador para crear códigos QR personalizados ilimitados gratis. Soporta WiFi, URL, vCard, Texto y más opciones."
     }
   },
-  "meta_description": "El mejor generador para crear códigos QR personalizados ilimitados gratis. Descubre cómo crear un código QR en segundos sin registro."
+  "meta_description": "El mejor generador para crear códigos QR personalizados ilimitados gratis. Descubre cómo crear un código QR en segundos sin registro.",
+  "related_tools_title": "Otras herramientas gratuitas",
+  "related_tools_text": [
+    { "label": "Crear código QR para URL", "path": "/es/crear-qr-url/" },
+    { "label": "Crear código QR para WiFi", "path": "/es/codigo-qr-wifi/" },
+    { "label": "Crear código QR vCard", "path": "/es/qr-vcard/" },
+    { "label": "Crear código QR para SMS", "path": "/es/qr-sms/" }
+  ]
 }

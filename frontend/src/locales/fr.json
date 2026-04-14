@@ -95,6 +95,32 @@
   "404_desc": "La page que vous recherchez a peut-être été déplacée ou supprimée.",
   "back_to_home": "RETOUR À L'ACCUEIL",
   "read_blog": "LIRE LE BLOG",
+  "faq_items_text": [
+    {
+      "q": "À quoi sert un code QR de texte ?",
+      "a": "Il permet de stocker **messages, notes ou instructions** qui s'affichent instantanément au scan, sans connexion internet."
+    },
+    {
+      "q": "Y a-t-il une limite de caractères ?",
+      "a": "Vous pouvez inclure jusqu'à **4 296 caractères** dans un code QR de texte statique."
+    },
+    {
+      "q": "Faut-il internet pour scanner le QR texte ?",
+      "a": "**Non**. Le texte est encodé directement dans le QR, il fonctionne hors connexion."
+    },
+    {
+      "q": "Puis-je créer un QR texte gratuitement ?",
+      "a": "Oui, sur QRGenHub c'est **100% gratuit**, sans inscription ni limite d'utilisation."
+    },
+    {
+      "q": "Les QR texte expirent-ils ?",
+      "a": "**Jamais**. Ils sont statiques et permanents, utilisables indéfiniment."
+    },
+    {
+      "q": "Quels sont les usages pratiques d'un QR texte ?",
+      "a": "Étiquettes produits, **instructions d'utilisation**, mots de passe Wi-Fi écrits, cartes de visite et bien plus."
+    }
+  ],
   "faq_items": [
     {
       "q": "Mes données sont-elles stockées ?",

@@ -307,7 +307,7 @@ const faqSchema = {
         />
       </div>
 
-      <SEOContent />
+      <SEOContent type={type} />
       <div className="w-full max-w-4xl mt-12">
         <FaqSection type={type} />
       </div>

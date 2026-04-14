@@ -1,8 +1,10 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link, useParams } from 'react-router-dom';
 
-const SEOContent = () => {
+const SEOContent = ({ type }) => {
   const { t } = useTranslation();
+  const { lng } = useParams();
 
   const features = [
     {
@@ -21,6 +23,10 @@ const SEOContent = () => {
       desc: t('feat3_d'),
     }
   ];
+
+  const relatedKey = type ? `related_tools_${type}` : null;
+  const relatedTools = relatedKey ? t(relatedKey, { returnObjects: true }) : null;
+  const relatedTitle = t('related_tools_title', { defaultValue: '' });
 
   return (
     <div className="w-full max-w-4xl mt-16 px-4 animate-in fade-in slide-in-from-bottom-8 duration-700">
@@ -50,6 +56,25 @@ const SEOContent = () => {
           </div>
         ))}
       </div>
+
+      {Array.isArray(relatedTools) && relatedTools.length > 0 && (
+        <div className="mt-12 p-6 rounded-3xl bg-white dark:bg-gray-800 shadow-sm border border-gray-100 dark:border-gray-700">
+          <h2 className="text-sm font-black uppercase tracking-widest text-indigo-900 dark:text-indigo-300 mb-4">
+            {relatedTitle}
+          </h2>
+          <div className="flex flex-wrap gap-3">
+            {relatedTools.map((tool, i) => (
+              <Link
+                key={i}
+                to={`/${lng}${tool.path.replace(/^\/[a-z]{2}/, '')}`}
+                className="px-4 py-2 rounded-xl text-sm font-semibold bg-indigo-50 text-indigo-700 hover:bg-indigo-100 dark:bg-indigo-900/30 dark:text-indigo-300 dark:hover:bg-indigo-900/50 transition-colors"
+              >
+                {tool.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
