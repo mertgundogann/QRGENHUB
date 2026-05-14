@@ -1,81 +1,100 @@
 import QRCode from "qrcode";
 import Cors from "cors";
-import rateLimit from "express-rate-limit";
-import initMiddleware from "../../utils/init-middleware.js"; // Dosya yolunun doğru olduğundan emin ol
+import { Ratelimit } from "@upstash/ratelimit";
+import { Redis } from "@upstash/redis";
+import initMiddleware from "../../utils/init-middleware.js";
 
 const isValidHex = (color) => /^#([0-9A-F]{3}){1,2}$/i.test(color);
 
-// 1. CORS Ayarları (Sadece burası yönetecek)
+// CORS
 const cors = initMiddleware(
   Cors({
-    // Origin kontrolünü burada yapıyoruz
     origin: (origin, callback) => {
       const allowedOrigins = [
         "https://qrgenhub.com",
         "https://www.qrgenhub.com",
-        "http://localhost:5173", // Vite varsayılan portu
-        "http://localhost:3000", // Olası diğer portlar
+        "http://localhost:5173",
+        "http://localhost:3000",
       ];
-      
-      // origin yoksa (server-to-server) veya listedeyse izin ver
       if (!origin || allowedOrigins.indexOf(origin) !== -1) {
         callback(null, true);
       } else {
-        // Geliştirme aşamasında hatayı görmek için:
         console.warn("Blocked by CORS:", origin);
-        callback(new Error('Not allowed by CORS'));
+        callback(new Error("Not allowed by CORS"));
       }
     },
     methods: ["POST", "OPTIONS"],
-    credentials: true, // Eğer cookie vs gönderiyorsan gerekli
+    credentials: true,
   })
 );
 
-// 2. Rate Limiter (Test sırasında çok sık hata almamak için limiti 100'e çektim)
-const limiter = initMiddleware(
-  rateLimit({
-    windowMs: 60 * 1000, 
-    max: 100, // Frontend yönlendirmeleri bazen arka arkaya istek atabilir, limiti biraz açtık
-    standardHeaders: true,
-    legacyHeaders: false,
-    message: {
-      errorCode: "ERR_TOO_MANY_REQUESTS",
-      message: "Too many requests. Please try again later.",
-    },
-  })
-);
+// Distributed rate limit (Upstash Redis).
+// Module-scope so the instance is reused across warm invocations.
+// If env vars aren't set (e.g. local dev without Upstash), rate limit is skipped.
+const ratelimit =
+  process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN
+    ? new Ratelimit({
+        redis: Redis.fromEnv(),
+        limiter: Ratelimit.slidingWindow(60, "60 s"),
+        analytics: true,
+        prefix: "qrgen:rl",
+      })
+    : null;
+
+if (!ratelimit) {
+  console.warn(
+    "[ratelimit] UPSTASH_REDIS_REST_URL / UPSTASH_REDIS_REST_TOKEN not set — rate limiting disabled."
+  );
+}
+
+const getClientIp = (req) => {
+  const fwd = req.headers["x-forwarded-for"];
+  if (typeof fwd === "string" && fwd.length > 0) {
+    return fwd.split(",")[0].trim();
+  }
+  return req.headers["x-real-ip"] || req.socket?.remoteAddress || "unknown";
+};
 
 export default async function handler(req, res) {
-  // A. Önce CORS Middleware çalışsın (OPTIONS istekleri burada yanıtlanır ve biter)
+  // A. CORS
   await cors(req, res);
 
-  // B. Eğer sadece OPTIONS isteği geldiyse (Pre-flight), cors middleware hallettiği için durabiliriz
-  // Ancak garanti olsun diye manuel bitiriş ekleyebiliriz ama genelde gerekmez.
-  if (req.method === 'OPTIONS') {
+  if (req.method === "OPTIONS") {
     return res.status(200).end();
   }
 
-  // C. Metot Kontrolü
+  // B. Method check
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
   }
 
-  // D. Rate Limiter Çalışsın
-  try {
-    await limiter(req, res);
-  } catch (e) {
-    // Rate limit hatası yakalanırsa
-    return res.status(429).json({ error: "Too many requests" });
+  // C. Rate limit (Upstash)
+  if (ratelimit) {
+    const ip = getClientIp(req);
+    const { success, limit, remaining, reset } = await ratelimit.limit(ip);
+
+    res.setHeader("X-RateLimit-Limit", limit);
+    res.setHeader("X-RateLimit-Remaining", remaining);
+    res.setHeader("X-RateLimit-Reset", reset);
+
+    if (!success) {
+      const retryAfterSec = Math.max(1, Math.ceil((reset - Date.now()) / 1000));
+      res.setHeader("Retry-After", retryAfterSec);
+      return res.status(429).json({
+        errorCode: "ERR_TOO_MANY_REQUESTS",
+        message: "Too many requests. Please try again later.",
+      });
+    }
   }
 
-  // --- İŞLEM BAŞLANGICI ---
+  // D. Validation
   const { value, fgColor = "#000000", bgColor = "#ffffff" } = req.body;
 
-  if (!value || typeof value !== "string") {
+  if (!value || typeof value !== "string" || !value.trim()) {
     return res.status(400).json({ error: "Invalid data type or missing value" });
   }
 
-  if (value.length > 2000) {
+  if (value.trim().length > 2000) {
     return res.status(400).json({ error: "Content is too long (Max 2000 chars)" });
   }
 
@@ -83,6 +102,7 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: "Invalid color format. Use Hex codes." });
   }
 
+  // E. Generate
   try {
     const qrImage = await QRCode.toDataURL(value, {
       width: 1000,
