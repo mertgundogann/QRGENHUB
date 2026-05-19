@@ -1,10 +1,29 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useParams } from 'react-router-dom';
+import { blogPosts } from '../data/posts';
+
+// Her tool tipi için ilgili blog yazısının post ID'si
+const TOOL_BLOG_MAP = {
+  url:   'url-qr-code-guide-2026',
+  wifi:  'wifi-qr-sharing',
+  vcard: 'vcard-qr-power',
+  sms:   'sms-qr-guide',
+  email: 'email-qr-customer-support',
+  tel:   'tel-qr-phone-guide',
+  text:  'qr-guide-2026',
+};
 
 const SEOContent = ({ type }) => {
   const { t } = useTranslation();
   const { lng } = useParams();
+
+  // İlgili blog yazısı hesapla
+  const relatedPostId = type ? TOOL_BLOG_MAP[type] : null;
+  const relatedPost = relatedPostId ? blogPosts.find(p => p.id === relatedPostId) : null;
+  const relatedLang = lng || 'en';
+  const relatedLangData = relatedPost?.languages?.[relatedLang] || relatedPost?.languages?.['en'];
+  const relatedBlogUrl = relatedLangData ? `/${relatedLang}/blog/${relatedLangData.slug}/` : null;
 
   const features = [
     {
@@ -56,6 +75,27 @@ const SEOContent = ({ type }) => {
           </div>
         ))}
       </div>
+
+      {relatedBlogUrl && relatedLangData && (
+        <div className="mt-8 p-6 rounded-3xl bg-indigo-50 dark:bg-indigo-900/20 border border-indigo-100 dark:border-indigo-800/40 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="text-3xl">📖</div>
+          <div className="flex-1">
+            <p className="text-xs font-black uppercase tracking-widest text-indigo-400 dark:text-indigo-400 mb-1">
+              {t('related_article_label', { defaultValue: 'Related Article' })}
+            </p>
+            <p className="text-sm font-bold text-gray-800 dark:text-gray-200 leading-snug">
+              {relatedLangData.title}
+            </p>
+          </div>
+          <Link
+            to={relatedBlogUrl}
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="shrink-0 px-5 py-2.5 rounded-2xl text-xs font-black uppercase tracking-widest bg-indigo-600 text-white hover:bg-indigo-700 transition-colors"
+          >
+            {t('read_article', { defaultValue: 'Read →' })}
+          </Link>
+        </div>
+      )}
 
       {Array.isArray(relatedTools) && relatedTools.length > 0 && (
         <div className="mt-12 p-6 rounded-3xl bg-white dark:bg-gray-800 shadow-sm border border-gray-100 dark:border-gray-700">

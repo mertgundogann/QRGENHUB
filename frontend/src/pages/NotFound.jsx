@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Helmet } from 'react-helmet-async'; 
-import SEO from '../components/SEO';
+import { Helmet } from 'react-helmet-async';
 
 const NotFound = () => {
   const { t, i18n } = useTranslation();
@@ -16,12 +15,8 @@ const NotFound = () => {
   return (
     <div className="min-h-[70vh] flex flex-col items-center justify-center px-4 overflow-hidden">
       
-      <SEO 
-        title="404 - Page Not Found" 
-        description="The page you are looking for does not exist." 
-      />
-
       <Helmet>
+        <title>404 - Page Not Found | QRGenHub</title>
         <meta name="robots" content="noindex, nofollow" />
       </Helmet>
 

@@ -43,8 +43,8 @@ const Flags = {
 };
 
 const languages = [
-  { code: "tr", label: "Türkçe", Flag: Flags.tr },
   { code: "en", label: "English", Flag: Flags.en },
+  { code: "tr", label: "Türkçe", Flag: Flags.tr },
   { code: "de", label: "Deutsch", Flag: Flags.de },
   { code: "fr", label: "Français", Flag: Flags.fr },
   { code: "es", label: "Español", Flag: Flags.es },

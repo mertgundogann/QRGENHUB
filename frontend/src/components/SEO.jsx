@@ -1,16 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'react-router-dom';
+import routeTranslations from '../config/routes';
 
-const routeTranslations = {
-  en: { url: 'url-qr', wifi: 'wifi-qr', vcard: 'vcard-qr', text: 'text-qr', sms: 'sms-qr', email: 'email-qr', tel: 'tel-qr' },
-  tr: { url: 'url-qr', wifi: 'wifi-qr', vcard: 'vcard-qr', text: 'metin-qr', sms: 'sms-qr', email: 'eposta-qr', tel: 'tel-qr' },
-  es: { url: 'crear-qr-url', wifi: 'codigo-qr-wifi', vcard: 'qr-vcard', text: 'qr-de-texto', sms: 'qr-sms', email: 'qr-email', tel: 'qr-telefono' },
-  fr: { url: 'creer-qr-url', wifi: 'qr-code-wifi', vcard: 'qr-vcard', text: 'qr-texte', sms: 'qr-sms', email: 'qr-email', tel: 'qr-telephone' },
-  de: { url: 'url-qr-erstellen', wifi: 'wlan-qr-code', vcard: 'vcard-qr', text: 'text-qr-code', sms: 'sms-qr', email: 'email-qr', tel: 'tel-qr' }
-};
-
-const SEO = ({ title, description, image, structuredData, localizedSlugs, toolType }) => {
+const SEO = ({ title, description, image, structuredData, additionalStructuredData, localizedSlugs, toolType }) => {
   const location = useLocation();
   const siteUrl = 'https://www.qrgenhub.com';
 
@@ -48,7 +41,40 @@ const SEO = ({ title, description, image, structuredData, localizedSlugs, toolTy
   }
 
   const canonicalUrl = `${siteUrl}${withSlash(canonicalPath)}`;
-  const metaImage = image || `${siteUrl}/og-image.jpg`;
+  const metaImage = image || `${siteUrl}/og-image.png`;
+
+  // 4. WebApplication Schema — sadece tool sayfalarında
+  const webAppSchema = toolType ? {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "QRGenHub",
+    "url": `${siteUrl}/${currentLang}/`,
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": description || "Free QR code generator. Supports WiFi, URL, vCard and more.",
+    "browserRequirements": "Requires JavaScript. Works on all modern browsers."
+  } : null;
+
+  // 5. BreadcrumbList Schema — blog ve tool sayfalarında otomatik
+  const breadcrumbItems = [
+    { "@type": "ListItem", "position": 1, "name": "QRGenHub", "item": `${siteUrl}/${currentLang}/` }
+  ];
+  if (localizedSlugs) {
+    breadcrumbItems.push({ "@type": "ListItem", "position": 2, "name": "Blog", "item": `${siteUrl}/${currentLang}/blog/` });
+    breadcrumbItems.push({ "@type": "ListItem", "position": 3, "name": title || "Post", "item": canonicalUrl });
+  } else if (toolType) {
+    breadcrumbItems.push({ "@type": "ListItem", "position": 2, "name": title || "QR Generator", "item": canonicalUrl });
+  }
+  const breadcrumbSchema = breadcrumbItems.length > 1 ? {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumbItems
+  } : null;
 
   // 3. YENİ: x-default URL Hesaplama
   let xDefaultPath;
@@ -76,10 +102,15 @@ const SEO = ({ title, description, image, structuredData, localizedSlugs, toolTy
       {/* --- Open Graph --- */}
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:title" content={title || 'QRGenHub'} />
-      <meta property="og:description" content={description} />
+      <meta property="og:description" content={description || "Generate custom QR codes for free. Supports WiFi, URL, vCard and more."} />
       <meta property="og:image" content={metaImage} />
       <meta property="og:type" content="website" />
+
+      {/* --- Twitter Card --- */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={title || 'QRGenHub'} />
+      <meta name="twitter:description" content={description || "Generate custom QR codes for free. Supports WiFi, URL, vCard and more."} />
+      <meta name="twitter:image" content={metaImage} />
 
       {/* --- HREFLANG Yapılandırması --- */}
       {languages.map((lang) => {
@@ -120,6 +151,21 @@ const SEO = ({ title, description, image, structuredData, localizedSlugs, toolTy
       {structuredData && (
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
+        </script>
+      )}
+      {additionalStructuredData && (
+        <script type="application/ld+json">
+          {JSON.stringify(additionalStructuredData)}
+        </script>
+      )}
+      {webAppSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(webAppSchema)}
+        </script>
+      )}
+      {breadcrumbSchema && (
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
         </script>
       )}
     </Helmet>

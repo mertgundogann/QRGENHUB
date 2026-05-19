@@ -18,6 +18,7 @@ const QRInputFields = ({ fields, inputs, setInputs }) => {
             <textarea
               placeholder={t(f.placeholder)}
               value={inputs[f.name] || ""}
+              maxLength={2000}
               onChange={(e) => setInputs({ ...inputs, [f.name]: e.target.value })}
               className="w-full p-4 rounded-2xl outline-none transition-all font-medium min-h-[120px] shadow-inner
                 bg-gray-50 border-2 border-transparent focus:bg-white focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10
@@ -60,6 +61,7 @@ const QRInputFields = ({ fields, inputs, setInputs }) => {
               type="text"
               placeholder={t(f.placeholder)}
               value={inputs[f.name] || ""}
+              maxLength={2000}
               onChange={(e) => setInputs({ ...inputs, [f.name]: e.target.value })}
               className="w-full p-4 rounded-2xl outline-none transition-all font-medium shadow-inner
                 bg-gray-50 border-2 border-transparent focus:bg-white focus:border-indigo-500 focus:ring-4 focus:ring-indigo-500/10

@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef, Suspense, lazy } from "react";
 import axios from "axios";
+import QRCode from "qrcode";
 import SEO from "../components/SEO"; 
 import { useTranslation } from "react-i18next";
 import { qrTypes } from "../components/QRConstants";
@@ -27,7 +28,8 @@ const CreateQR = ({ defaultType }) => {
   const canvasRef = useRef(null);
   const advancedSettingsRef = useRef(null);
   const fileInputRef = useRef(null);
-  
+  const qrValueRef = useRef('');
+
   const abortControllerRef = useRef(null);
 
   useEffect(() => {
@@ -124,7 +126,13 @@ const faqSchema = {
         const eTo = getV("qr.field.email");
         const eSub = getV("qr.field.subject") || "";
         const eBody = getV("qr.field.message") || "";
-        if (eTo) value = `MATMSG:TO:${eTo};SUB:${eSub};BODY:${eBody};;`;
+        if (eTo) {
+          const params = new URLSearchParams();
+          if (eSub) params.set('subject', eSub);
+          if (eBody) params.set('body', eBody);
+          const query = params.toString();
+          value = `mailto:${eTo}${query ? `?${query}` : ''}`;
+        }
         break;
       }
       case "text": {
@@ -136,10 +144,12 @@ const faqSchema = {
     }
 
     if (!value || value.trim() === "") {
+      qrValueRef.current = '';
       setQr(null);
       return;
     }
 
+    qrValueRef.current = value;
     setLoading(true);
     try {
       const res = await axios.post(`${API_BASE_URL}/api/qr/create`, {
@@ -233,14 +243,75 @@ const faqSchema = {
     a.click();
   });
 
-  const handleDownloadSVG = () => drawFullQR(c => {
-    const svgContent = `<svg xmlns="http://www.w3.org/2000/svg" width="${c.width}" height="${c.height}"><rect width="100%" height="100%" fill="${bgColor}"/><image href="${c.toDataURL("image/png")}" width="100%" height="100%"/></svg>`;
-    const blob = new Blob([svgContent], {type: "image/svg+xml"});
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(blob);
-    a.download = `qrgen-${type}.svg`;
-    a.click();
-  });
+  const handleDownloadSVG = async () => {
+    const value = qrValueRef.current;
+    if (!value) return;
+
+    try {
+      const svgString = await QRCode.toString(value, {
+        type: 'svg',
+        color: { dark: fgColor, light: bgColor },
+        width: 400,
+        margin: 2
+      });
+
+      let finalSvg = svgString;
+
+      if (frameText || logo) {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(svgString, 'image/svg+xml');
+        const svgEl = doc.querySelector('svg');
+        const width = parseFloat(svgEl.getAttribute('width') || '400');
+        const height = parseFloat(svgEl.getAttribute('height') || '400');
+
+        if (logo) {
+          const logoSize = width * 0.22;
+          const logoX = (width - logoSize) / 2;
+          const logoY = (height - logoSize) / 2;
+          const rect = doc.createElementNS('http://www.w3.org/2000/svg', 'rect');
+          rect.setAttribute('x', logoX - 5);
+          rect.setAttribute('y', logoY - 5);
+          rect.setAttribute('width', logoSize + 10);
+          rect.setAttribute('height', logoSize + 10);
+          rect.setAttribute('fill', bgColor);
+          svgEl.appendChild(rect);
+          const imageEl = doc.createElementNS('http://www.w3.org/2000/svg', 'image');
+          imageEl.setAttribute('x', logoX);
+          imageEl.setAttribute('y', logoY);
+          imageEl.setAttribute('width', logoSize);
+          imageEl.setAttribute('height', logoSize);
+          imageEl.setAttributeNS('http://www.w3.org/1999/xlink', 'href', logo);
+          svgEl.appendChild(imageEl);
+        }
+
+        if (frameText) {
+          const textPadding = 40;
+          svgEl.setAttribute('height', height + textPadding);
+          const textEl = doc.createElementNS('http://www.w3.org/2000/svg', 'text');
+          textEl.setAttribute('x', width / 2);
+          textEl.setAttribute('y', height + 25);
+          textEl.setAttribute('text-anchor', 'middle');
+          textEl.setAttribute('font-size', '18');
+          textEl.setAttribute('font-weight', 'bold');
+          textEl.setAttribute('font-family', 'sans-serif');
+          textEl.setAttribute('fill', fgColor);
+          textEl.textContent = frameText.toUpperCase();
+          svgEl.appendChild(textEl);
+        }
+
+        finalSvg = new XMLSerializer().serializeToString(doc);
+      }
+
+      const blob = new Blob([finalSvg], { type: 'image/svg+xml' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `qrgen-${type}.svg`;
+      a.click();
+    } catch (err) {
+      console.error('SVG generation error:', err);
+      toast.error('SVG export failed. Please try PNG.');
+    }
+  };
 
   const currentTypeData = qrTypes.find((t_item) => t_item.value === type) || qrTypes[0];
 

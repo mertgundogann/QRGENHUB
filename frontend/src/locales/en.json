@@ -157,5 +157,76 @@
       "desc": "The best free QR code generator to create custom QR codes in seconds. Supports URL, WiFi, vCard, Text, and more. No sign-up, no limits."
     }
   },
-  "meta_description": "The best free QR code generator to create custom QR codes in seconds. Supports URL, WiFi, vCard, Text, and more. No sign-up, no limits."
+  "meta_description": "The best free QR code generator to create custom QR codes in seconds. Supports URL, WiFi, vCard, Text, and more. No sign-up, no limits.",
+  "faq_items_text": [
+    {
+      "q": "What is a text QR code used for?",
+      "a": "It stores **messages, notes or instructions** that are displayed instantly when scanned, with no internet connection needed."
+    },
+    {
+      "q": "Is there a character limit for text QR codes?",
+      "a": "You can store up to **4,296 characters** in a static text QR code."
+    },
+    {
+      "q": "Do I need internet to scan a text QR code?",
+      "a": "**No**. The text is encoded directly in the QR code and works completely offline."
+    },
+    {
+      "q": "Can I create a text QR code for free?",
+      "a": "Yes, QRGenHub is **100% free** with no registration or usage limits."
+    },
+    {
+      "q": "Do text QR codes expire?",
+      "a": "**Never**. They are static and permanent — use them indefinitely."
+    },
+    {
+      "q": "What are text QR codes used for in practice?",
+      "a": "They are used for **product labels, usage instructions, Wi-Fi passwords, business cards** and much more."
+    }
+  ],
+  "related_article_label": "Related Article",
+  "read_article": "Read Article →",
+  "related_tools_title": "Other free tools",
+  "related_tools_text": [
+    { "label": "Create QR Code for URL", "path": "/en/url-qr/" },
+    { "label": "Create WiFi QR Code", "path": "/en/wifi-qr/" },
+    { "label": "Create vCard QR Code", "path": "/en/vcard-qr/" },
+    { "label": "Create SMS QR Code", "path": "/en/sms-qr/" }
+  ],
+  "related_tools_url": [
+    { "label": "Create WiFi QR Code", "path": "/en/wifi-qr/" },
+    { "label": "Create vCard QR Code", "path": "/en/vcard-qr/" },
+    { "label": "Create Phone QR Code", "path": "/en/tel-qr/" },
+    { "label": "Create SMS QR Code", "path": "/en/sms-qr/" }
+  ],
+  "related_tools_wifi": [
+    { "label": "Create QR Code for URL", "path": "/en/url-qr/" },
+    { "label": "Create vCard QR Code", "path": "/en/vcard-qr/" },
+    { "label": "Create Phone QR Code", "path": "/en/tel-qr/" },
+    { "label": "Create Text QR Code", "path": "/en/text-qr/" }
+  ],
+  "related_tools_vcard": [
+    { "label": "Create QR Code for URL", "path": "/en/url-qr/" },
+    { "label": "Create WiFi QR Code", "path": "/en/wifi-qr/" },
+    { "label": "Create Phone QR Code", "path": "/en/tel-qr/" },
+    { "label": "Create Email QR Code", "path": "/en/email-qr/" }
+  ],
+  "related_tools_sms": [
+    { "label": "Create QR Code for URL", "path": "/en/url-qr/" },
+    { "label": "Create Email QR Code", "path": "/en/email-qr/" },
+    { "label": "Create Phone QR Code", "path": "/en/tel-qr/" },
+    { "label": "Create vCard QR Code", "path": "/en/vcard-qr/" }
+  ],
+  "related_tools_email": [
+    { "label": "Create QR Code for URL", "path": "/en/url-qr/" },
+    { "label": "Create SMS QR Code", "path": "/en/sms-qr/" },
+    { "label": "Create Phone QR Code", "path": "/en/tel-qr/" },
+    { "label": "Create vCard QR Code", "path": "/en/vcard-qr/" }
+  ],
+  "related_tools_tel": [
+    { "label": "Create QR Code for URL", "path": "/en/url-qr/" },
+    { "label": "Create WiFi QR Code", "path": "/en/wifi-qr/" },
+    { "label": "Create vCard QR Code", "path": "/en/vcard-qr/" },
+    { "label": "Create Email QR Code", "path": "/en/email-qr/" }
+  ]
 }

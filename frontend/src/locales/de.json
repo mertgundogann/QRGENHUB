@@ -155,5 +155,76 @@
       "desc": "Der beste kostenlose QR-Code Generator. Erstellen Sie in Sekunden unbegrenzte QR-Codes für WLAN, URL, vCard und Text. Ohne Anmeldung!"
     }
   },
-  "meta_description": "Der beste kostenlose QR-Code Generator. Erstellen Sie in Sekunden unbegrenzte QR-Codes für WLAN, URL, vCard und Text. Ohne Anmeldung!"
+  "meta_description": "Der beste kostenlose QR-Code Generator. Erstellen Sie in Sekunden unbegrenzte QR-Codes für WLAN, URL, vCard und Text. Ohne Anmeldung!",
+  "faq_items_text": [
+    {
+      "q": "Wofür wird ein Text-QR-Code verwendet?",
+      "a": "Er speichert **Nachrichten, Notizen oder Anweisungen**, die beim Scannen sofort angezeigt werden — ohne Internetverbindung."
+    },
+    {
+      "q": "Gibt es ein Zeichenlimit für Text-QR-Codes?",
+      "a": "Sie können bis zu **4.296 Zeichen** in einem statischen Text-QR-Code speichern."
+    },
+    {
+      "q": "Brauche ich Internet zum Scannen eines Text-QR-Codes?",
+      "a": "**Nein**. Der Text ist direkt im QR-Code kodiert und funktioniert offline."
+    },
+    {
+      "q": "Kann ich einen Text-QR-Code kostenlos erstellen?",
+      "a": "Ja, QRGenHub ist **100% kostenlos**, ohne Registrierung oder Nutzungslimits."
+    },
+    {
+      "q": "Laufen Text-QR-Codes ab?",
+      "a": "**Niemals**. Sie sind statisch und dauerhaft — unbegrenzt verwendbar."
+    },
+    {
+      "q": "Wofür werden Text-QR-Codes praktisch genutzt?",
+      "a": "Für **Produktetiketten, Gebrauchsanweisungen, WLAN-Passwörter, Visitenkarten** und vieles mehr."
+    }
+  ],
+  "related_article_label": "Verwandter Artikel",
+  "read_article": "Artikel lesen →",
+  "related_tools_title": "Weitere kostenlose Tools",
+  "related_tools_text": [
+    { "label": "QR-Code für URL erstellen", "path": "/de/url-qr-erstellen/" },
+    { "label": "WLAN QR-Code erstellen", "path": "/de/wlan-qr-code/" },
+    { "label": "vCard QR-Code erstellen", "path": "/de/vcard-qr/" },
+    { "label": "SMS QR-Code erstellen", "path": "/de/sms-qr/" }
+  ],
+  "related_tools_url": [
+    { "label": "WLAN QR-Code erstellen", "path": "/de/wlan-qr-code/" },
+    { "label": "vCard QR-Code erstellen", "path": "/de/vcard-qr/" },
+    { "label": "Telefon QR-Code erstellen", "path": "/de/tel-qr/" },
+    { "label": "SMS QR-Code erstellen", "path": "/de/sms-qr/" }
+  ],
+  "related_tools_wifi": [
+    { "label": "QR-Code für URL erstellen", "path": "/de/url-qr-erstellen/" },
+    { "label": "vCard QR-Code erstellen", "path": "/de/vcard-qr/" },
+    { "label": "Telefon QR-Code erstellen", "path": "/de/tel-qr/" },
+    { "label": "Text QR-Code erstellen", "path": "/de/text-qr-code/" }
+  ],
+  "related_tools_vcard": [
+    { "label": "QR-Code für URL erstellen", "path": "/de/url-qr-erstellen/" },
+    { "label": "WLAN QR-Code erstellen", "path": "/de/wlan-qr-code/" },
+    { "label": "Telefon QR-Code erstellen", "path": "/de/tel-qr/" },
+    { "label": "E-Mail QR-Code erstellen", "path": "/de/email-qr/" }
+  ],
+  "related_tools_sms": [
+    { "label": "QR-Code für URL erstellen", "path": "/de/url-qr-erstellen/" },
+    { "label": "E-Mail QR-Code erstellen", "path": "/de/email-qr/" },
+    { "label": "Telefon QR-Code erstellen", "path": "/de/tel-qr/" },
+    { "label": "vCard QR-Code erstellen", "path": "/de/vcard-qr/" }
+  ],
+  "related_tools_email": [
+    { "label": "QR-Code für URL erstellen", "path": "/de/url-qr-erstellen/" },
+    { "label": "SMS QR-Code erstellen", "path": "/de/sms-qr/" },
+    { "label": "Telefon QR-Code erstellen", "path": "/de/tel-qr/" },
+    { "label": "vCard QR-Code erstellen", "path": "/de/vcard-qr/" }
+  ],
+  "related_tools_tel": [
+    { "label": "QR-Code für URL erstellen", "path": "/de/url-qr-erstellen/" },
+    { "label": "WLAN QR-Code erstellen", "path": "/de/wlan-qr-code/" },
+    { "label": "vCard QR-Code erstellen", "path": "/de/vcard-qr/" },
+    { "label": "E-Mail QR-Code erstellen", "path": "/de/email-qr/" }
+  ]
 }

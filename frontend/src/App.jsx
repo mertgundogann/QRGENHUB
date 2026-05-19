@@ -10,9 +10,10 @@ import { HelmetProvider, Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import routeTranslations from "./config/routes";
 
 // 1. KRİTİK SAYFA
-import CreateQR from "./pages/CreateQR"; 
+import CreateQR from "./pages/CreateQR";
 
 // 2. DİĞER SAYFALAR (Lazy Loaded)
 const Blog = lazy(() => import("./pages/Blog"));
@@ -27,25 +28,7 @@ const getBrowserLang = () => {
   return SUPPORTED_LANGS.includes(lang) ? lang : 'en';
 };
 
-// --- ÇEVİRİ TABLOSU (URL SLUGLARI) ---
-// SEO için her dilin kendi dilinde aranma hacmi olan kelimeleri kullanıyoruz
-const routeTranslations = {
-  en: {
-    url: 'url-qr', wifi: 'wifi-qr', vcard: 'vcard-qr', text: 'text-qr', sms: 'sms-qr', email: 'email-qr', tel: 'tel-qr'
-  },
-  tr: {
-    url: 'url-qr', wifi: 'wifi-qr', vcard: 'vcard-qr', text: 'metin-qr', sms: 'sms-qr', email: 'eposta-qr', tel: 'tel-qr'
-  },
-  es: {
-    url: 'crear-qr-url', wifi: 'codigo-qr-wifi', vcard: 'qr-vcard', text: 'qr-de-texto', sms: 'qr-sms', email: 'qr-email', tel: 'qr-telefono'
-  },
-  fr: {
-    url: 'creer-qr-url', wifi: 'qr-code-wifi', vcard: 'qr-vcard', text: 'qr-texte', sms: 'qr-sms', email: 'qr-email', tel: 'qr-telephone'
-  },
-  de: {
-    url: 'url-qr-erstellen', wifi: 'wlan-qr-code', vcard: 'vcard-qr', text: 'text-qr-code', sms: 'sms-qr', email: 'email-qr', tel: 'tel-qr'
-  }
-};
+// routeTranslations is imported from src/config/routes.js (shared with PostDetail, etc.)
 
 const LoadingSpinner = () => (
   <div className="flex items-center justify-center min-h-[50vh] w-full">
@@ -179,7 +162,9 @@ function App() {
           {/* --- KÖK YÖNLENDİRMELERİ --- */}
           <Route path="/" element={<Navigate to={`/${browserLang}/${defaultRoutes.url}/`} replace />} />
           <Route path="/privacy" element={<Navigate to={`/${browserLang}/privacy/`} replace />} />
+          <Route path="/privacy/*" element={<Navigate to={`/${browserLang}/privacy/`} replace />} />
           <Route path="/terms" element={<Navigate to={`/${browserLang}/terms/`} replace />} />
+          <Route path="/terms/*" element={<Navigate to={`/${browserLang}/terms/`} replace />} />
 
           {/* Kök dizinden gelen eski Link Yönlendirmeleri (Direkt qrgenhub.com/wifi-qr gibi gelenler için) */}
           <Route path="/url-qr" element={<Navigate to={`/${browserLang}/${defaultRoutes.url}/`} replace />} />

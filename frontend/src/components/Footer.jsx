@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <footer className="w-full py-12 px-6 border-t border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 mt-auto transition-colors duration-300">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+      <div className="max-w-6xl mx-auto flex flex-col items-center gap-6">
         
         {/* Sol: Logo */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
@@ -40,6 +40,26 @@ const Footer = () => {
         <div className="text-[10px] text-gray-600 dark:text-gray-400 font-black uppercase tracking-widest">
           © {new Date().getFullYear()} QRGENHUB.COM
         </div>
+
+        {/* ProductHunt Badge */}
+        <a
+          href="https://www.producthunt.com/products/qrgenhub?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-qrgenhub"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            alt="QRGenHub - Free QR Code Generator with Logo — No Signup, No Limits | Product Hunt"
+            width="250" height="54"
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1137487&theme=light&t=1777984415924"
+            className="dark:hidden"
+          />
+          <img
+            alt="QRGenHub - Free QR Code Generator with Logo — No Signup, No Limits | Product Hunt"
+            width="250" height="54"
+            src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1137487&theme=dark&t=1777984415924"
+            className="hidden dark:block"
+          />
+        </a>
 
       </div>
     </footer>

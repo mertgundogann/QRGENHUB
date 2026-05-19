@@ -1,8 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { blogPosts } from "../data/posts"; 
+import { blogPosts } from "../data/posts";
 import { useTranslation } from 'react-i18next';
 import SEO from '../components/SEO';
+import DOMPurify from 'dompurify';
+import routeTranslations from '../config/routes';
 
 const PostDetail = () => {
   const { postId, lng } = useParams();
@@ -61,6 +63,7 @@ const PostDetail = () => {
           }
           
           navigate(finalUrl);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
         }
       }
     };
@@ -95,10 +98,10 @@ const PostDetail = () => {
     "headline": langContent.title,
     "image": [post.image],
     "datePublished": post.date,
-    "dateModified": post.date,
+    "dateModified": new Date().toISOString().split('T')[0],
     "author": {
-      "@type": "Organization", // Kişi değil Kurum
-      "name": "QRGenHub Team", // Senin ismin yerine Takım ismi
+      "@type": "Organization",
+      "name": "QRGenHub Team",
       "url": "https://www.qrgenhub.com"
     },
     "publisher": {
@@ -116,14 +119,29 @@ const PostDetail = () => {
     }
   };
 
+  // FAQ schema — injected if the post language has faq[] array defined
+  const faqSchema = langContent.faq && langContent.faq.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": langContent.faq.map(item => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.a
+      }
+    }))
+  } : null;
+
   return (
     <div className="w-full min-h-screen transition-colors duration-300 bg-white dark:bg-gray-900 pb-20">
-      <SEO 
-        title={langContent.title} 
-        description={langContent.metaDescription || langContent.excerpt} 
+      <SEO
+        title={langContent.title}
+        description={langContent.metaDescription || langContent.excerpt}
         image={post.image}
-        localizedSlugs={post.languages} 
+        localizedSlugs={post.languages}
         structuredData={articleSchema}
+        additionalStructuredData={faqSchema}
       />
 
       <div className="max-w-4xl mx-auto px-4 py-12">
@@ -172,7 +190,7 @@ const PostDetail = () => {
           <div 
             ref={contentRef}
             className="leading-relaxed font-medium blog-content text-gray-600 dark:text-gray-300"
-            dangerouslySetInnerHTML={{ __html: langContent.content }} 
+            dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(langContent.content, { ADD_ATTR: ['target', 'class', 'title'], ADD_TAGS: ['a'] }) }} 
           />
         </article>
 
@@ -183,8 +201,8 @@ const PostDetail = () => {
           <p className="text-indigo-100 mb-8 font-medium">
             {t('cta_blog_desc')}
           </p>
-          <button 
-            onClick={() => navigate(`/${lng}/url-qr/`)}
+          <button
+            onClick={() => { navigate(`/${lng}/${(routeTranslations[lng] || routeTranslations.en).url}/`); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
             className="px-10 py-4 rounded-2xl font-black uppercase tracking-widest transition-all active:scale-95 bg-white text-indigo-600 hover:bg-indigo-50 dark:bg-gray-900 dark:text-indigo-400 dark:hover:bg-gray-800"
           >
             {t('cta_blog_button')}

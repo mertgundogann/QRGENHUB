@@ -173,13 +173,84 @@
       "desc": "Générez un code QR qui prépare un e-mail avec un destinataire et un sujet prédéfinis. Rapide, 100% gratuit et facile à utiliser."
     },
     "tel": {
-      "title": "Créer un Code QR Téléphone - Appel Direct | QRGenHub",
-      "desc": "Générez un code QR pour que vos clients vous appellent en un seul scan. Créez un code QR téléphonique gratuit et sans inscription."
+      "title": "QR Code Téléphone Gratuit — Appel en 1 Scan | QRGenHub",
+      "desc": "Créez votre QR code téléphone en 30 secondes. Un seul scan suffit pour appeler directement — sans inscription, sans expiration, 100% gratuit."
     },
     "home": {
       "title": "Créer un Code QR Gratuit avec Logo | Générateur QRGenHub",
       "desc": "Le meilleur générateur pour créer des codes QR personnalisés en quelques secondes. 100% gratuit, illimité et sans inscription."
     }
   },
-  "meta_description": "Le meilleur générateur pour créer des codes QR personnalisés en quelques secondes. 100% gratuit, illimité et sans inscription. Supporte URL, WiFi, vCard, etc."
+  "meta_description": "Le meilleur générateur pour créer des codes QR personnalisés en quelques secondes. 100% gratuit, illimité et sans inscription. Supporte URL, WiFi, vCard, etc.",
+  "faq_items_text": [
+    {
+      "q": "À quoi sert un code QR de texte ?",
+      "a": "Il stocke des **messages, notes ou instructions** affichés instantanément au scan, sans connexion internet."
+    },
+    {
+      "q": "Y a-t-il une limite de caractères ?",
+      "a": "Vous pouvez stocker jusqu'à **4 296 caractères** dans un code QR de texte statique."
+    },
+    {
+      "q": "Faut-il internet pour scanner un QR de texte ?",
+      "a": "**Non**. Le texte est encodé directement dans le QR et fonctionne hors ligne."
+    },
+    {
+      "q": "Puis-je créer un QR de texte gratuitement ?",
+      "a": "Oui, QRGenHub est **100% gratuit**, sans inscription ni limite d'utilisation."
+    },
+    {
+      "q": "Les QR de texte expirent-ils ?",
+      "a": "**Jamais**. Ils sont statiques et permanents."
+    },
+    {
+      "q": "À quoi servent les QR de texte en pratique ?",
+      "a": "Ils sont utilisés pour les **étiquettes produits, instructions, mots de passe Wi-Fi, cartes de visite** et bien plus."
+    }
+  ],
+  "related_article_label": "Article associé",
+  "read_article": "Lire l'article →",
+  "related_tools_title": "Autres outils gratuits",
+  "related_tools_text": [
+    { "label": "Créer un QR Code pour URL", "path": "/fr/creer-qr-url/" },
+    { "label": "Créer un QR Code WiFi", "path": "/fr/qr-code-wifi/" },
+    { "label": "Créer un QR Code vCard", "path": "/fr/qr-vcard/" },
+    { "label": "Créer un QR Code SMS", "path": "/fr/qr-sms/" }
+  ],
+  "related_tools_url": [
+    { "label": "Créer un QR Code WiFi", "path": "/fr/qr-code-wifi/" },
+    { "label": "Créer un QR Code vCard", "path": "/fr/qr-vcard/" },
+    { "label": "Créer un QR Code téléphone", "path": "/fr/qr-telephone/" },
+    { "label": "Créer un QR Code SMS", "path": "/fr/qr-sms/" }
+  ],
+  "related_tools_wifi": [
+    { "label": "Créer un QR Code pour URL", "path": "/fr/creer-qr-url/" },
+    { "label": "Créer un QR Code vCard", "path": "/fr/qr-vcard/" },
+    { "label": "Créer un QR Code téléphone", "path": "/fr/qr-telephone/" },
+    { "label": "Créer un QR Code texte", "path": "/fr/qr-texte/" }
+  ],
+  "related_tools_vcard": [
+    { "label": "Créer un QR Code pour URL", "path": "/fr/creer-qr-url/" },
+    { "label": "Créer un QR Code WiFi", "path": "/fr/qr-code-wifi/" },
+    { "label": "Créer un QR Code téléphone", "path": "/fr/qr-telephone/" },
+    { "label": "Créer un QR Code e-mail", "path": "/fr/qr-email/" }
+  ],
+  "related_tools_sms": [
+    { "label": "Créer un QR Code pour URL", "path": "/fr/creer-qr-url/" },
+    { "label": "Créer un QR Code e-mail", "path": "/fr/qr-email/" },
+    { "label": "Créer un QR Code téléphone", "path": "/fr/qr-telephone/" },
+    { "label": "Créer un QR Code vCard", "path": "/fr/qr-vcard/" }
+  ],
+  "related_tools_email": [
+    { "label": "Créer un QR Code pour URL", "path": "/fr/creer-qr-url/" },
+    { "label": "Créer un QR Code SMS", "path": "/fr/qr-sms/" },
+    { "label": "Créer un QR Code téléphone", "path": "/fr/qr-telephone/" },
+    { "label": "Créer un QR Code vCard", "path": "/fr/qr-vcard/" }
+  ],
+  "related_tools_tel": [
+    { "label": "Créer un QR Code pour URL", "path": "/fr/creer-qr-url/" },
+    { "label": "Créer un QR Code WiFi", "path": "/fr/qr-code-wifi/" },
+    { "label": "Créer un QR Code vCard", "path": "/fr/qr-vcard/" },
+    { "label": "Créer un QR Code e-mail", "path": "/fr/qr-email/" }
+  ]
 }

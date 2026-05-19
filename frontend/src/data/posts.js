@@ -47,7 +47,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Misafirlerinize teknolojik bir karşılama yapmaya hazır mısınız?</p>
             <a href="/wifi-qr" title="Hemen Wi-Fi QR Oluştur" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Ücretsiz Wi-Fi QR Kodunu Şimdi Oluştur</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Wi-Fi QR kodu oluşturmak ücretsiz mi?", a: "Evet. QRGenHub ile Wi-Fi QR kodu oluşturma tamamen ücretsizdir — kayıt gerekmez, sınır yoktur. Kodunuzu PNG veya SVG formatında indirebilirsiniz." },
+          { q: "Wi-Fi şifrem QR kodu oluştururken güvende mi?", a: "Evet. Şifreniz yalnızca tarayıcınızda işlenir ve sunucularımıza hiçbir zaman gönderilmez. Tüm QR oluşturma işlemi cihazınızda gerçekleşir." },
+          { q: "iPhone Wi-Fi QR kodunu okuyabiliyor mu?", a: "Evet. iOS 11 ve üzeri sürümlerde iPhone'un kamera uygulaması Wi-Fi QR kodlarını otomatik olarak tanır ve 'Wi-Fi Ağına Katıl' bildirimi gösterir. Ek uygulama indirmeye gerek yoktur." },
+          { q: "Hangi şifreleme türünü seçmeliyim?", a: "Ev ve işyeri yönlendiricileri için WPA/WPA2 seçin — modern ağların %99'unu kapsar. WEP yalnızca çok eski donanımlar için, 'Yok' ise şifresiz açık ağlar için geçerlidir." }
+        ]
       },
       en: {
         slug: "free-wifi-qr-code-generator",
@@ -89,7 +95,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Ready to give your guests a high-tech welcome?</p>
             <a href="/en/wifi-qr" title="Create Wi-Fi QR" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Create Your Free Wi-Fi QR Code Now</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Is creating a Wi-Fi QR code really free?", a: "Yes. QRGenHub generates Wi-Fi QR codes completely free — no account, no watermark, no expiry. Download in PNG for digital use or SVG for print." },
+          { q: "Is my Wi-Fi password safe when generating the QR code?", a: "Yes. Your password is processed entirely in your browser and never sent to our servers. The entire QR generation happens locally on your device." },
+          { q: "Does an iPhone scan Wi-Fi QR codes?", a: "Yes. On iOS 11 and later, the built-in Camera app automatically recognises Wi-Fi QR codes and shows a 'Join Network' notification. No third-party app needed." },
+          { q: "What encryption type should I choose?", a: "Select WPA/WPA2 for home and business routers — this covers over 99% of modern networks. Only choose WEP for very old hardware, or 'None' for open networks with no password." }
+        ]
       },
       fr: {
         slug: "generateur-code-qr-wifi-gratuit",
@@ -100,7 +112,7 @@ export const blogPosts = [
           <h2>Le nouveau standard du partage de connexion</h2>
           <p>Êtes-vous fatigué d'épeler des mots de passe Wi-Fi à vos invités ou clients ? La technologie moderne résout ce problème avec les <strong>codes QR Wi-Fi</strong>. Fini les bouts de papier avec des codes complexes !</p>
           
-          <p>Dans ce guide, découvrez pourquoi adopter le QR code et comment en créer un gratuitement avec notre <a href="/fr/wifi-qr" class="text-indigo-600 font-bold hover:underline">générateur de QR Wi-Fi</a>.</p>
+          <p>Dans ce guide, découvrez pourquoi adopter le QR code et comment en créer un gratuitement avec notre <a href="/fr/qr-code-wifi/" class="text-indigo-600 font-bold hover:underline">générateur de QR Wi-Fi</a>.</p>
 
           <h3>Pourquoi utiliser un QR Code Wi-Fi ?</h3>
           <p>Les méthodes traditionnelles sont risquées et lentes. Voici 3 raisons de changer :</p>
@@ -122,9 +134,15 @@ export const blogPosts = [
           <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
             <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Commencez Maintenant</h4>
             <p class="mb-4 text-gray-600 dark:text-gray-300">Prêt à simplifier la vie de vos invités ?</p>
-            <a href="/fr/wifi-qr" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Créez votre Code QR Wi-Fi Gratuitement</a>
+            <a href="/fr/qr-code-wifi/" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Créez votre Code QR Wi-Fi Gratuitement</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "La création d'un QR code Wi-Fi est-elle vraiment gratuite ?", a: "Oui. QRGenHub génère des QR codes Wi-Fi entièrement gratuitement — sans compte, sans filigrane, sans expiration. Téléchargez en PNG pour le numérique ou en SVG pour l'impression." },
+          { q: "Mon mot de passe Wi-Fi est-il sécurisé lors de la génération ?", a: "Oui. Votre mot de passe est traité entièrement dans votre navigateur et n'est jamais envoyé à nos serveurs. Toute la génération QR se fait localement sur votre appareil." },
+          { q: "Un iPhone peut-il scanner les QR codes Wi-Fi ?", a: "Oui. Sur iOS 11 et versions ultérieures, l'application Appareil photo intégrée reconnaît automatiquement les QR codes Wi-Fi et affiche une notification 'Rejoindre le réseau'. Aucune application tierce nécessaire." },
+          { q: "Quel type de chiffrement dois-je choisir ?", a: "Choisissez WPA/WPA2 pour les routeurs domestiques et professionnels — cela couvre plus de 99% des réseaux modernes. WEP uniquement pour du matériel très ancien, 'Aucun' pour les réseaux ouverts sans mot de passe." }
+        ]
       },
       de: {
         slug: "kostenloser-wlan-qr-code-generator",
@@ -159,7 +177,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Machen Sie es Ihren Gästen einfach.</p>
             <a href="/de/wifi-qr" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Kostenlosen WLAN-QR-Code erstellen</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Ist die Erstellung eines WLAN-QR-Codes kostenlos?", a: "Ja. QRGenHub erstellt WLAN-QR-Codes völlig kostenlos — kein Konto, kein Wasserzeichen, kein Ablaufdatum. Download als PNG für digitale Nutzung oder als SVG für den Druck." },
+          { q: "Ist mein WLAN-Passwort beim Erstellen des QR-Codes sicher?", a: "Ja. Ihr Passwort wird ausschließlich in Ihrem Browser verarbeitet und nie an unsere Server gesendet. Die gesamte QR-Generierung erfolgt lokal auf Ihrem Gerät." },
+          { q: "Kann ein iPhone WLAN-QR-Codes scannen?", a: "Ja. Ab iOS 11 erkennt die integrierte Kamera-App WLAN-QR-Codes automatisch und zeigt eine 'Netzwerk beitreten'-Benachrichtigung an. Keine zusätzliche App erforderlich." },
+          { q: "Welche Verschlüsselung soll ich wählen?", a: "Wählen Sie WPA/WPA2 für Heim- und Geschäftsrouter — dies deckt über 99% der modernen Netzwerke ab. WEP nur für sehr alte Hardware, 'Keine' für offene Netzwerke ohne Passwort." }
+        ]
       },
       es: {
         slug: "generador-codigo-qr-wifi-gratis",
@@ -170,7 +194,7 @@ export const blogPosts = [
           <h2>La nueva forma de compartir Wi-Fi: Rápida y Segura</h2>
           <p>¿Está cansado de deletrear contraseñas de Wi-Fi a sus clientes o invitados? La tecnología moderna resuelve este problema con los <strong>Códigos QR de Wi-Fi</strong>. Olvídese de escribir claves complejas en servilletas o papeles.</p>
           
-          <p>En esta guía, explicamos por qué debe usar códigos QR y cómo crear uno gratis con nuestra <a href="/es/wifi-qr" class="text-indigo-600 font-bold hover:underline">herramienta generadora de Wi-Fi</a>.</p>
+          <p>En esta guía, explicamos por qué debe usar códigos QR y cómo crear uno gratis con nuestra <a href="/es/codigo-qr-wifi/" class="text-indigo-600 font-bold hover:underline">herramienta generadora de Wi-Fi</a>.</p>
 
           <h3>¿Por qué usar un código QR para Wi-Fi?</h3>
           <p>Compartir contraseñas verbalmente es un riesgo de seguridad. Aquí hay 3 razones para cambiar:</p>
@@ -192,9 +216,15 @@ export const blogPosts = [
           <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
             <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Empiece Ahora</h4>
             <p class="mb-4 text-gray-600 dark:text-gray-300">¿Listo para ofrecer una bienvenida tecnológica?</p>
-            <a href="/es/wifi-qr" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Crear Código QR Wi-Fi Gratis</a>
+            <a href="/es/codigo-qr-wifi/" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Crear Código QR Wi-Fi Gratis</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "¿Crear un código QR de Wi-Fi es realmente gratuito?", a: "Sí. QRGenHub genera códigos QR de Wi-Fi completamente gratis — sin cuenta, sin marca de agua, sin vencimiento. Descarga en PNG para uso digital o en SVG para impresión." },
+          { q: "¿Está segura mi contraseña Wi-Fi al generar el código QR?", a: "Sí. Tu contraseña se procesa completamente en tu navegador y nunca se envía a nuestros servidores. Toda la generación del QR ocurre localmente en tu dispositivo." },
+          { q: "¿Puede un iPhone escanear códigos QR de Wi-Fi?", a: "Sí. En iOS 11 y versiones posteriores, la app de Cámara integrada reconoce automáticamente los QR de Wi-Fi y muestra una notificación 'Unirse a la red'. No se necesita ninguna app adicional." },
+          { q: "¿Qué tipo de cifrado debo elegir?", a: "Elige WPA/WPA2 para routers domésticos y de empresa — cubre más del 99% de las redes modernas. WEP solo para hardware muy antiguo, 'Ninguno' para redes abiertas sin contraseña." }
+        ]
       }
     }
   },
@@ -238,7 +268,14 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Saniyeler içinde logolu ve renkli kodunuzu oluşturun.</p>
             <a href="/tr/url-qr" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Hemen QR Kod Oluşturmaya Başla</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "QRGenHub gerçekten ücretsiz mi?", a: "Evet, tamamen ücretsiz. Sınırsız QR kod oluşturabilir, özelleştirebilir ve indirebilirsiniz — hesap gerekmez, kredi kartı yok, gizli ücret yok." },
+          { q: "QR kodun süresi dolar mı?", a: "Statik QR kodlar hiçbir zaman sona ermez. Bağlantılı hedef erişilebilir olduğu sürece sonsuza kadar çalışır. Hiçbir sunucu süresi veya son kullanma tarihi yoktur." },
+          { q: "QR koduma logo ekleyebilir miyim?", a: "Evet. QRGenHub, QR kodunuzun ortasına logo eklemenize ve renkleri özelleştirmenize olanak tanır. Hata düzeltme algoritması, logolu kodun güvenilir şekilde taranmasını sağlar." },
+          { q: "PNG mi SVG mi indirmeliyim?", a: "Web sitesi, e-posta ve sosyal medya için PNG yeterlidir. Broşür, afiş veya kartvizit gibi baskı materyalleri için her zaman SVG seçin — bu vektör format kalite kaybı olmadan her boyuta ölçeklenir." },
+          { q: "QR kodu oluştururken verilerim kaydediliyor mu?", a: "Hayır. QRGenHub'da girdiğiniz veriler yalnızca tarayıcınızda işlenir, sunucularımızda saklanmaz. URL'leriniz, Wi-Fi şifreleriniz ve iletişim bilgileriniz tamamen gizli kalır." }
+        ]
       },
       en: {
         slug: "how-to-create-qr-code",
@@ -272,7 +309,14 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Create your custom code with a logo in seconds.</p>
             <a href="/en/url-qr" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Start Creating QR Codes Now</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Is QRGenHub really free?", a: "Yes, completely free. You can create, customise and download unlimited QR codes — no account required, no credit card, no hidden fees." },
+          { q: "Do QR codes expire?", a: "Static QR codes never expire. They work as long as the linked destination is accessible. There is no server lifetime or expiry date." },
+          { q: "Can I embed a logo in my QR code?", a: "Yes. QRGenHub lets you add your own logo to the centre of the QR code and customise colours. The error-correction algorithm ensures the code remains reliably scannable even with a logo." },
+          { q: "Should I download PNG or SVG?", a: "PNG is sufficient for digital use (websites, email, social media). For print materials like flyers, posters or business cards, always choose SVG — this vector format scales to any size without quality loss." },
+          { q: "Is my data stored when creating a QR code?", a: "No. Your inputs are processed exclusively in your browser and never stored on our servers. Your URLs, Wi-Fi passwords and contact details remain completely private." }
+        ]
       },
       fr: {
         slug: "comment-creer-un-code-qr",
@@ -297,9 +341,16 @@ export const blogPosts = [
           <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
             <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Créez le vôtre</h4>
             <p class="mb-4 text-gray-600 dark:text-gray-300">Générez un code avec logo en quelques secondes.</p>
-            <a href="/fr/url-qr" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Créer un code QR maintenant</a>
+            <a href="/fr/creer-qr-url/" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Créer un code QR maintenant</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "QRGenHub est-il vraiment gratuit ?", a: "Oui, entièrement gratuit. Vous pouvez créer, personnaliser et télécharger des QR codes en illimité — sans compte, sans carte bancaire, sans frais cachés." },
+          { q: "Les QR codes expirent-ils ?", a: "Les QR codes statiques n'expirent jamais. Ils fonctionnent tant que la destination liée est accessible. Il n'y a pas de durée de vie serveur ni de date d'expiration." },
+          { q: "Puis-je intégrer un logo dans mon QR code ?", a: "Oui. QRGenHub vous permet d'ajouter votre propre logo au centre du QR code et de personnaliser les couleurs. L'algorithme de correction d'erreurs garantit que le code reste scannable même avec un logo." },
+          { q: "Dois-je télécharger en PNG ou SVG ?", a: "Le PNG suffit pour l'usage numérique (site web, e-mail, réseaux sociaux). Pour les supports imprimés comme les flyers, affiches ou cartes de visite, choisissez toujours SVG — ce format vectoriel s'adapte à toute taille sans perte de qualité." },
+          { q: "Mes données sont-elles stockées lors de la création d'un QR code ?", a: "Non. Vos saisies sont traitées exclusivement dans votre navigateur et ne sont jamais stockées sur nos serveurs. Vos URL, mots de passe Wi-Fi et coordonnées restent totalement privés." }
+        ]
       },
       de: {
         slug: "wie-man-einen-qr-code-erstellt",
@@ -358,7 +409,14 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Erstellen Sie Ihren ersten QR-Code in unter 60 Sekunden.</p>
             <a href="/de/qr-url" title="Kostenlosen QR-Code erstellen" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Jetzt QR-Code kostenlos erstellen</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Ist QRGenHub wirklich kostenlos?", a: "Ja, völlig kostenlos. Sie können unbegrenzt QR-Codes erstellen, anpassen und herunterladen — kein Konto erforderlich, keine Kreditkarte, keine versteckten Kosten." },
+          { q: "Laufen QR-Codes ab?", a: "Statische QR-Codes laufen niemals ab. Sie funktionieren so lange, wie das verlinkte Ziel erreichbar ist. Es gibt keine Server-Laufzeit oder Ablaufdatum." },
+          { q: "Kann ich ein Logo in meinen QR-Code einbetten?", a: "Ja. QRGenHub ermöglicht es Ihnen, Ihr eigenes Logo in die Mitte des QR-Codes einzufügen und Farben anzupassen. Der Fehlerkorrektur-Algorithmus stellt sicher, dass der Code auch mit Logo zuverlässig lesbar bleibt." },
+          { q: "Soll ich PNG oder SVG herunterladen?", a: "PNG ist für die digitale Nutzung ausreichend (Webseiten, E-Mail, Social Media). Für Druckmaterialien wie Flyer, Poster oder Visitenkarten immer SVG wählen — dieses Vektorformat skaliert verlustfrei auf jede Größe." },
+          { q: "Werden meine Daten beim Erstellen eines QR-Codes gespeichert?", a: "Nein. Ihre Eingaben werden ausschließlich in Ihrem Browser verarbeitet und nie auf unseren Servern gespeichert. Ihre URLs, WLAN-Passwörter und Kontaktdaten bleiben vollständig privat." }
+        ]
       },
       es: {
         slug: "como-crear-un-codigo-qr",
@@ -383,9 +441,16 @@ export const blogPosts = [
           <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
             <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Diseñe el suyo</h4>
             <p class="mb-4 text-gray-600 dark:text-gray-300">Cree su código personalizado con logo en segundos.</p>
-            <a href="/es/url-qr" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Crear código QR ahora</a>
+            <a href="/es/crear-qr-url/" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Crear código QR ahora</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "¿QRGenHub es realmente gratuito?", a: "Sí, completamente gratuito. Puedes crear, personalizar y descargar códigos QR ilimitados — sin cuenta, sin tarjeta de crédito, sin cargos ocultos." },
+          { q: "¿Los códigos QR tienen fecha de vencimiento?", a: "Los códigos QR estáticos nunca vencen. Funcionan mientras el destino vinculado sea accesible. No hay vida útil del servidor ni fecha de expiración." },
+          { q: "¿Puedo insertar un logo en mi código QR?", a: "Sí. QRGenHub te permite añadir tu propio logo al centro del código QR y personalizar los colores. El algoritmo de corrección de errores garantiza que el código siga siendo escaneable incluso con logo." },
+          { q: "¿Debo descargar en PNG o SVG?", a: "El PNG es suficiente para uso digital (sitio web, email, redes sociales). Para materiales impresos como folletos, carteles o tarjetas de visita, elige siempre SVG — este formato vectorial escala a cualquier tamaño sin pérdida de calidad." },
+          { q: "¿Se almacenan mis datos al crear un código QR?", a: "No. Tus entradas se procesan exclusivamente en tu navegador y nunca se almacenan en nuestros servidores. Tus URLs, contraseñas Wi-Fi y datos de contacto permanecen completamente privados." }
+        ]
       }
     }
   },
@@ -429,7 +494,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Müşterilerinize modern bir deneyim sunmak için geç kalmayın.</p>
             <a href="/tr/url-qr" class="inline-block bg-orange-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-orange-700 transition-colors">👉 Restoranın İçin Ücretsiz QR Oluştur</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Restoran QR menüsü oluşturmak ücretli mi?", a: "Hayır. QRGenHub ile menü URL'iniz için QR kod oluşturmak tamamen ücretsizdir — kayıt gerekmez. Kodu SVG formatında indirip masalara veya çerçevelere basabilirsiniz." },
+          { q: "QR menüyü güncellemek ne kadar sürer?", a: "Dijital menü bağlantınızı değiştirip yeni bir QR kod oluşturmanız dakikalar alır. Fiyat güncellemeleri ise menünüzü barındırdığınız platformda anlık olarak yansır — yeni QR basmaya gerek yok." },
+          { q: "Müşteriler QR menüyü okutmak için uygulama indirmek zorunda mı?", a: "Hayır. iOS ve Android'de yerleşik kamera uygulaması QR kodları okuyabilir. Ek uygulama indirmeye gerek yoktur, bu da müşteri deneyimini sorunsuz kılar." },
+          { q: "QR menü kâr artışına katkı sağlar mı?", a: "Evet. Yüksek kaliteli görsellere sahip dijital menüler sipariş başına ortalama %30 oranında ek satış artışı sağlayabilir. Müşteriler görseli çekici buldukları ürünleri daha sık sipariş ediyor." }
+        ]
       },
       en: {
         slug: "restaurant-qr-menu-benefits",
@@ -463,7 +534,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Don't be late to offer a modern dining experience.</p>
             <a href="/en/url-qr" class="inline-block bg-orange-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-orange-700 transition-colors">👉 Create Free Restaurant QR</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Is creating a restaurant QR menu free?", a: "Yes. Creating a QR code for your menu URL is completely free with QRGenHub — no registration required. Download as SVG and print it on table stands or frames." },
+          { q: "How quickly can I update the QR menu?", a: "Updating your digital menu link takes minutes. Price changes reflect instantly on the platform hosting your menu — no need to reprint QR codes." },
+          { q: "Do customers need to download an app to use a QR menu?", a: "No. The built-in camera on iOS and Android can read QR codes without any additional app. This makes the customer experience seamless." },
+          { q: "Can a QR menu increase revenue?", a: "Yes. Digital menus with high-quality images can increase average order value by up to 30%. Customers are more likely to order items they can see visually." }
+        ]
       },
       fr: {
         slug: "avantages-menu-qr-restaurant",
@@ -492,9 +569,15 @@ export const blogPosts = [
           <div class="bg-orange-50 p-6 rounded-2xl my-8 border border-orange-100 dark:bg-orange-900/30 dark:border-orange-800">
             <h4 class="text-orange-800 dark:text-orange-300 font-bold mb-2">Créez votre Menu</h4>
             <p class="mb-4 text-gray-600 dark:text-gray-300">Offrez une expérience moderne à vos clients.</p>
-            <a href="/fr/url-qr" class="inline-block bg-orange-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-orange-700 transition-colors">👉 Créer un Menu QR Gratuit</a>
+            <a href="/fr/creer-qr-url/" class="inline-block bg-orange-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-orange-700 transition-colors">👉 Créer un Menu QR Gratuit</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "La création d'un menu QR pour restaurant est-elle gratuite ?", a: "Oui. Créer un QR code pour l'URL de votre menu est entièrement gratuit avec QRGenHub — sans inscription. Téléchargez en SVG et imprimez sur des présentoirs de table." },
+          { q: "Combien de temps faut-il pour mettre à jour le menu QR ?", a: "La mise à jour du lien de votre menu numérique prend quelques minutes. Les changements de prix se reflètent instantanément sur la plateforme hébergeant votre menu — pas besoin de réimprimer les QR codes." },
+          { q: "Les clients doivent-ils télécharger une application pour utiliser un menu QR ?", a: "Non. L'appareil photo intégré sur iOS et Android peut lire les QR codes sans application supplémentaire. Cela rend l'expérience client fluide et sans friction." },
+          { q: "Un menu QR peut-il augmenter le chiffre d'affaires ?", a: "Oui. Les menus numériques avec des images de qualité peuvent augmenter la valeur moyenne des commandes jusqu'à 30%. Les clients commandent plus facilement ce qu'ils peuvent visualiser." }
+        ]
       },
       de: {
         slug: "vorteile-von-qr-restaurant-menues",
@@ -524,7 +607,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Modernisieren Sie Ihr Restaurant noch heute.</p>
             <a href="/de/url-qr" class="inline-block bg-orange-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-orange-700 transition-colors">👉 Kostenloses Restaurant-QR erstellen</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Ist die Erstellung eines Restaurant-QR-Menüs kostenlos?", a: "Ja. Das Erstellen eines QR-Codes für Ihre Menü-URL ist mit QRGenHub komplett kostenlos — keine Registrierung erforderlich. Als SVG herunterladen und auf Tischaufstellern ausdrucken." },
+          { q: "Wie schnell kann ich das QR-Menü aktualisieren?", a: "Das Aktualisieren Ihres digitalen Menü-Links dauert Minuten. Preisänderungen spiegeln sich sofort auf der Plattform wider — kein Neudrucken der QR-Codes nötig." },
+          { q: "Müssen Kunden eine App herunterladen, um ein QR-Menü zu nutzen?", a: "Nein. Die integrierte Kamera auf iOS und Android kann QR-Codes ohne zusätzliche App lesen. Das macht das Kundenerlebnis reibungslos." },
+          { q: "Kann ein QR-Menü den Umsatz steigern?", a: "Ja. Digitale Menüs mit hochwertigen Bildern können den durchschnittlichen Bestellwert um bis zu 30% steigern. Kunden bestellen häufiger Artikel, die sie visuell sehen können." }
+        ]
       },
       es: {
         slug: "ventajas-del-menu-qr-para-restaurantes",
@@ -552,9 +641,15 @@ export const blogPosts = [
           <div class="bg-orange-50 p-6 rounded-2xl my-8 border border-orange-100 dark:bg-orange-900/30 dark:border-orange-800">
             <h4 class="text-orange-800 dark:text-orange-300 font-bold mb-2">Cree su Menú Ahora</h4>
             <p class="mb-4 text-gray-600 dark:text-gray-300">Ofrezca una experiencia moderna a sus comensales.</p>
-            <a href="/es/url-qr" class="inline-block bg-orange-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-orange-700 transition-colors">👉 Crear Menú QR Gratis</a>
+            <a href="/es/crear-qr-url/" class="inline-block bg-orange-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-orange-700 transition-colors">👉 Crear Menú QR Gratis</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "¿Crear un menú QR para restaurante es gratuito?", a: "Sí. Crear un código QR para la URL de tu menú es completamente gratuito con QRGenHub — sin registro. Descarga en SVG e imprime en soportes de mesa." },
+          { q: "¿Cuánto tiempo lleva actualizar el menú QR?", a: "Actualizar el enlace de tu menú digital lleva minutos. Los cambios de precios se reflejan instantáneamente en la plataforma que aloja tu menú — sin necesidad de reimprimir los códigos QR." },
+          { q: "¿Los clientes necesitan descargar una app para usar un menú QR?", a: "No. La cámara integrada en iOS y Android puede leer códigos QR sin ninguna app adicional. Esto hace que la experiencia del cliente sea fluida." },
+          { q: "¿Puede un menú QR aumentar los ingresos?", a: "Sí. Los menús digitales con imágenes de alta calidad pueden aumentar el valor promedio del pedido hasta un 30%. Los clientes piden más fácilmente lo que pueden ver visualmente." }
+        ]
       }
     }
   },
@@ -597,7 +692,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">İletişim bilgilerinizi şık bir QR koda dönüştürmek sadece 30 saniye sürer.</p>
             <a href="/tr/vcard-qr" class="inline-block bg-green-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-700 transition-colors">👉 Kendi vCard QR Kodunu Tasarla</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "vCard QR kodu hangi bilgileri saklayabilir?", a: "Ad, soyad, iş unvanı, şirket, cep telefonu, sabit hat, e-posta, web sitesi ve fiziksel adres. Tüm bu bilgiler tek bir QR koduna sığar ve tek taramayla telefon rehberine kaydedilir." },
+          { q: "vCard QR kodu taramak için internet bağlantısı gerekiyor mu?", a: "Hayır. Tüm iletişim bilgileri QR kodun içine yerleştirilmiştir. Tarama ve kaydetme işlemi için internet bağlantısına ihtiyaç duyulmaz." },
+          { q: "vCard QR kodu oluşturmak ücretli mi?", a: "Hayır. QRGenHub ile vCard QR kodu oluşturmak tamamen ücretsizdir — kayıt gerekmez. Kodu PNG veya SVG formatında indirebilirsiniz." },
+          { q: "vCard QR kodu tüm telefonlarda çalışıyor mu?", a: "Evet. vCard formatı iOS ve Android tarafından evrensel olarak desteklenmektedir. iPhone'da ve Android'de yerleşik kamera uygulamasıyla ek uygulama gerekmeksizin sorunsuz çalışır." }
+        ]
       },
       en: {
         slug: "vcard-qr-code-benefits",
@@ -628,7 +729,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Turning your contact info into a sleek QR code takes only 30 seconds.</p>
             <a href="/en/vcard-qr" class="inline-block bg-green-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-700 transition-colors">👉 Design Your Free vCard QR</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "What information can a vCard QR code store?", a: "Full name, job title, company, mobile phone, landline, email, website and physical address. All this fits in one QR code and saves to contacts with a single scan." },
+          { q: "Does scanning a vCard QR code require an internet connection?", a: "No. All contact information is embedded directly in the QR code. No internet connection is needed to scan and save the contact." },
+          { q: "Is creating a vCard QR code free?", a: "Yes. QRGenHub creates vCard QR codes completely free — no registration required. Download in PNG or SVG format." },
+          { q: "Does a vCard QR code work on all phones?", a: "Yes. The vCard format is universally supported by iOS and Android. It works with the native camera app on iPhone and Android without any additional app." }
+        ]
       },
       es: {
         slug: "ventajas-del-codigo-qr-vcard",
@@ -638,7 +745,7 @@ export const blogPosts = [
         content: `
           <h2>El Futuro del Networking es Sin Contacto</h2>
           <p>¿Alguna vez se ha quedado sin tarjetas de visita en medio de una reunión importante? Con los <strong>Códigos QR vCard</strong>, eso nunca volverá a suceder.</p>
-          <p>Esta tecnología incrusta sus datos de contacto (Nombre, Teléfono, Email) en un código que, al ser escaneado, añade automáticamente su información a la agenda del teléfono de la otra persona.</p>
+          <p>Esta tecnología incrusta sus datos de contacto (Nombre, <a href="/es/qr-telefono/" class="text-indigo-600 font-bold hover:underline">Teléfono</a>, Email) en un código que, al ser escaneado, añade automáticamente su información a la agenda del teléfono de la otra persona.</p>
           
           <h3>¿Por qué elegir tarjetas digitales?</h3>
           <ul>
@@ -657,9 +764,15 @@ export const blogPosts = [
           <div class="bg-green-50 p-6 rounded-2xl my-8 border border-green-100 dark:bg-green-900/30 dark:border-green-800">
             <h4 class="text-green-800 dark:text-green-300 font-bold mb-2">Cree su Identidad Profesional</h4>
             <p class="mb-4 text-gray-600 dark:text-gray-300">Convertir su contacto en un QR elegante toma solo unos segundos.</p>
-            <a href="/es/vcard-qr" class="inline-block bg-green-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-700 transition-colors">👉 Diseñe su vCard QR Gratis</a>
+            <a href="/es/qr-vcard/" class="inline-block bg-green-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-700 transition-colors">👉 Diseñe su vCard QR Gratis</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "¿Qué información puede almacenar un código QR vCard?", a: "Nombre completo, cargo, empresa, teléfono móvil, fijo, email, sitio web y dirección física. Todo cabe en un único código QR y se guarda en contactos con un solo escaneo." },
+          { q: "¿Se necesita conexión a internet para escanear un QR vCard?", a: "No. Toda la información de contacto está integrada directamente en el código QR. No se necesita conexión a internet para escanear y guardar el contacto." },
+          { q: "¿Crear un código QR vCard es gratuito?", a: "Sí. QRGenHub crea códigos QR vCard completamente gratis — sin registro. Descarga en formato PNG o SVG." },
+          { q: "¿Funciona un código QR vCard en todos los teléfonos?", a: "Sí. El formato vCard es compatible universalmente con iOS y Android. Funciona con la app de cámara nativa en iPhone y Android sin ninguna app adicional." }
+        ]
       },
       de: {
         slug: "vorteile-von-vcard-qr-codes",
@@ -690,7 +803,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Ihre Kontaktdaten in einen schicken QR-Code zu verwandeln dauert nur 30 Sekunden.</p>
             <a href="/de/vcard-qr" class="inline-block bg-green-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-700 transition-colors">👉 vCard QR-Code jetzt gestalten</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Welche Informationen kann ein vCard-QR-Code speichern?", a: "Vollständiger Name, Berufsbezeichnung, Unternehmen, Mobiltelefon, Festnetz, E-Mail, Website und Adresse. Alles passt in einen QR-Code und wird mit einem Scan in Kontakte gespeichert." },
+          { q: "Braucht man eine Internetverbindung zum Scannen eines vCard-QR-Codes?", a: "Nein. Alle Kontaktinformationen sind direkt im QR-Code eingebettet. Zum Scannen und Speichern des Kontakts ist keine Internetverbindung erforderlich." },
+          { q: "Ist das Erstellen eines vCard-QR-Codes kostenlos?", a: "Ja. QRGenHub erstellt vCard-QR-Codes völlig kostenlos — keine Registrierung erforderlich. Download als PNG oder SVG." },
+          { q: "Funktioniert ein vCard-QR-Code auf allen Handys?", a: "Ja. Das vCard-Format wird nativ von iOS und Android unterstützt. Es funktioniert mit der eingebauten Kamera-App auf iPhone und Android ohne zusätzliche App." }
+        ]
       },
       fr: {
         slug: "avantages-code-qr-vcard",
@@ -700,7 +819,7 @@ export const blogPosts = [
         content: `
           <h2>L'avenir du réseautage est sans contact</h2>
           <p>Vous rencontrez un client potentiel et réalisez que vous n'avez plus de cartes de visite ? Avec les <strong>QR Codes vCard</strong>, ce problème appartient au passé.</p>
-          <p>Cette technologie intègre vos coordonnées (Nom, Téléphone, Email) dans un code. Une fois scanné, vous êtes automatiquement ajouté au répertoire du téléphone de votre interlocuteur.</p>
+          <p>Cette technologie intègre vos coordonnées (Nom, <a href="/fr/qr-telephone/" class="text-indigo-600 font-bold hover:underline">Téléphone</a>, Email) dans un code. Une fois scanné, vous êtes automatiquement ajouté au répertoire du téléphone de votre interlocuteur.</p>
           
           <h3>Pourquoi passer à la carte numérique ?</h3>
           <ul>
@@ -719,9 +838,15 @@ export const blogPosts = [
           <div class="bg-green-50 p-6 rounded-2xl my-8 border border-green-100 dark:bg-green-900/30 dark:border-green-800">
             <h4 class="text-green-800 dark:text-green-300 font-bold mb-2">Créez votre identité pro</h4>
             <p class="mb-4 text-gray-600 dark:text-gray-300">Transformer vos coordonnées en un QR code élégant ne prend que 30 secondes.</p>
-            <a href="/fr/vcard-qr" class="inline-block bg-green-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-700 transition-colors">👉 Concevoir votre vCard QR</a>
+            <a href="/fr/qr-vcard/" class="inline-block bg-green-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-green-700 transition-colors">👉 Concevoir votre vCard QR</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Quelles informations un QR code vCard peut-il stocker ?", a: "Nom complet, titre du poste, entreprise, téléphone mobile, fixe, e-mail, site web et adresse. Tout tient dans un seul QR code et s'enregistre dans les contacts en un seul scan." },
+          { q: "Faut-il une connexion internet pour scanner un QR code vCard ?", a: "Non. Toutes les coordonnées sont intégrées directement dans le QR code. Aucune connexion internet n'est nécessaire pour scanner et enregistrer le contact." },
+          { q: "La création d'un QR code vCard est-elle gratuite ?", a: "Oui. QRGenHub crée des QR codes vCard entièrement gratuitement — sans inscription. Téléchargement en PNG ou SVG." },
+          { q: "Un QR code vCard fonctionne-t-il sur tous les téléphones ?", a: "Oui. Le format vCard est universellement pris en charge par iOS et Android. Il fonctionne avec l'appareil photo natif sur iPhone et Android sans application supplémentaire." }
+        ]
       }
     }
   },
@@ -762,7 +887,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Müşterilerinizi dinlemeye hazır mısınız?</p>
             <a href="/tr/sms-qr" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors">👉 Ücretsiz SMS QR Kodunu Şimdi Oluştur</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "SMS QR kodu internet olmadan çalışır mı?", a: "Evet. SMS QR kodları GSM şebekesi üzerinden çalışır, internet bağlantısı gerekmez. Wi-Fi olmayan ortamlarda bile güvenilir biçimde işlev görür." },
+          { q: "SMS QR kodu mesajı önceden doldurabilir mi?", a: "Evet. Mesajın alıcısını ve içeriğini önceden ayarlayabilirsiniz. Müşteri kodu taradığında hazır doldurulmuş mesajla karşılaşır ve yalnızca 'Gönder' tuşuna basması yeterlidir." },
+          { q: "SMS geri bildirim QR kodu nerede kullanılmalıdır?", a: "En etkili konumlar: masa üstü stantlar, fiş arkası, ürün ambalajı, kasa yakını veya otel odaları. Koda 'Deneyiminizi paylaşın' gibi kısa bir CTA eklemek geri bildirim oranını önemli ölçüde artırır." },
+          { q: "SMS QR kodu oluşturmak ücretli mi?", a: "Hayır. QRGenHub ile SMS QR kodu oluşturmak tamamen ücretsizdir — kayıt gerekmez, sınır yok." }
+        ]
       },
       en: {
         slug: "how-to-use-sms-qr-code-feedback",
@@ -793,7 +924,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Ready to listen to your customers?</p>
             <a href="/en/sms-qr" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors">👉 Create Free SMS QR Code Now</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Does an SMS feedback QR code work without internet?", a: "Yes. SMS QR codes work over the cellular network — no internet connection required. This makes them reliable in any venue, even those with poor Wi-Fi." },
+          { q: "Can an SMS QR code pre-fill the message?", a: "Yes. You can set the recipient number and a pre-written message body. When a customer scans the code, they see the ready-to-send message and only need to tap 'Send'." },
+          { q: "Where should I place an SMS feedback QR code?", a: "Top placements: table stands, receipts, product packaging, near the checkout, or hotel rooms. Adding a short CTA like 'Share your experience' significantly increases response rates." },
+          { q: "Is creating an SMS QR code free?", a: "Yes. QRGenHub creates SMS QR codes completely free — no registration, no limits." }
+        ]
       },
       fr: {
         slug: "comment-utiliser-code-qr-sms-avis-client",
@@ -808,7 +945,7 @@ export const blogPosts = [
           <ul>
             <li><strong>Messages pré-remplis :</strong> Le texte est prêt au scan (ex: "Service excellent !"). Le client n'a qu'à envoyer.</li>
             <li><strong>Pas d'Internet requis :</strong> Fonctionne avec le réseau mobile classique, idéal dans les zones sans Wi-Fi.</li>
-            <li><strong>Canal direct :</strong> Le message arrive directement sur le téléphone du gérant.</li>
+            <li><strong>Canal direct :</strong> Le message arrive directement sur le <a href="/fr/qr-telephone/" class="text-indigo-600 font-bold hover:underline">téléphone du gérant</a>.</li>
           </ul>
 
           <h3>Où les placer ?</h3>
@@ -822,9 +959,15 @@ export const blogPosts = [
           <div class="bg-blue-50 p-6 rounded-2xl my-8 border border-blue-100 dark:bg-blue-900/30 dark:border-blue-800">
             <h4 class="text-blue-800 dark:text-blue-300 font-bold mb-2">Collectez des Avis</h4>
             <p class="mb-4 text-gray-600 dark:text-gray-300">Prêt à écouter vos clients ?</p>
-            <a href="/fr/sms-qr" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors">👉 Créez votre QR Code SMS gratuit</a>
+            <a href="/fr/qr-sms/" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors">👉 Créez votre QR Code SMS gratuit</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Un QR code SMS de feedback fonctionne-t-il sans internet ?", a: "Oui. Les QR codes SMS fonctionnent via le réseau mobile — aucune connexion internet requise. Ils sont fiables dans n'importe quel endroit, même avec un Wi-Fi médiocre." },
+          { q: "Un QR code SMS peut-il pré-remplir le message ?", a: "Oui. Vous pouvez définir le numéro du destinataire et un texte de message prérédigé. Quand un client scanne le code, il voit le message prêt à l'envoi et n'a qu'à appuyer sur 'Envoyer'." },
+          { q: "Où placer un QR code SMS de feedback ?", a: "Les meilleurs emplacements : présentoirs de table, reçus, emballages produits, près de la caisse ou dans les chambres d'hôtel. Un court CTA comme 'Partagez votre expérience' augmente significativement les taux de réponse." },
+          { q: "La création d'un QR code SMS est-elle gratuite ?", a: "Oui. QRGenHub crée des QR codes SMS entièrement gratuitement — sans inscription, sans limite." }
+        ]
       },
       de: {
         slug: "sms-qr-code-fuer-kundenfeedback-nutzen",
@@ -855,7 +998,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Hören Sie Ihren Kunden zu.</p>
             <a href="/de/sms-qr" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors">👉 Jetzt kostenlosen SMS-QR-Code erstellen</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Funktioniert ein SMS-Feedback-QR-Code ohne Internet?", a: "Ja. SMS-QR-Codes funktionieren über das Mobilfunknetz — keine Internetverbindung erforderlich. Sie sind in jedem Umfeld zuverlässig, auch bei schlechtem WLAN." },
+          { q: "Kann ein SMS-QR-Code die Nachricht vorausfüllen?", a: "Ja. Sie können die Empfängernummer und einen vorgeschriebenen Nachrichtentext festlegen. Wenn ein Kunde den Code scannt, sieht er die versandfertige Nachricht und muss nur auf 'Senden' tippen." },
+          { q: "Wo sollte ich einen SMS-Feedback-QR-Code platzieren?", a: "Top-Platzierungen: Tischaufsteller, Kassenbons, Produktverpackungen, in der Nähe der Kasse oder in Hotelzimmern. Ein kurzer CTA wie 'Teilen Sie Ihre Erfahrung' erhöht die Rücklaufquote erheblich." },
+          { q: "Ist das Erstellen eines SMS-QR-Codes kostenlos?", a: "Ja. QRGenHub erstellt SMS-QR-Codes völlig kostenlos — keine Registrierung, keine Limits." }
+        ]
       },
       es: {
         slug: "como-usar-codigo-qr-sms-comentarios-clientes",
@@ -870,7 +1019,7 @@ export const blogPosts = [
           <ul>
             <li><strong>Mensajes listos:</strong> El texto aparece al escanear (ej: "¡Buen servicio!"). El cliente solo envía.</li>
             <li><strong>Sin Internet:</strong> Funciona con la red móvil básica, ideal donde no hay Wi-Fi.</li>
-            <li><strong>Canal directo:</strong> El mensaje llega directamente al teléfono del encargado.</li>
+            <li><strong>Canal directo:</strong> El mensaje llega directamente al <a href="/es/qr-telefono/" class="text-indigo-600 font-bold hover:underline">teléfono del encargado</a>.</li>
           </ul>
 
           <h3>¿Dónde usarlo?</h3>
@@ -884,9 +1033,15 @@ export const blogPosts = [
           <div class="bg-blue-50 p-6 rounded-2xl my-8 border border-blue-100 dark:bg-blue-900/30 dark:border-blue-800">
             <h4 class="text-blue-800 dark:text-blue-300 font-bold mb-2">Reciba Opiniones Ya</h4>
             <p class="mb-4 text-gray-600 dark:text-gray-300">¿Listo para escuchar a sus clientes?</p>
-            <a href="/es/sms-qr" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors">👉 Crear código QR SMS gratis</a>
+            <a href="/es/qr-sms/" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors">👉 Crear código QR SMS gratis</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "¿Funciona un código QR de feedback por SMS sin internet?", a: "Sí. Los códigos QR de SMS funcionan a través de la red móvil — no se requiere conexión a internet. Son fiables en cualquier lugar, incluso con Wi-Fi deficiente." },
+          { q: "¿Puede un código QR de SMS rellenar previamente el mensaje?", a: "Sí. Puedes configurar el número del destinatario y un texto de mensaje predactado. Cuando un cliente escanea el código, ve el mensaje listo para enviar y solo necesita pulsar 'Enviar'." },
+          { q: "¿Dónde debo colocar un código QR de feedback por SMS?", a: "Los mejores lugares: soportes de mesa, recibos, embalajes de productos, cerca de la caja o en habitaciones de hotel. Un breve CTA como 'Comparte tu experiencia' aumenta significativamente las tasas de respuesta." },
+          { q: "¿Crear un código QR de SMS es gratuito?", a: "Sí. QRGenHub crea códigos QR de SMS completamente gratis — sin registro, sin límites." }
+        ]
       }
     }
   },
@@ -943,7 +1098,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Sosyal medya hesaplarınızı tek bir tarama ile erişilebilir kılın.</p>
             <a href="/tr/url-qr" class="inline-block bg-pink-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-pink-700 transition-colors">👉 Sosyal Medya QR Kodunu Tasarla</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Tüm sosyal medya profillerim için tek bir QR kod kullanabilir miyim?", a: "Tek statik QR kodla değil — her kod yalnızca bir URL'ye bağlanır. Çözüm, tüm profillerinizi listeleyen bir link-in-bio sayfası oluşturmak ve bu sayfaya yönlendiren tek bir QR kod kullanmaktır." },
+          { q: "Sosyal medya QR kodu nedir?", a: "Sosyal medya QR kodu, profil bağlantınızı kodlayan bir URL QR kodudur. Tarandığında doğrudan Instagram, TikTok veya YouTube profilinize yönlendirir — arama veya yazma gerekmez." },
+          { q: "Sosyal medya QR kodunu nereye koymalıyım?", a: "En çok dönüşüm sağlayan yerler: ürün ambalajı, kasa önü, vitrin, etkinlik standı ve restoran masa kartları. Her zaman 'Takip etmek için tara' gibi bir CTA ekleyin — tarama oranını %30'a kadar artırır." },
+          { q: "Sosyal medya QR kodu uygulama olmadan çalışır mı?", a: "Evet. Tarama, mobil tarayıcıda profili açar. Yerel uygulama (Instagram, TikTok, YouTube) yüklüyse çoğu telefon otomatik olarak ona yönlendirir. Kullanıcının uygulamaya sahip olup olmaması önemli değildir." }
+        ]
       },
       en: {
         slug: "boost-social-media-followers-with-qr-codes",
@@ -990,7 +1151,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Make your social profiles accessible with a single scan.</p>
             <a href="/en/url-qr" class="inline-block bg-pink-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-pink-700 transition-colors">👉 Design Your Social Media QR</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Can I use one QR code for all my social media profiles?", a: "Not with a single static QR code — each code links to one URL. The solution is to create a link-in-bio page listing all your profiles, then point one QR code to that page." },
+          { q: "What is a social media QR code?", a: "A social media QR code is a URL QR code that encodes your profile link. When scanned, it opens your Instagram, TikTok or YouTube profile directly — no searching, no typing." },
+          { q: "Where should I place a 'Follow us' QR code?", a: "Top converting locations: product packaging, checkout counters, shop windows, event stands and restaurant table cards. Always include a CTA like 'Scan to follow us' — it increases scan rates by up to 30%." },
+          { q: "Does a social media QR code work without the app installed?", a: "Yes. Scanning opens the profile in the mobile browser. If the native app is installed, most smartphones redirect automatically. The scan works regardless of whether the user has the app." }
+        ]
       },
       fr: {
         slug: "augmenter-abonnes-reseaux-sociaux-qr-code",
@@ -1026,9 +1193,15 @@ export const blogPosts = [
           <div class="bg-pink-50 p-6 rounded-2xl my-8 border border-pink-100 dark:bg-pink-900/30 dark:border-pink-800">
             <h4 class="text-pink-800 dark:text-pink-300 font-bold mb-2">Développez votre audience</h4>
             <p class="mb-4 text-gray-600 dark:text-gray-300">Rendez vos profils accessibles en un scan.</p>
-            <a href="/fr/url-qr" class="inline-block bg-pink-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-pink-700 transition-colors">👉 Créer un QR Code Réseaux Sociaux</a>
+            <a href="/fr/creer-qr-url/" class="inline-block bg-pink-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-pink-700 transition-colors">👉 Créer un QR Code Réseaux Sociaux</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Puis-je utiliser un seul QR code pour tous mes profils réseaux sociaux ?", a: "Pas avec un seul QR code statique — chaque code lie à une URL. La solution est de créer une page link-in-bio listant tous vos profils, puis de pointer un seul QR code vers cette page." },
+          { q: "Qu'est-ce qu'un QR code réseau social ?", a: "Un QR code réseau social est un QR code URL qui encode le lien de votre profil. Au scan, il ouvre directement votre profil Instagram, TikTok ou YouTube — sans recherche, sans frappe." },
+          { q: "Où placer un QR code 'Suivez-nous' ?", a: "Les emplacements les plus convertissants : emballage produit, comptoirs de caisse, vitrines, stands événementiels et cartes de table restaurant. Toujours accompagner d'un CTA comme 'Scannez pour nous suivre' — augmente le taux de scan jusqu'à 30%." },
+          { q: "Un QR code réseau social fonctionne-t-il sans l'application installée ?", a: "Oui. Le scan ouvre le profil dans le navigateur mobile. Si l'application native est installée, la plupart des smartphones redirigent automatiquement. Le scan fonctionne que l'utilisateur ait l'application ou non." }
+        ]
       },
       de: {
         slug: "social-media-follower-mit-qr-codes-steigern",
@@ -1066,7 +1239,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Machen Sie Ihre Profile mit einem Scan zugänglich.</p>
             <a href="/de/url-qr" class="inline-block bg-pink-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-pink-700 transition-colors">👉 Social-Media-QR erstellen</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Kann ich einen QR-Code für alle meine Social-Media-Profile verwenden?", a: "Nicht mit einem einzelnen statischen QR-Code — jeder Code verlinkt auf eine URL. Die Lösung ist eine Link-in-Bio-Seite mit allen Profilen zu erstellen und einen QR-Code darauf zu verweisen." },
+          { q: "Was ist ein Social-Media-QR-Code?", a: "Ein Social-Media-QR-Code ist ein URL-QR-Code, der Ihren Profillink kodiert. Beim Scannen öffnet er direkt Ihr Instagram-, TikTok- oder YouTube-Profil — kein Suchen, kein Tippen." },
+          { q: "Wo sollte ich einen 'Folge uns'-QR-Code platzieren?", a: "Die umsatzstärksten Platzierungen sind: Produktverpackung, Kassenbereiche, Schaufenster, Messestände und Restauranttischkarten. Immer mit CTA wie 'Scan zum Folgen' — erhöht die Scan-Rate um bis zu 30%." },
+          { q: "Funktioniert ein Social-Media-QR-Code ohne installierte App?", a: "Ja. Das Scannen öffnet das Profil im mobilen Browser. Wenn die native App installiert ist, leiten die meisten Smartphones automatisch dorthin weiter. Der Scan funktioniert unabhängig davon, ob der Nutzer die App hat." }
+        ]
       },
       es: {
         slug: "aumentar-seguidores-redes-sociales-codigo-qr",
@@ -1102,9 +1281,15 @@ export const blogPosts = [
           <div class="bg-pink-50 p-6 rounded-2xl my-8 border border-pink-100 dark:bg-pink-900/30 dark:border-pink-800">
             <h4 class="text-pink-800 dark:text-pink-300 font-bold mb-2">Haga crecer su audiencia</h4>
             <p class="mb-4 text-gray-600 dark:text-gray-300">Haga sus perfiles accesibles con un escaneo.</p>
-            <a href="/es/url-qr" class="inline-block bg-pink-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-pink-700 transition-colors">👉 Crear QR para Redes Sociales</a>
+            <a href="/es/crear-qr-url/" class="inline-block bg-pink-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-pink-700 transition-colors">👉 Crear QR para Redes Sociales</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "¿Puedo usar un solo código QR para todos mis perfiles de redes sociales?", a: "No con un único código QR estático — cada código enlaza a una URL. La solución es crear una página link-in-bio con todos tus perfiles y apuntar un solo QR hacia esa página." },
+          { q: "¿Qué es un código QR de redes sociales?", a: "Un código QR de redes sociales es un QR de URL que codifica el enlace de tu perfil. Al escanearlo, abre directamente tu perfil de Instagram, TikTok o YouTube — sin buscar, sin escribir." },
+          { q: "¿Dónde colocar un código QR de 'Síguenos'?", a: "Los mejores lugares: embalaje de productos, mostradores de caja, escaparates, stands de eventos y tarjetas de mesa en restaurantes. Siempre añade un CTA como 'Escanea para seguirnos' — aumenta la tasa de escaneo hasta un 30%." },
+          { q: "¿Funciona un QR de redes sociales sin la app instalada?", a: "Sí. El escaneo abre el perfil en el navegador móvil. Si la app nativa está instalada, la mayoría de los smartphones redirigen automáticamente. El escaneo funciona independientemente de si el usuario tiene la app." }
+        ]
       }
     }
   },
@@ -1150,7 +1335,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">QRGenHub olarak şu an size süresi asla dolmayan, sınırsız tarama hakkına sahip %100 ücretsiz Statik QR kodlar sunuyoruz. (Gelişmiş analizler sunan Dinamik QR özelliğimiz ise çok yakında sizlerle olacak!)</p>
             <a href="/tr/url-qr" class="inline-block bg-purple-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-purple-700 transition-colors">👉 Hemen Ücretsiz QR Kod Oluştur</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Statik QR kodlar hiç sona erer mi?", a: "Hayır, hiçbir zaman. Statik QR kodlar sonsuza kadar çalışır — bağlantılı hedef erişilebilir olduğu sürece. Sunucu bağımlılığı veya son kullanma tarihi yoktur." },
+          { q: "Dinamik QR aboneliğimi iptal edersem ne olur?", a: "Çoğu platformda dinamik QR kodlar abonelik iptal edildiğinde çalışmaz. Bu kodlarla basılı tüm materyallerde bağlantılar kırık gösterecektir. Bu yüzden kalıcı baskı materyalleri için statik QR her zaman daha güvenlidir." },
+          { q: "QRGenHub dinamik QR kodu sunuyor mu?", a: "QRGenHub şu an %100 ücretsiz statik QR kodlar sunmaktadır — kayıt yok, sınırsız tarama, son kullanma tarihi yok. Dinamik QR işlevi (takip edilebilirlik ve link düzenleme) geliştirme aşamasındadır." },
+          { q: "Statik mi dinamik mi seçmeliyim?", a: "İçerik değişmeyecekse (kartvizit, Wi-Fi, menü, vCard) → Statik QR seçin: ücretsiz ve sunucu bağımlılığı yok. Link baskıdan sonra değişebilecekse veya ayrıntılı analize ihtiyaç varsa → Dinamik QR düşünün." }
+        ]
       },
       en: {
         slug: "dynamic-vs-static-qr-code-difference",
@@ -1186,7 +1377,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">At QRGenHub, we currently offer 100% free Static QR codes with unlimited scans that never expire. (Our advanced Dynamic QR analytics feature is coming very soon!)</p>
             <a href="/en/url-qr" class="inline-block bg-purple-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-purple-700 transition-colors">👉 Create Free QR Code Now</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Do static QR codes expire?", a: "No. Static QR codes never expire. They work as long as the linked destination is accessible. There is no server dependency or expiry date." },
+          { q: "What happens if I cancel my dynamic QR subscription?", a: "On most platforms, dynamic QR codes stop working when the subscription is cancelled. All printed materials with those codes will start showing broken links. This is why static QR is always safer for permanent printed materials." },
+          { q: "Does QRGenHub offer dynamic QR codes?", a: "QRGenHub currently provides 100% free static QR codes — no registration, unlimited scans, no expiry. Dynamic QR functionality (trackability and link editing) is in development and will be available soon." },
+          { q: "Should I choose static or dynamic?", a: "If the content won't change (business card, Wi-Fi, menu, vCard) → choose Static QR: free and no server dependency. If you need to change the link after printing or require detailed analytics → consider Dynamic QR." }
+        ]
       },
       fr: {
         slug: "difference-code-qr-dynamique-statique",
@@ -1202,7 +1399,7 @@ export const blogPosts = [
           <ul>
             <li><strong>Non modifiable :</strong> Une fois créé, le lien ne peut plus être changé.</li>
             <li><strong>Non traçable :</strong> Aucune statistique de scan n'est disponible.</li>
-            <li><strong>Durée illimitée :</strong> Idéal pour le Wi-Fi ou les textes simples, car il ne dépend d'aucun serveur.</li>
+            <li><strong>Durée illimitée :</strong> Idéal pour le Wi-Fi ou les <a href="/fr/qr-texte/" class="text-indigo-600 font-bold hover:underline">textes simples</a>, car il ne dépend d'aucun serveur.</li>
           </ul>
 
           <h3>Qu'est-ce qu'un code QR Dynamique ?</h3>
@@ -1219,9 +1416,15 @@ export const blogPosts = [
           <div class="bg-purple-50 p-6 rounded-2xl my-8 border border-purple-100 dark:bg-purple-900/30 dark:border-purple-800">
             <h4 class="text-purple-800 dark:text-purple-300 font-bold mb-2">Créez votre QR Code Statique Gratuit à Vie</h4>
             <p class="mb-4 text-gray-600 dark:text-gray-300">Sur QRGenHub, nous proposons des QR codes statiques 100% gratuits, sans limite de scan et sans expiration. (Notre fonctionnalité QR Dynamique arrive très bientôt !)</p>
-            <a href="/fr/url-qr" class="inline-block bg-purple-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-purple-700 transition-colors">👉 Créer un Code QR Gratuitement</a>
+            <a href="/fr/creer-qr-url/" class="inline-block bg-purple-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-purple-700 transition-colors">👉 Créer un Code QR Gratuitement</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Les QR codes statiques expirent-ils ?", a: "Non. Les QR codes statiques n'expirent jamais. Ils fonctionnent tant que la destination liée est accessible. Il n'y a pas de dépendance serveur ni de date d'expiration." },
+          { q: "Que se passe-t-il si j'annule mon abonnement QR dynamique ?", a: "Sur la plupart des plateformes, les QR codes dynamiques cessent de fonctionner à l'annulation de l'abonnement. Tous les supports imprimés avec ces codes afficheront des liens brisés. C'est pourquoi le QR statique est toujours plus sûr pour les supports imprimés permanents." },
+          { q: "QRGenHub propose-t-il des QR codes dynamiques ?", a: "QRGenHub propose actuellement des QR codes statiques 100% gratuits — sans inscription, scans illimités, sans expiration. La fonctionnalité QR dynamique est en développement et sera bientôt disponible." },
+          { q: "Dois-je choisir statique ou dynamique ?", a: "Si le contenu ne changera pas (carte de visite, Wi-Fi, menu, vCard) → choisissez QR Statique : gratuit et sans dépendance serveur. Si vous avez besoin de modifier le lien après impression ou d'analyses détaillées → envisagez le QR Dynamique." }
+        ]
       },
       de: {
         slug: "dynamische-vs-statische-qr-codes",
@@ -1256,7 +1459,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">QRGenHub bietet derzeit 100% kostenlose statische QR-Codes ohne Scan-Limit, die niemals ablaufen. (Unsere dynamische QR-Funktion kommt bald!)</p>
             <a href="/de/url-qr" class="inline-block bg-purple-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-purple-700 transition-colors">👉 Jetzt kostenlos erstellen</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Laufen statische QR-Codes ab?", a: "Nein. Statische QR-Codes laufen niemals ab. Sie funktionieren so lange, wie das verlinkte Ziel erreichbar ist. Es gibt keine Server-Abhängigkeit oder Ablaufdatum." },
+          { q: "Was passiert, wenn ich mein Dynamic-QR-Abo kündige?", a: "Auf den meisten Plattformen hören dynamische QR-Codes auf zu funktionieren, wenn das Abo gekündigt wird. Alle gedruckten Materialien mit diesen Codes zeigen dann defekte Links. Deshalb ist statischer QR für dauerhafte Druckmaterialien immer sicherer." },
+          { q: "Bietet QRGenHub dynamische QR-Codes an?", a: "QRGenHub bietet derzeit 100% kostenlose statische QR-Codes — keine Registrierung, unbegrenzte Scans, kein Ablaufdatum. Die dynamische QR-Funktion ist in Entwicklung und wird bald verfügbar sein." },
+          { q: "Soll ich statisch oder dynamisch wählen?", a: "Wenn sich der Inhalt nicht ändert (Visitenkarte, WLAN, Menü, vCard) → Statischen QR wählen: kostenlos und keine Server-Abhängigkeit. Wenn Sie den Link nach dem Druck ändern oder detaillierte Analysen benötigen → Dynamischen QR in Betracht ziehen." }
+        ]
       },
       es: {
         slug: "diferencia-codigo-qr-dinamico-estatico",
@@ -1272,7 +1481,7 @@ export const blogPosts = [
           <ul>
             <li><strong>Inmodificable:</strong> Una vez creado, no puede cambiar el enlace de destino.</li>
             <li><strong>Sin seguimiento:</strong> No proporciona estadísticas de escaneo.</li>
-            <li><strong>Funciona para siempre:</strong> Ideal para Wi-Fi o texto fijo, ya que no depende de servidores.</li>
+            <li><strong>Funciona para siempre:</strong> Ideal para Wi-Fi o <a href="/es/qr-de-texto/" class="text-indigo-600 font-bold hover:underline">texto fijo</a>, ya que no depende de servidores.</li>
           </ul>
 
           <h3>¿Qué es un Código QR Dinámico?</h3>
@@ -1289,9 +1498,15 @@ export const blogPosts = [
           <div class="bg-purple-50 p-6 rounded-2xl my-8 border border-purple-100 dark:bg-purple-900/30 dark:border-purple-800">
             <h4 class="text-purple-800 dark:text-purple-300 font-bold mb-2">Cree su Código QR Estático Gratis de por Vida</h4>
             <p class="mb-4 text-gray-600 dark:text-gray-300">En QRGenHub, ofrecemos códigos QR estáticos 100% gratuitos, sin límite de escaneo y que nunca caducan. (¡Nuestra función de QR Dinámico llegará muy pronto!)</p>
-            <a href="/es/url-qr" class="inline-block bg-purple-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-purple-700 transition-colors">👉 Crear QR Gratis Ahora</a>
+            <a href="/es/crear-qr-url/" class="inline-block bg-purple-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-purple-700 transition-colors">👉 Crear QR Gratis Ahora</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "¿Los códigos QR estáticos vencen?", a: "No. Los códigos QR estáticos nunca vencen. Funcionan mientras el destino vinculado sea accesible. No hay dependencia de servidor ni fecha de vencimiento." },
+          { q: "¿Qué ocurre si cancelo mi suscripción de QR dinámico?", a: "En la mayoría de plataformas, los QR dinámicos dejan de funcionar al cancelar la suscripción. Todos los materiales impresos con esos códigos mostrarán enlaces rotos. Por eso el QR estático es siempre más seguro para materiales impresos permanentes." },
+          { q: "¿QRGenHub ofrece códigos QR dinámicos?", a: "QRGenHub ofrece actualmente códigos QR estáticos 100% gratuitos — sin registro, escaneos ilimitados, sin vencimiento. La funcionalidad QR dinámica está en desarrollo y estará disponible próximamente." },
+          { q: "¿Debo elegir estático o dinámico?", a: "Si el contenido no cambiará (tarjeta de visita, Wi-Fi, menú, vCard) → elige QR Estático: gratuito y sin dependencia de servidor. Si necesitas cambiar el enlace después de imprimir o requieres análisis detallados → considera el QR Dinámico." }
+        ]
       }
     }
   },
@@ -1333,7 +1548,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">İletişim adresinizi akıllı bir QR koda dönüştürmek saniyelerinizi alır.</p>
             <a href="/tr/eposta-qr" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors">👉 Ücretsiz E-Posta QR Kodu Oluştur</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "E-posta QR kodu internet bağlantısı olmadan çalışır mı?", a: "Kısmen. Kod tarama ve mail uygulamasını açma internet gerektirmez. Ancak maili göndermek için aktif bir internet bağlantısı veya mobil veri gereklidir." },
+          { q: "E-posta QR kodu konu ve mesaj içeriğini otomatik doldurabilir mi?", a: "Evet. Alıcı adresi, konu satırı ve mesaj gövdesini önceden ayarlayabilirsiniz. Müşteri kodu taradığında tüm bu alanlar hazır doldurulmuş şekilde mail uygulamasında açılır." },
+          { q: "Hangi mail uygulamaları e-posta QR kodunu destekler?", a: "Gmail, Apple Mail, Outlook ve neredeyse tüm modern mail uygulamaları mailto: protokolünü destekler. iPhone ve Android'de ekstra bir uygulama yüklemek gerekmez." },
+          { q: "E-posta QR kodu oluşturmak ücretli mi?", a: "Hayır. QRGenHub ile e-posta QR kodu oluşturmak tamamen ücretsizdir — kayıt gerekmez, sınır yoktur." }
+        ]
       },
       en: {
         slug: "automate-support-with-email-qr-code",
@@ -1365,7 +1586,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Turn your email address into a smart, actionable QR code today.</p>
             <a href="/en/email-qr" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors">👉 Create Free Email QR Code</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Does an email QR code work without internet?", a: "Partly. Scanning the code and opening the mail app requires no internet. However, an active internet connection or mobile data is needed to actually send the email." },
+          { q: "Can an email QR code auto-fill the subject and message body?", a: "Yes. You can set the recipient address, subject line and message body in advance. When a customer scans the code, all these fields appear pre-filled in their default mail app." },
+          { q: "Which email apps support email QR codes?", a: "Gmail, Apple Mail, Outlook and virtually all modern email apps support the mailto: protocol. No extra app installation is needed on iPhone or Android." },
+          { q: "Is creating an email QR code free?", a: "Yes. QRGenHub creates email QR codes completely free — no registration required, no limits." }
+        ]
       },
       fr: {
         slug: "automatiser-support-avec-code-qr-email",
@@ -1397,7 +1624,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Transformez votre adresse e-mail en un QR code intelligent.</p>
             <a href="/fr/qr-email" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors">👉 Créer un QR Code E-mail Gratuit</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Un QR code e-mail fonctionne-t-il sans internet ?", a: "En partie. Scanner le code et ouvrir l'application mail ne nécessite pas internet. Cependant, une connexion internet active ou des données mobiles sont nécessaires pour envoyer l'e-mail." },
+          { q: "Un QR code e-mail peut-il pré-remplir le sujet et le corps du message ?", a: "Oui. Vous pouvez définir l'adresse du destinataire, la ligne d'objet et le corps du message à l'avance. Quand un client scanne le code, tous ces champs apparaissent pré-remplis dans son application mail par défaut." },
+          { q: "Quelles applications e-mail supportent les QR codes e-mail ?", a: "Gmail, Apple Mail, Outlook et pratiquement toutes les applications mail modernes supportent le protocole mailto:. Aucune installation d'application supplémentaire n'est nécessaire sur iPhone ou Android." },
+          { q: "La création d'un QR code e-mail est-elle gratuite ?", a: "Oui. QRGenHub crée des QR codes e-mail entièrement gratuitement — sans inscription, sans limite." }
+        ]
       },
       de: {
         slug: "support-automatisieren-mit-email-qr-code",
@@ -1429,7 +1662,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Verwandeln Sie Ihre E-Mail-Adresse in einen smarten QR-Code.</p>
             <a href="/de/email-qr" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors">👉 Kostenlosen E-Mail QR-Code erstellen</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Funktioniert ein E-Mail-QR-Code ohne Internet?", a: "Teilweise. Das Scannen und Öffnen der Mail-App erfordert kein Internet. Zum tatsächlichen Senden der E-Mail ist jedoch eine aktive Internetverbindung oder mobile Daten erforderlich." },
+          { q: "Kann ein E-Mail-QR-Code Betreff und Nachrichtentext vorausfüllen?", a: "Ja. Sie können die Empfängeradresse, Betreffzeile und den Nachrichtentext im Voraus festlegen. Wenn ein Kunde den Code scannt, erscheinen alle Felder vorausgefüllt in seiner Standard-Mail-App." },
+          { q: "Welche E-Mail-Apps unterstützen E-Mail-QR-Codes?", a: "Gmail, Apple Mail, Outlook und praktisch alle modernen E-Mail-Apps unterstützen das mailto: Protokoll. Keine zusätzliche App-Installation auf iPhone oder Android erforderlich." },
+          { q: "Ist das Erstellen eines E-Mail-QR-Codes kostenlos?", a: "Ja. QRGenHub erstellt E-Mail-QR-Codes völlig kostenlos — keine Registrierung erforderlich, keine Limits." }
+        ]
       },
       es: {
         slug: "automatizar-soporte-con-codigo-qr-email",
@@ -1461,7 +1700,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Convierta su dirección de correo en un código QR inteligente hoy mismo.</p>
             <a href="/es/qr-email" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors">👉 Crear QR de Email Gratis</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "¿Funciona un código QR de email sin internet?", a: "En parte. Escanear el código y abrir la app de correo no requiere internet. Sin embargo, se necesita conexión a internet activa o datos móviles para enviar el email." },
+          { q: "¿Puede un código QR de email rellenar automáticamente el asunto y el cuerpo?", a: "Sí. Puedes configurar la dirección del destinatario, la línea de asunto y el cuerpo del mensaje de antemano. Cuando un cliente escanea el código, todos estos campos aparecen pre-rellenados en su app de correo predeterminada." },
+          { q: "¿Qué apps de correo soportan los códigos QR de email?", a: "Gmail, Apple Mail, Outlook y prácticamente todas las apps de correo modernas soportan el protocolo mailto:. No se necesita instalar ninguna app adicional en iPhone o Android." },
+          { q: "¿Crear un código QR de email es gratuito?", a: "Sí. QRGenHub crea códigos QR de email completamente gratis — sin registro, sin límites." }
+        ]
       }
     }
   },
@@ -1513,7 +1758,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Herhangi bir URL'yi saniyeler içinde ücretsiz QR koda dönüştürün.</p>
             <a href="/qr-url" title="Ücretsiz URL QR Kod Oluştur" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Ücretsiz URL QR Kodunu Şimdi Oluştur</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "URL QR kodu ile kısa link arasındaki fark nedir?", a: "Kısa linkler (bit.ly gibi) bir ara sunucuya bağlıdır — servis kapanırsa tüm kodlar çalışmaz. URL QR kodu ise URL'yi doğrudan içine gömer veya kendi kısa linkinize yönlendirebilir; tamamen sizin kontrolünüzdedir." },
+          { q: "URL QR kodunun süresi dolar mı?", a: "Hayır. QRGenHub ile oluşturulan URL QR kodlarının süresi hiçbir zaman dolmaz. Yönlendirilen URL erişilebilir olduğu sürece kod çalışmaya devam eder." },
+          { q: "URL QR kodumu nasıl özelleştirebilirim?", a: "QRGenHub'da renk değiştirme, logo ekleme ve köşe şekli seçeneği sunulmaktadır. Her zaman yüksek kontrast koruyun ve bastırmadan önce gerçek bir telefonda test edin." },
+          { q: "URL QR kodu oluşturmak ücretli mi?", a: "Hayır. QRGenHub'da URL QR kodu oluşturma tamamen ücretsizdir — kayıt gerekmez. PNG ve SVG formatlarında sınırsız indirme yapabilirsiniz." }
+        ]
       },
       en: {
         slug: "how-to-create-qr-code-for-url-free-2026",
@@ -1555,7 +1806,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Turn any URL into a QR code in seconds. No signup, no cost.</p>
             <a href="/en/qr-url" title="Free URL QR Code Generator" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Create Your Free URL QR Code Now</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "What is the difference between a URL QR code and a short link?", a: "Short links (like bit.ly) rely on a third-party server — if the service shuts down, all codes break. A URL QR code embeds the URL directly or can point to your own short link, giving you full control." },
+          { q: "Does a URL QR code expire?", a: "No. URL QR codes created with QRGenHub never expire. The code keeps working as long as the destination URL remains accessible." },
+          { q: "How can I customise my URL QR code?", a: "QRGenHub offers colour changes, logo embedding and corner shape options. Always maintain high contrast and test on a real phone before printing." },
+          { q: "Is creating a URL QR code free?", a: "Yes. Creating a URL QR code on QRGenHub is completely free — no registration required. Unlimited downloads in PNG and SVG formats." }
+        ]
       },
       fr: {
         slug: "creer-code-qr-url-gratuit-2026",
@@ -1565,7 +1822,7 @@ export const blogPosts = [
         content: `
           <h2>Qu'est-ce qu'un QR Code URL et pourquoi l'utiliser ?</h2>
           <p>Quelle que soit la longueur d'une adresse web, un <strong>QR code URL</strong> la transforme en un simple carré scannable. L'utilisateur pointe son téléphone dessus et accède directement à la page — sans saisir, copier ni chercher.</p>
-          <p>En 2026, les QR codes sont partout : menus, cartes de visite, emballages produits et panneaux publicitaires. Avec notre <a href="/fr/qr-url" class="text-indigo-600 font-bold hover:underline">générateur de QR code URL gratuit</a>, créez un code professionnel en quelques minutes.</p>
+          <p>En 2026, les QR codes sont partout : menus, cartes de visite, emballages produits et panneaux publicitaires. Avec notre <a href="/fr/creer-qr-url/" class="text-indigo-600 font-bold hover:underline">générateur de QR code URL gratuit</a>, créez un code professionnel en quelques minutes.</p>
 
           <h3>Où utiliser un QR Code URL ?</h3>
           <ul>
@@ -1594,9 +1851,15 @@ export const blogPosts = [
           <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
             <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Essayez maintenant — C'est gratuit</h4>
             <p class="mb-4 text-gray-600 dark:text-gray-300">Transformez n'importe quelle URL en QR code en quelques secondes.</p>
-            <a href="/fr/qr-url" title="Générateur de QR Code URL gratuit" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Créer mon QR Code URL gratuitement</a>
+            <a href="/fr/creer-qr-url/" title="Générateur de QR Code URL gratuit" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Créer mon QR Code URL gratuitement</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Quelle est la différence entre un QR code URL et un lien court ?", a: "Les liens courts (comme bit.ly) dépendent d'un serveur tiers — si le service ferme, tous les codes cessent de fonctionner. Un QR code URL intègre directement l'URL ou peut pointer vers votre propre lien court — contrôle total de votre côté." },
+          { q: "Un QR code URL expire-t-il ?", a: "Non. Les QR codes URL créés avec QRGenHub n'expirent jamais. Le code continue de fonctionner tant que l'URL de destination reste accessible." },
+          { q: "Comment puis-je personnaliser mon QR code URL ?", a: "QRGenHub propose des changements de couleur, l'intégration de logo et des options de forme des coins. Toujours maintenir un contraste élevé et tester sur un vrai téléphone avant impression." },
+          { q: "La création d'un QR code URL est-elle gratuite ?", a: "Oui. Créer un QR code URL sur QRGenHub est entièrement gratuit — sans inscription. Téléchargements illimités en PNG et SVG." }
+        ]
       },
       de: {
         slug: "kostenlosen-qr-code-fuer-url-erstellen-2026",
@@ -1637,7 +1900,13 @@ export const blogPosts = [
             <p class="mb-4 text-gray-600 dark:text-gray-300">Jede URL in Sekunden in einen QR-Code verwandeln.</p>
             <a href="/de/qr-url" title="Kostenloser URL-QR-Code-Generator" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Kostenlosen URL-QR-Code jetzt erstellen</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Was ist der Unterschied zwischen einem URL-QR-Code und einem Kurzlink?", a: "Kurzlinks (wie bit.ly) sind auf einen Drittanbieter-Server angewiesen — wenn der Dienst eingestellt wird, funktionieren alle Codes nicht mehr. Ein URL-QR-Code bettet die URL direkt ein oder zeigt auf Ihren eigenen Kurzlink — volle Kontrolle bei Ihnen." },
+          { q: "Läuft ein URL-QR-Code ab?", a: "Nein. Mit QRGenHub erstellte URL-QR-Codes laufen nie ab. Der Code funktioniert so lange, wie die Ziel-URL erreichbar bleibt." },
+          { q: "Wie kann ich meinen URL-QR-Code anpassen?", a: "QRGenHub bietet Farbänderungen, Logo-Einbettung und Eckenform-Optionen. Immer hohen Kontrast beibehalten und vor dem Druck auf einem echten Telefon testen." },
+          { q: "Ist das Erstellen eines URL-QR-Codes kostenlos?", a: "Ja. Das Erstellen eines URL-QR-Codes auf QRGenHub ist völlig kostenlos — keine Registrierung erforderlich. Unbegrenzte Downloads in PNG und SVG." }
+        ]
       },
       es: {
         slug: "crear-codigo-qr-url-gratis-2026",
@@ -1647,7 +1916,7 @@ export const blogPosts = [
         content: `
           <h2>¿Qué es un Código QR de URL y por qué usarlo?</h2>
           <p>No importa cuán larga sea una dirección web — un <strong>código QR de URL</strong> la convierte en un único cuadrado escaneable. El usuario apunta su teléfono y accede directamente a esa página, sin escribir, copiar ni buscar.</p>
-          <p>En 2026, los códigos QR están en todas partes: menús, tarjetas de visita, envases de productos y vallas publicitarias. Con nuestro <a href="/es/qr-url" class="text-indigo-600 font-bold hover:underline">generador gratuito de QR para URL</a>, cree un código profesional en minutos.</p>
+          <p>En 2026, los códigos QR están en todas partes: menús, tarjetas de visita, envases de productos y vallas publicitarias. Con nuestro <a href="/es/crear-qr-url/" class="text-indigo-600 font-bold hover:underline">generador gratuito de QR para URL</a>, cree un código profesional en minutos.</p>
 
           <h3>¿Dónde puede usar un Código QR de URL?</h3>
           <ul>
@@ -1676,9 +1945,15 @@ export const blogPosts = [
           <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
             <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Pruébelo ahora — Es gratis</h4>
             <p class="mb-4 text-gray-600 dark:text-gray-300">Convierta cualquier URL en un código QR en segundos.</p>
-            <a href="/es/qr-url" title="Generador gratuito de QR para URL" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Crear mi Código QR de URL gratis</a>
+            <a href="/es/crear-qr-url/" title="Generador gratuito de QR para URL" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Crear mi Código QR de URL gratis</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "¿Cuál es la diferencia entre un código QR de URL y un enlace corto?", a: "Los enlaces cortos (como bit.ly) dependen de un servidor de terceros — si el servicio cierra, todos los códigos dejan de funcionar. Un código QR de URL integra la URL directamente o apunta a tu propio enlace corto — control total en tus manos." },
+          { q: "¿Un código QR de URL vence?", a: "No. Los códigos QR de URL creados con QRGenHub nunca vencen. El código sigue funcionando mientras la URL de destino permanezca accesible." },
+          { q: "¿Cómo puedo personalizar mi código QR de URL?", a: "QRGenHub ofrece cambios de color, integración de logo y opciones de forma de esquinas. Siempre mantén alto contraste y prueba en un teléfono real antes de imprimir." },
+          { q: "¿Crear un código QR de URL es gratuito?", a: "Sí. Crear un código QR de URL en QRGenHub es completamente gratuito — sin registro. Descargas ilimitadas en PNG y SVG." }
+        ]
       }
     }
   }

@@ -21,7 +21,7 @@ const Header = ({ navLinks }) => {
 
       {/* Logo Alanı */}
       {/* ✅ DÜZELTME 1: Logo linki '/url' yerine '/url-qr/' (slashlı) yapıldı */}
-      <NavLink to={`/${currentLang}/url-qr/`} className="mb-8 flex flex-col items-center group cursor-pointer mt-8 md:mt-0">
+      <NavLink to={`/${currentLang}/${navLinks?.[0]?.id || 'url-qr'}/`} className="mb-8 flex flex-col items-center group cursor-pointer mt-8 md:mt-0">
         
         <img 
           src="/favicon.svg" 

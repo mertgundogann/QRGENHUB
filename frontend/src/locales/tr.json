@@ -157,5 +157,76 @@
       "desc": "En iyi ücretsiz QR kod oluşturucu ile saniyeler içinde logolu ve özelleştirilmiş QR kodlar tasarlayın. Kayıt yok, süre sınırı yok. URL, Wi-Fi, vCard."
     }
   },
-  "meta_description": "En iyi ücretsiz QR kod oluşturucu ile saniyeler içinde logolu ve özelleştirilmiş QR kodlar tasarlayın. Kayıt yok, süre sınırı yok. URL, Wi-Fi, vCard."
+  "meta_description": "En iyi ücretsiz QR kod oluşturucu ile saniyeler içinde logolu ve özelleştirilmiş QR kodlar tasarlayın. Kayıt yok, süre sınırı yok. URL, Wi-Fi, vCard.",
+  "faq_items_text": [
+    {
+      "q": "Metin QR kodu ne işe yarar?",
+      "a": "İnternete ihtiyaç duymadan anında görüntülenebilen **mesaj, not veya talimat** saklamanızı sağlar."
+    },
+    {
+      "q": "Metin için karakter sınırı var mı?",
+      "a": "Statik bir metin QR koduna en fazla **4.296 karakter** ekleyebilirsiniz."
+    },
+    {
+      "q": "Metin QR kodunu taramak için internet gerekiyor mu?",
+      "a": "**Hayır**. Metin doğrudan QR koduna gömülüdür, internet bağlantısı olmadan çalışır."
+    },
+    {
+      "q": "Metin QR kodu ücretsiz oluşturabilir miyim?",
+      "a": "Evet, QRGenHub'da **tamamen ücretsiz**, kayıt ve sınır olmadan oluşturabilirsiniz."
+    },
+    {
+      "q": "Metin QR kodlarının süresi doluyor mu?",
+      "a": "**Asla dolmaz**. Statik ve kalıcıdır, süresiz kullanabilirsiniz."
+    },
+    {
+      "q": "Metin QR kodu pratikte ne için kullanılır?",
+      "a": "**Ürün etiketleri, kullanım talimatları, Wi-Fi şifreleri, kartvizitler** ve daha fazlası için kullanılır."
+    }
+  ],
+  "related_article_label": "İlgili Makale",
+  "read_article": "Makaleyi Oku →",
+  "related_tools_title": "Diğer ücretsiz araçlar",
+  "related_tools_text": [
+    { "label": "URL için QR Kod Oluştur", "path": "/tr/url-qr/" },
+    { "label": "Wi-Fi QR Kod Oluştur", "path": "/tr/wifi-qr/" },
+    { "label": "vCard QR Kod Oluştur", "path": "/tr/vcard-qr/" },
+    { "label": "SMS QR Kod Oluştur", "path": "/tr/sms-qr/" }
+  ],
+  "related_tools_url": [
+    { "label": "Wi-Fi QR Kod Oluştur", "path": "/tr/wifi-qr/" },
+    { "label": "vCard QR Kod Oluştur", "path": "/tr/vcard-qr/" },
+    { "label": "Telefon QR Kod Oluştur", "path": "/tr/tel-qr/" },
+    { "label": "SMS QR Kod Oluştur", "path": "/tr/sms-qr/" }
+  ],
+  "related_tools_wifi": [
+    { "label": "URL için QR Kod Oluştur", "path": "/tr/url-qr/" },
+    { "label": "vCard QR Kod Oluştur", "path": "/tr/vcard-qr/" },
+    { "label": "Telefon QR Kod Oluştur", "path": "/tr/tel-qr/" },
+    { "label": "Metin QR Kod Oluştur", "path": "/tr/metin-qr/" }
+  ],
+  "related_tools_vcard": [
+    { "label": "URL için QR Kod Oluştur", "path": "/tr/url-qr/" },
+    { "label": "Wi-Fi QR Kod Oluştur", "path": "/tr/wifi-qr/" },
+    { "label": "Telefon QR Kod Oluştur", "path": "/tr/tel-qr/" },
+    { "label": "E-posta QR Kod Oluştur", "path": "/tr/eposta-qr/" }
+  ],
+  "related_tools_sms": [
+    { "label": "URL için QR Kod Oluştur", "path": "/tr/url-qr/" },
+    { "label": "E-posta QR Kod Oluştur", "path": "/tr/eposta-qr/" },
+    { "label": "Telefon QR Kod Oluştur", "path": "/tr/tel-qr/" },
+    { "label": "vCard QR Kod Oluştur", "path": "/tr/vcard-qr/" }
+  ],
+  "related_tools_email": [
+    { "label": "URL için QR Kod Oluştur", "path": "/tr/url-qr/" },
+    { "label": "SMS QR Kod Oluştur", "path": "/tr/sms-qr/" },
+    { "label": "Telefon QR Kod Oluştur", "path": "/tr/tel-qr/" },
+    { "label": "vCard QR Kod Oluştur", "path": "/tr/vcard-qr/" }
+  ],
+  "related_tools_tel": [
+    { "label": "URL için QR Kod Oluştur", "path": "/tr/url-qr/" },
+    { "label": "Wi-Fi QR Kod Oluştur", "path": "/tr/wifi-qr/" },
+    { "label": "vCard QR Kod Oluştur", "path": "/tr/vcard-qr/" },
+    { "label": "E-posta QR Kod Oluştur", "path": "/tr/eposta-qr/" }
+  ]
 }
