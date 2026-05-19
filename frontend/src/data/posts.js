@@ -1,4 +1,4 @@
-export const blogPosts = [
+﻿export const blogPosts = [
   {
     id: "wifi-qr-sharing",
     category: "Rehber",
@@ -1953,6 +1953,1485 @@ export const blogPosts = [
           { q: "¿Un código QR de URL vence?", a: "No. Los códigos QR de URL creados con QRGenHub nunca vencen. El código sigue funcionando mientras la URL de destino permanezca accesible." },
           { q: "¿Cómo puedo personalizar mi código QR de URL?", a: "QRGenHub ofrece cambios de color, integración de logo y opciones de forma de esquinas. Siempre mantén alto contraste y prueba en un teléfono real antes de imprimir." },
           { q: "¿Crear un código QR de URL es gratuito?", a: "Sí. Crear un código QR de URL en QRGenHub es completamente gratuito — sin registro. Descargas ilimitadas en PNG y SVG." }
+        ]
+      }
+    }
+  }
+,
+  {
+    id: "tel-qr-phone-guide",
+    category: "Rehber",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800",
+    imageAlt: "Telefon Numarası QR Kodu ile Tek Tıkla Arama",
+    author: "Mert Gündoğan",
+    date: "2026-04-25",
+    languages: {
+      tr: {
+        slug: "telefon-numarasi-qr-kodu-olusturma",
+        title: "Telefon Numarası QR Kodu Nasıl Oluşturulur? (Ücretsiz)",
+        metaDescription: "Telefon numaranızı QR koda dönüştürün. Müşterileriniz kodu tarayarak sizi tek tıkla arasın. Kartvizit, afiş ve web sitesi için mükemmel.",
+        excerpt: "Telefon numaranızı QR koda dönüştürün. Müşterileriniz kodu tarayan akıllı telefonlarından sizi tek tıkla arayabilsin.",
+        content: `
+          <h2>Telefon QR Kodu Nedir ve Neden İşinizi Kolaylaştırır?</h2>
+          <p>Bir <strong>telefon numarası QR kodu</strong>, içinde <code>tel:</code> protokolüyle kodlanmış bir numara barındıran iki boyutlu bir barkodtur. Müşteriniz bu kodu akıllı telefonuyla taradığında, telefon uygulaması numaranız hazır şekilde açılır. Tek yapmaları gereken "Ara" tuşuna basmaktır.</p>
+          <p>Uzun numaraları yazmaktan kaynaklanan yanlış aramalar, kaçırılan müşteriler ve hatalı girişler artık geçmişte kalıyor. <a href="/tr/tel-qr" class="text-indigo-600 font-bold hover:underline">Ücretsiz telefon QR kod oluşturucumuzu</a> kullanarak bu sorunu saniyeler içinde çözebilirsiniz.</p>
+
+          <h3>Telefon QR Kodunu Nerede Kullanabilirsiniz?</h3>
+          <ul>
+            <li><strong>Kartvizitler:</strong> Numaranızı QR koda ekleyin; müşterileriniz klavyeye dokunmadan sizi arayabilsin.</li>
+            <li><strong>Vitrin ve Afişler:</strong> Mağaza camınıza veya tabela üzerine yapıştırın, dışarıdan geçenler kolayca ulaşsın.</li>
+            <li><strong>Web Sitesi ve Sosyal Medya:</strong> "Hemen Ara" butonunun yanına QR kod ekleyin, masaüstü ziyaretçiler telefonlarıyla tarayabilsin.</li>
+            <li><strong>Ürün Ambalajı:</strong> Destek hattınızı ambalajın üzerinde QR kod olarak sunun.</li>
+            <li><strong>E-posta İmzası:</strong> İmzanızdaki QR kod, alıcının sizi tek hamlede aramasını sağlar.</li>
+          </ul>
+
+          <h3>Telefon Numarası QR Kodu Nasıl Oluşturulur? (Adım Adım)</h3>
+          <p>QRGenHub ile bu işlem tamamen ücretsiz ve kayıt gerektirmez:</p>
+          <ol>
+            <li><strong>Araca gidin:</strong> <a href="/tr/tel-qr" class="text-indigo-600 font-bold hover:underline">qrgenhub.com/tr/tel-qr</a> adresine gidin.</li>
+            <li><strong>Numaranızı girin:</strong> Uluslararası formatta yazın. Türkiye için örnek: <code>+905XXXXXXXXX</code>. Bu format tüm operatörler ve ülkelerde sorunsuz çalışır.</li>
+            <li><strong>QR kodunuzu oluşturun:</strong> Butona tıklayın, kod anında hazır olur.</li>
+            <li><strong>İndirin ve kullanın:</strong> PNG formatında indirin, kartvizitinize veya afişinize ekleyin.</li>
+          </ol>
+
+          <h3>Telefon Numarasını Doğru Formatta Girmenin Önemi</h3>
+          <p>En sık yapılan hata, numarayı yerel formatta girmektir (örn. <code>0532 000 00 00</code>). Bu format bazı cihazlarda çalışmayabilir. Doğru format her zaman uluslararası standarttır:</p>
+          <ul>
+            <li>✅ <strong>Doğru:</strong> <code>+905320000000</code></li>
+            <li>❌ <strong>Yanlış:</strong> <code>05320000000</code></li>
+          </ul>
+          <p>Başına <strong>+90</strong> (Türkiye alan kodu) eklemek, kodun dünyada her telefonla uyumlu çalışmasını sağlar.</p>
+
+          <h3>Telefon QR Kodu ile vCard QR Kodu Arasındaki Fark</h3>
+          <p>İkisi de telefon numarası içerebilir, ancak amaçları farklıdır:</p>
+          <ul>
+            <li><strong>Telefon QR Kodu:</strong> Yalnızca aramayı başlatır. Basit ve tek amaçlı.</li>
+            <li><strong>vCard QR Kodu:</strong> Ad, numara, e-posta, şirket gibi tüm iletişim bilgilerini rehbere kaydeder. Daha kapsamlı.</li>
+          </ul>
+          <p>Sadece hızlı arama istiyorsanız telefon QR kodu, tüm bilgileri paylaşmak istiyorsanız <a href="/tr/vcard-qr" class="text-indigo-600 font-bold hover:underline">vCard QR kodu</a> tercih edin.</p>
+
+          <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Hemen Oluşturun — Ücretsiz</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Telefon numaranızı saniyeler içinde QR koda dönüştürün.</p>
+            <a href="/tr/tel-qr" title="Ücretsiz Telefon QR Kodu Oluştur" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Telefon QR Kodunu Şimdi Oluştur</a>
+          </div>
+        `
+      },
+      en: {
+        slug: "phone-number-qr-code-generator",
+        title: "Phone Number QR Code Generator: One Scan to Call (Free)",
+        metaDescription: "Turn your phone number into a scannable QR code. Customers tap to call instantly — perfect for business cards, signs, and websites. Free, no signup.",
+        excerpt: "Let customers call you with a single scan. Turn any phone number into a QR code for your business cards, signs, and website — completely free.",
+        content: `
+          <h2>What Is a Phone Number QR Code and Why Does It Matter?</h2>
+          <p>A <strong>phone number QR code</strong> is a two-dimensional barcode that encodes a number using the <code>tel:</code> protocol. When someone scans it with their smartphone, the phone app opens with your number pre-filled — all they need to do is tap "Call."</p>
+          <p>Wrong numbers from manual entry, missed calls, and customer frustration are problems of the past. Use our <a href="/en/tel-qr" class="text-indigo-600 font-bold hover:underline">free phone QR code generator</a> to create yours in seconds, no sign-up required.</p>
+
+          <h3>Where Can You Use a Phone Number QR Code?</h3>
+          <ul>
+            <li><strong>Business Cards:</strong> Add a QR code next to your number so contacts can call without typing.</li>
+            <li><strong>Storefronts & Posters:</strong> Stick it on your window or signage — passersby can call in seconds.</li>
+            <li><strong>Website & Social Media:</strong> Place it next to your "Call Us" button so desktop visitors can scan with their phone.</li>
+            <li><strong>Product Packaging:</strong> Make your support line instantly accessible right on the box.</li>
+            <li><strong>Email Signature:</strong> A QR code in your signature lets recipients call you with one scan.</li>
+          </ul>
+
+          <h3>How to Create a Phone Number QR Code (Step by Step)</h3>
+          <p>It's completely free on QRGenHub — no account needed:</p>
+          <ol>
+            <li><strong>Go to the tool:</strong> Visit <a href="/en/tel-qr" class="text-indigo-600 font-bold hover:underline">qrgenhub.com/en/tel-qr</a>.</li>
+            <li><strong>Enter your number:</strong> Use international format for best compatibility. Example: <code>+14155550100</code> for the US.</li>
+            <li><strong>Generate:</strong> Click the button — your QR code is ready instantly.</li>
+            <li><strong>Download & use:</strong> Save as PNG and add it to your card, flyer, or website.</li>
+          </ol>
+
+          <h3>Why International Format Matters</h3>
+          <p>The most common mistake is entering a local number format (e.g., <code>555-0100</code>). This can fail on some devices. Always use the international standard:</p>
+          <ul>
+            <li>✅ <strong>Correct:</strong> <code>+14155550100</code></li>
+            <li>❌ <strong>Wrong:</strong> <code>4155550100</code></li>
+          </ul>
+          <p>The <strong>+</strong> prefix and country code ensure the QR code works on every phone, anywhere in the world.</p>
+
+          <h3>Phone QR Code vs. vCard QR Code — What's the Difference?</h3>
+          <p>Both can include a phone number, but they serve different purposes:</p>
+          <ul>
+            <li><strong>Phone QR Code:</strong> Opens the dialer instantly. Simple and single-purpose.</li>
+            <li><strong>vCard QR Code:</strong> Saves your full contact — name, number, email, company — directly to the address book.</li>
+          </ul>
+          <p>Use a phone QR code for quick calls. Use a <a href="/en/vcard-qr" class="text-indigo-600 font-bold hover:underline">vCard QR code</a> when you want to share your complete contact information.</p>
+
+          <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Create Yours — It's Free</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Turn any phone number into a scannable QR code in seconds.</p>
+            <a href="/en/tel-qr" title="Free Phone Number QR Code Generator" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Create Your Phone QR Code Now</a>
+          </div>
+        `
+      },
+      es: {
+        slug: "crear-codigo-qr-numero-telefono",
+        title: "Crear Código QR de Número de Teléfono Gratis: ¡Un Escaneo para Llamar!",
+        metaDescription: "Convierta su número de teléfono en un código QR escaneable. Sus clientes llaman al instante desde tarjetas, carteles y sitios web. Gratis, sin registro.",
+        excerpt: "Permita que sus clientes le llamen con un solo escaneo. Convierta cualquier número en un código QR para tarjetas, carteles y su web — completamente gratis.",
+        content: `
+          <h2>¿Qué es un Código QR de Número de Teléfono?</h2>
+          <p>Un <strong>código QR de teléfono</strong> es un código de barras bidimensional que almacena un número usando el protocolo <code>tel:</code>. Cuando alguien lo escanea con su smartphone, la aplicación de llamadas se abre con su número ya introducido — solo necesitan pulsar "Llamar".</p>
+          <p>Los errores al marcar números manualmente, las llamadas perdidas y la frustración del cliente son cosa del pasado. Use nuestro <a href="/es/qr-telefono" class="text-indigo-600 font-bold hover:underline">generador gratuito de QR para teléfono</a> y créelo en segundos, sin registro.</p>
+
+          <h3>¿Dónde puede usar un Código QR de Teléfono?</h3>
+          <ul>
+            <li><strong>Tarjetas de visita:</strong> Añada el QR junto a su número — los contactos llaman sin teclear.</li>
+            <li><strong>Escaparates y carteles:</strong> Colóquelo en la vitrina para que los transeúntes llamen al instante.</li>
+            <li><strong>Sitio web y redes sociales:</strong> Junto al botón "Llámenos", para que los visitantes de escritorio escaneen con su móvil.</li>
+            <li><strong>Embalaje de productos:</strong> Haga su línea de soporte accesible directamente en la caja.</li>
+            <li><strong>Firma de correo:</strong> Un QR en su firma permite que el destinatario le llame con un solo escaneo.</li>
+          </ul>
+
+          <h3>Cómo crear un Código QR de Teléfono (Paso a Paso)</h3>
+          <ol>
+            <li><strong>Vaya a la herramienta:</strong> Visita <a href="/es/qr-telefono" class="text-indigo-600 font-bold hover:underline">qrgenhub.com/es/qr-telefono</a>.</li>
+            <li><strong>Introduzca su número:</strong> Use el formato internacional para máxima compatibilidad. Ejemplo para España: <code>+34600000000</code>.</li>
+            <li><strong>Genere:</strong> Haga clic — su código QR estará listo al instante.</li>
+            <li><strong>Descargue y use:</strong> Guárdelo en PNG y añádalo a su tarjeta, flyer o web.</li>
+          </ol>
+
+          <h3>Por qué es importante el formato internacional</h3>
+          <p>El error más común es introducir un número en formato local. Use siempre el estándar internacional:</p>
+          <ul>
+            <li>✅ <strong>Correcto:</strong> <code>+34600000000</code></li>
+            <li>❌ <strong>Incorrecto:</strong> <code>600000000</code></li>
+          </ul>
+
+          <h3>Código QR de Teléfono vs. Código QR vCard</h3>
+          <ul>
+            <li><strong>QR de Teléfono:</strong> Abre el marcador al instante. Simple y directo.</li>
+            <li><strong>QR vCard:</strong> Guarda toda su información de contacto — nombre, número, email, empresa — en la agenda.</li>
+          </ul>
+          <p>Use el QR de teléfono para llamadas rápidas. Use el <a href="/es/qr-vcard" class="text-indigo-600 font-bold hover:underline">QR vCard</a> si desea compartir todos sus datos de contacto.</p>
+
+          <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Créelo ahora — Es gratis</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Convierta cualquier número en un código QR escaneable en segundos.</p>
+            <a href="/es/qr-telefono" title="Generador gratuito de QR para teléfono" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Crear mi Código QR de Teléfono gratis</a>
+          </div>
+        `
+      },
+      fr: {
+        slug: "creer-code-qr-numero-telephone",
+        title: "Créer un Code QR pour Numéro de Téléphone (Gratuit) : Un Scan pour Appeler",
+        metaDescription: "Transformez votre numéro de téléphone en code QR scannable. Vos clients appellent en un scan depuis cartes de visite, affiches et sites web. Gratuit.",
+        excerpt: "Permettez à vos clients de vous appeler en un seul scan. Transformez n'importe quel numéro en QR code pour vos cartes et affiches — entièrement gratuit.",
+        content: `
+          <h2>Qu'est-ce qu'un Code QR de Téléphone ?</h2>
+          <p>Un <strong>code QR de téléphone</strong> est un code-barres 2D qui encode un numéro via le protocole <code>tel:</code>. Lorsqu'on le scanne avec un smartphone, l'application d'appel s'ouvre avec votre numéro prérempli — il suffit d'appuyer sur "Appeler".</p>
+          <p>Fini les erreurs de composition, les appels manqués et la frustration. Utilisez notre <a href="/fr/qr-telephone" class="text-indigo-600 font-bold hover:underline">générateur de QR téléphonique gratuit</a> pour créer le vôtre en quelques secondes, sans inscription.</p>
+
+          <h3>Où utiliser un Code QR de Téléphone ?</h3>
+          <ul>
+            <li><strong>Cartes de visite :</strong> Ajoutez le QR à côté de votre numéro — vos contacts appellent sans taper.</li>
+            <li><strong>Vitrines et affiches :</strong> Collez-le en vitrine pour que les passants vous contactent immédiatement.</li>
+            <li><strong>Site web :</strong> Placez-le à côté de "Appelez-nous" pour que les visiteurs bureau scannent avec leur mobile.</li>
+            <li><strong>Emballages produits :</strong> Rendez votre service client accessible directement sur la boîte.</li>
+            <li><strong>Signature e-mail :</strong> Un QR dans votre signature permet au destinataire de vous appeler d'un seul scan.</li>
+          </ul>
+
+          <h3>Comment créer un Code QR de Téléphone (Étape par étape)</h3>
+          <ol>
+            <li><strong>Accédez à l'outil :</strong> Rendez-vous sur <a href="/fr/qr-telephone" class="text-indigo-600 font-bold hover:underline">qrgenhub.com/fr/qr-telephone</a>.</li>
+            <li><strong>Entrez votre numéro :</strong> Utilisez le format international. Exemple pour la France : <code>+33600000000</code>.</li>
+            <li><strong>Générez :</strong> Cliquez — votre code QR est prêt instantanément.</li>
+            <li><strong>Téléchargez :</strong> Enregistrez en PNG et ajoutez-le à votre carte, flyer ou site.</li>
+          </ol>
+
+          <h3>L'importance du format international</h3>
+          <ul>
+            <li>✅ <strong>Correct :</strong> <code>+33600000000</code></li>
+            <li>❌ <strong>Incorrect :</strong> <code>0600000000</code></li>
+          </ul>
+
+          <h3>QR Téléphone vs. QR vCard : Quelle différence ?</h3>
+          <ul>
+            <li><strong>QR Téléphone :</strong> Ouvre le composeur immédiatement. Simple et direct.</li>
+            <li><strong>QR vCard :</strong> Enregistre toutes vos coordonnées (nom, numéro, email, société) dans le répertoire.</li>
+          </ul>
+          <p>Utilisez le QR téléphone pour un appel rapide. Utilisez le <a href="/fr/qr-vcard" class="text-indigo-600 font-bold hover:underline">QR vCard</a> pour partager toutes vos informations.</p>
+
+          <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Créez le vôtre — Gratuit</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Transformez n'importe quel numéro en QR code scannable en secondes.</p>
+            <a href="/fr/qr-telephone" title="Générateur de QR téléphonique gratuit" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Créer mon Code QR Téléphone gratuitement</a>
+          </div>
+        `
+      },
+      de: {
+        slug: "telefonnummer-qr-code-erstellen",
+        title: "Telefonnummer QR-Code erstellen: Ein Scan zum Anrufen (Kostenlos)",
+        metaDescription: "Verwandeln Sie Ihre Telefonnummer in einen QR-Code. Kunden rufen mit einem Scan an — ideal für Visitenkarten, Schilder und Websites. Kostenlos, ohne Anmeldung.",
+        excerpt: "Lassen Sie Kunden Sie mit einem einzigen Scan anrufen. Verwandeln Sie jede Telefonnummer in einen QR-Code für Visitenkarten und Schilder — komplett kostenlos.",
+        content: `
+          <h2>Was ist ein Telefonnummer-QR-Code?</h2>
+          <p>Ein <strong>Telefonnummer-QR-Code</strong> ist ein zweidimensionaler Barcode, der eine Nummer über das <code>tel:</code>-Protokoll speichert. Wenn jemand ihn mit seinem Smartphone scannt, öffnet sich die Telefon-App mit Ihrer Nummer — der Nutzer muss nur noch "Anrufen" tippen.</p>
+          <p>Falsch gewählte Nummern, verpasste Anrufe und Kundenfrust gehören der Vergangenheit an. Nutzen Sie unseren <a href="/de/tel-qr" class="text-indigo-600 font-bold hover:underline">kostenlosen Telefon-QR-Generator</a> und erstellen Sie Ihren Code in Sekunden — ohne Anmeldung.</p>
+
+          <h3>Wo können Sie einen Telefon-QR-Code einsetzen?</h3>
+          <ul>
+            <li><strong>Visitenkarten:</strong> Fügen Sie den QR neben Ihrer Nummer ein — Kontakte rufen ohne Tippen an.</li>
+            <li><strong>Schaufenster und Plakate:</strong> Kleben Sie ihn ins Fenster, damit Passanten sofort anrufen können.</li>
+            <li><strong>Website:</strong> Platzieren Sie ihn neben "Jetzt anrufen" — Desktop-Besucher scannen mit dem Handy.</li>
+            <li><strong>Produktverpackung:</strong> Machen Sie Ihren Support direkt auf der Verpackung zugänglich.</li>
+            <li><strong>E-Mail-Signatur:</strong> Ein QR in der Signatur ermöglicht dem Empfänger, Sie mit einem Scan anzurufen.</li>
+          </ul>
+
+          <h3>Wie erstellen Sie einen Telefon-QR-Code? (Schritt für Schritt)</h3>
+          <ol>
+            <li><strong>Tool aufrufen:</strong> Besuchen Sie <a href="/de/tel-qr" class="text-indigo-600 font-bold hover:underline">qrgenhub.com/de/tel-qr</a>.</li>
+            <li><strong>Nummer eingeben:</strong> Verwenden Sie das internationale Format. Beispiel für Deutschland: <code>+49151000000</code>.</li>
+            <li><strong>Generieren:</strong> Klicken Sie — Ihr QR-Code ist sofort fertig.</li>
+            <li><strong>Herunterladen:</strong> Als PNG speichern und auf Karte, Flyer oder Website einfügen.</li>
+          </ol>
+
+          <h3>Warum das internationale Format wichtig ist</h3>
+          <ul>
+            <li>✅ <strong>Richtig:</strong> <code>+49151000000</code></li>
+            <li>❌ <strong>Falsch:</strong> <code>0151000000</code></li>
+          </ul>
+
+          <h3>Telefon-QR-Code vs. vCard-QR-Code</h3>
+          <ul>
+            <li><strong>Telefon-QR-Code:</strong> Öffnet sofort die Wähltastatur. Einfach und zielgerichtet.</li>
+            <li><strong>vCard-QR-Code:</strong> Speichert alle Kontaktdaten — Name, Nummer, E-Mail, Firma — ins Adressbuch.</li>
+          </ul>
+          <p>Nutzen Sie den Telefon-QR für schnelle Anrufe. Nutzen Sie den <a href="/de/vcard-qr" class="text-indigo-600 font-bold hover:underline">vCard-QR-Code</a>, wenn Sie alle Kontaktdaten teilen möchten.</p>
+
+          <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Jetzt erstellen — Kostenlos</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Verwandeln Sie jede Telefonnummer in einen QR-Code — in Sekunden.</p>
+            <a href="/de/tel-qr" title="Kostenloser Telefonnummer-QR-Code-Generator" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Telefon-QR-Code kostenlos erstellen</a>
+          </div>
+        `
+      }
+    }
+  }
+,
+  {
+    id: "qr-scan-troubleshoot",
+    category: "Rehber",
+    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=800",
+    imageAlt: "QR Kod Okutma Sorunu - Telefon ile QR Tarama",
+    author: "Mert Gündoğan",
+    date: "2026-04-12",
+    languages: {
+      tr: {
+        slug: "qr-kod-neden-okutulmuyor",
+        title: "QR Kod Neden Okutulmuyor? 7 Neden ve Çözümü",
+        metaDescription: "QR kodunuz okunmuyor mu? Kontrast, boyut ve URL uzunluğu gibi 7 yaygın nedeni ve hızlı çözümleri öğrenin. Baskı öncesi test rehberi.",
+        excerpt: "Oluşturduğunuz QR kod telefonlara okutulmuyor mu? Sebebi büyük ihtimalle bu 7 yaygın hatadan biri — ve hepsinin hızlı bir çözümü var.",
+        content: `
+          <h2>QR Kod Neden Okunmaz?</h2>
+          <p>QR kodunuzu bastırdınız veya ekrana koydunuz — ama telefon bir türlü okutmuyor. Bu sorun genellikle tasarım, boyut veya veri miktarından kaynaklanır. İyi haber şu: hepsinin çözümü var ve çoğu dakikalar içinde düzeltilebilir.</p>
+          <p>Aşağıda en yaygın 7 nedeni ve her biri için pratik çözümü bulabilirsiniz.</p>
+
+          <h2>1. Düşük Kontrast</h2>
+          <p>QR kodun temel kuralı: <strong>koyu kod, açık arka plan</strong>. Açık gri kod beyaz arka planda, sarı kod krem arka planda veya herhangi bir renkte kod aynı tonda arka planda kullanılırsa kamera ayrım yapamaz.</p>
+          <p><strong>Çözüm:</strong> Kod rengini koyu tutun (siyah, koyu lacivert, koyu yeşil), arka planı açık tutun (beyaz, açık gri). Hiçbir zaman renkli arka plan üzerine benzer ton kod koymayın.</p>
+
+          <h2>2. Çok Küçük Boyut</h2>
+          <p>Baskı materyalinde QR kodun boyutu en az <strong>2 × 2 cm</strong> olmalıdır. Bunun altında telefon kamerası yeterince piksel toplayamaz ve tarama başarısız olur.</p>
+          <p><strong>Çözüm:</strong> Kullanım yerine göre boyutlandırın. Kartvizit için 2×2 cm, flyer için 3×3 cm, afiş için minimum 10×10 cm.</p>
+
+          <h2>3. URL Çok Uzun — Kod Çok Yoğun</h2>
+          <p>QR kod ne kadar fazla veri içerirse deseni o kadar karmaşık ve sık olur. Çok yoğun bir desen küçük baskılarda veya düşük çözünürlüklü ekranlarda okunamaz.</p>
+          <p><strong>Çözüm:</strong> URL'nizi kısaltın. bit.ly veya benzeri bir servis kullanın ya da URL'yi mümkün olduğunca kısa tutun. Gereksiz parametreleri (UTM kodları gibi) kaldırın.</p>
+
+          <h2>4. Bozulmuş veya Kirli Yüzey</h2>
+          <p>Bastırılan QR kod zamanla çizilir, solabilir veya üzeri bir şeylerle kapatılabilir. Hatta parmak izi bile okutmayı zorlaştırabilir.</p>
+          <p><strong>Çözüm:</strong> Kodun üzerine mat laminasyon uygulayın. Düzenli kontrol edin, solmuşsa yenileyin. Açık hava kullanımında UV dayanıklı baskı yaptırın.</p>
+
+          <h2>5. PNG ile Büyük Baskı</h2>
+          <p>PNG piksele dayalı bir formattır. Küçük bir PNG görseli büyük baskıda kalite kaybı yaşar — bulanık kenarlı QR kodlar kamera tarafından okunamaz.</p>
+          <p><strong>Çözüm:</strong> Baskı için her zaman <strong>SVG formatı</strong> indirin. SVG vektörel olduğu için billboard boyutuna kadar kalite kaybı olmadan büyütülebilir. <a href="/tr/url-qr/" class="text-indigo-600 font-bold hover:underline">QRGenHub</a> her QR kodda SVG indirme seçeneği sunar.</p>
+
+          <h2>6. Quiet Zone (Beyaz Çerçeve) Eksikliği</h2>
+          <p>QR kodun etrafında en az <strong>4 modül</strong> (kare birim) genişliğinde boş beyaz alan olması zorunludur. Bu alana "quiet zone" denir. QR kodun doğrudan kenarına kadar başka içerik gelirse kamera kodu nerede başlayıp bittiğini anlayamaz.</p>
+          <p><strong>Çözüm:</strong> Kodun etrafında yeterli beyaz boşluk bırakın. Kodu kesip kenarına başka öğe dayamayın.</p>
+
+          <h2>7. Eski Telefon veya Kirli Kamera Lensi</h2>
+          <p>Telefon kamerasının lensi kirli, çizili veya odaklama sistemi zayıfsa QR okutma güçleşir. Ayrıca bazı eski telefon modelleri kamera uygulamasından doğrudan QR okutmayı desteklemez.</p>
+          <p><strong>Çözüm:</strong> Lensi temizleyin. Kamera uygulaması çalışmıyorsa Google Lens veya iPhone'da Fotoğraflar uygulamasını deneyin. Sorun devam ediyorsa farklı bir telefonla test edin.</p>
+
+          <h2>Baskı Öncesi Test Listesi</h2>
+          <ul>
+            <li>✓ Hem iPhone hem Android ile test ettim</li>
+            <li>✓ Minimum 2×2 cm boyutunda</li>
+            <li>✓ Koyu kod, açık arka plan</li>
+            <li>✓ Baskı için SVG formatı kullandım</li>
+            <li>✓ Etrafında yeterli boşluk var</li>
+          </ul>
+
+          <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Yeni QR Kod Oluşturun — Ücretsiz</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Sorunlu kodunuzu değiştirin. Kayıt yok, süre sınırı yok, SVG dahil.</p>
+            <a href="/tr/url-qr/" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Hemen Yeni QR Kod Oluştur</a>
+          </div>
+        `,
+        faq: [
+          { q: "QR kod neden telefona okutulmuyor?", a: "En yaygın nedenler: düşük kontrast (benzer renkler), çok küçük boyut (2cm altı), çok uzun URL (yoğun desen), bozulmuş yüzey veya PNG ile büyük baskı. SVG formatı kullanmak ve minimum 2×2 cm boyutu sorunların büyük çoğunluğunu çözer." },
+          { q: "QR kodun minimum boyutu ne olmalı?", a: "Baskı için minimum 2×2 cm. Bu boyutun altında normal tarama mesafesinde kamera yeterince piksel toplayamaz. Afiş için minimum 10×10 cm önerilir." },
+          { q: "QR kod için hangi format kullanmalıyım, PNG mi SVG mi?", a: "Web ve dijital kullanım için PNG yeterli. Baskı (kartvizit, flyer, afiş) için her zaman SVG kullanın — vektörel format olduğu için her boyutta keskin kalır." },
+          { q: "QR kodun etrafında neden boşluk bırakılmalı?", a: "QR kodun etrafındaki beyaz boşluğa 'quiet zone' denir. Kamera bu boşluğu kullanarak kodun başlangıç ve bitiş noktasını tespit eder. Bu alan olmadan tarama güvenilmez hale gelir." }
+        ]
+      },
+      en: {
+        slug: "qr-code-not-scanning-fix",
+        title: "QR Code Not Scanning? 7 Causes and Easy Fixes",
+        metaDescription: "QR code not working? Discover the 7 most common reasons a QR code fails to scan and how to fix each one fast — before you print.",
+        excerpt: "Your QR code won't scan? The cause is almost always one of these 7 fixable problems — most can be resolved in minutes.",
+        content: `
+          <h2>Why Won't Your QR Code Scan?</h2>
+          <p>You created a QR code, printed it — and now no phone will read it. This is one of the most frustrating QR code problems, but it's almost always caused by one of a handful of fixable issues. Here are the seven most common causes and their solutions.</p>
+
+          <h2>1. Low Contrast</h2>
+          <p>The golden rule of QR codes: <strong>dark code on a light background</strong>. A light-colored code on a white background, or a yellow code on a cream background, gives the camera nothing to distinguish between the code and the surface.</p>
+          <p><strong>Fix:</strong> Keep the foreground (code) dark — black, dark navy, or dark green — and the background light (white or pale grey). Never use a colored background with a similar-tone code.</p>
+
+          <h2>2. Too Small to Scan</h2>
+          <p>Printed QR codes must be at least <strong>2 × 2 cm</strong>. Below that size, phone cameras cannot capture enough detail at normal scanning distances, and the scan fails.</p>
+          <p><strong>Fix:</strong> Match the size to the use case. Business card: 2×2 cm minimum. Flyer: 3×3 cm. Poster: at least 10×10 cm.</p>
+
+          <h2>3. URL Too Long — Code Too Dense</h2>
+          <p>More data in a QR code means a denser, more complex pattern. A very dense pattern becomes unreadable on small prints or low-resolution displays.</p>
+          <p><strong>Fix:</strong> Shorten your URL. Use a URL shortener or remove unnecessary tracking parameters (UTM strings, session IDs) to reduce code complexity.</p>
+
+          <h2>4. Damaged or Dirty Surface</h2>
+          <p>A printed QR code can be scratched, faded, or partially obscured over time. Even fingerprints can interfere with scanning.</p>
+          <p><strong>Fix:</strong> Apply a matte laminate over printed codes. For outdoor use, specify UV-resistant ink. Replace codes that have visibly faded.</p>
+
+          <h2>5. PNG Used for Large Print</h2>
+          <p>PNG is pixel-based. Enlarging a small PNG image for a large print produces blurry edges — and blurry QR code modules cannot be read reliably.</p>
+          <p><strong>Fix:</strong> Always download <strong>SVG format</strong> for printed materials. SVG is vector-based and scales to any size without quality loss. <a href="/en/url-qr/" class="text-indigo-600 font-bold hover:underline">QRGenHub</a> provides SVG download for every QR code at no cost.</p>
+
+          <h2>6. Missing Quiet Zone</h2>
+          <p>Every QR code requires a clear white border — called the "quiet zone" — of at least 4 module widths around all four sides. Without this border, the camera cannot locate where the code begins and ends.</p>
+          <p><strong>Fix:</strong> Never crop the quiet zone or place content directly against the edge of a QR code. Always preserve the white border in your design.</p>
+
+          <h2>7. Old Phone or Dirty Camera Lens</h2>
+          <p>A smudged or scratched camera lens significantly reduces scan reliability. Some older phones also do not support native QR scanning through the camera app.</p>
+          <p><strong>Fix:</strong> Clean the lens. If the native camera app fails, try Google Lens (Android) or the Photos app (iPhone). Always test on both iOS and Android before publishing.</p>
+
+          <h2>Pre-Print Checklist</h2>
+          <ul>
+            <li>✓ Tested on both iPhone and Android</li>
+            <li>✓ Minimum 2×2 cm size</li>
+            <li>✓ Dark code on light background</li>
+            <li>✓ SVG format for print</li>
+            <li>✓ Quiet zone preserved around all edges</li>
+          </ul>
+
+          <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Create a New QR Code — Free</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Replace your problematic code. No signup, no expiry, SVG included.</p>
+            <a href="/en/url-qr/" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Create Free QR Code Now</a>
+          </div>
+        `,
+        faq: [
+          { q: "Why won't my QR code scan?", a: "The most common causes are: low contrast between code and background, size too small (under 2cm), URL too long making the pattern too dense, damaged or dirty print surface, or using PNG instead of SVG for large prints." },
+          { q: "What is the minimum size for a QR code to scan reliably?", a: "The absolute minimum for printed QR codes is 2×2 cm for close-range scanning (business cards). For posters scanned from 1-2 metres, use at least 10×10 cm." },
+          { q: "Should I download PNG or SVG for printing?", a: "Always SVG for print. PNG is pixel-based and blurs when enlarged. SVG is vector-based and remains perfectly sharp at any size — from business cards to billboards." },
+          { q: "What is a quiet zone on a QR code?", a: "The quiet zone is the white border surrounding a QR code. It must be at least 4 module-widths wide on all sides. Without it, the camera cannot detect where the code starts and ends, causing scan failure." }
+        ]
+      },
+      fr: {
+        slug: "code-qr-illisible-causes-solutions",
+        title: "Code QR Illisible : 7 Causes et Solutions Rapides",
+        metaDescription: "Votre code QR ne se scanne pas ? Découvrez les 7 raisons les plus fréquentes et comment corriger chaque problème rapidement avant impression.",
+        excerpt: "Votre code QR refuse de se scanner ? La cause est presque toujours l'un de ces 7 problèmes faciles à corriger — la plupart en quelques minutes.",
+        content: `
+          <h2>Pourquoi votre code QR ne se scanne-t-il pas ?</h2>
+          <p>Vous avez créé et imprimé un code QR, mais aucun téléphone ne parvient à le lire. C'est l'un des problèmes les plus frustrants, mais il est presque toujours causé par l'une de ces sept raisons bien identifiées — et chacune a une solution simple.</p>
+
+          <h2>1. Contraste insuffisant</h2>
+          <p>La règle d'or : <strong>code foncé sur fond clair</strong>. Un code clair sur fond blanc, ou un code jaune sur fond crème, ne laisse aucune différence visible pour la caméra.</p>
+          <p><strong>Solution :</strong> Gardez le code (premier plan) dans un ton foncé — noir, bleu marine, vert sombre — et le fond en blanc ou gris pâle. Évitez tout fond coloré de tonalité similaire au code.</p>
+
+          <h2>2. Taille trop petite</h2>
+          <p>Un code QR imprimé doit mesurer au moins <strong>2 × 2 cm</strong>. En dessous, la caméra ne capture pas assez de détails pour lire le motif à distance normale.</p>
+          <p><strong>Solution :</strong> Carte de visite : 2×2 cm minimum. Flyer : 3×3 cm. Affiche : au moins 10×10 cm.</p>
+
+          <h2>3. URL trop longue — motif trop dense</h2>
+          <p>Plus un code QR contient de données, plus son motif est dense et complexe. Un motif très dense devient illisible sur de petites impressions.</p>
+          <p><strong>Solution :</strong> Raccourcissez votre URL avec un raccourcisseur ou supprimez les paramètres inutiles (UTM, identifiants de session).</p>
+
+          <h2>4. Surface endommagée ou sale</h2>
+          <p>Un code imprimé peut être rayé, décoloré ou partiellement masqué avec le temps. Même les empreintes digitales peuvent perturber la lecture.</p>
+          <p><strong>Solution :</strong> Appliquez un plastifiant mat sur les codes imprimés. Pour une utilisation extérieure, utilisez une encre résistante aux UV. Remplacez les codes visiblement décolorés.</p>
+
+          <h2>5. PNG utilisé pour une grande impression</h2>
+          <p>Le format PNG est basé sur les pixels. Agrandir un petit fichier PNG pour une grande impression produit des bords flous — et les modules QR flous ne peuvent pas être lus.</p>
+          <p><strong>Solution :</strong> Téléchargez toujours le format <strong>SVG</strong> pour l'impression. Le SVG est vectoriel et se redimensionne à n'importe quelle taille sans perte de qualité. <a href="/fr/creer-qr-url/" class="text-indigo-600 font-bold hover:underline">QRGenHub</a> propose le téléchargement SVG gratuitement.</p>
+
+          <h2>6. Zone de tranquillité manquante</h2>
+          <p>Tout code QR nécessite une bordure blanche — la "quiet zone" — d'au moins 4 largeurs de module sur les quatre côtés. Sans cette marge, la caméra ne peut pas localiser les limites du code.</p>
+          <p><strong>Solution :</strong> Ne coupez jamais la zone blanche autour du code et ne placez pas d'éléments graphiques directement contre ses bords.</p>
+
+          <h2>7. Téléphone ancien ou objectif sale</h2>
+          <p>Un objectif sale ou rayé réduit considérablement la fiabilité du scan. Certains anciens modèles ne supportent pas non plus la lecture QR native via l'appareil photo.</p>
+          <p><strong>Solution :</strong> Nettoyez l'objectif. Si l'appli photo échoue, essayez Google Lens ou l'appli Photos sur iPhone. Testez toujours sur iOS et Android avant publication.</p>
+
+          <h2>Liste de contrôle avant impression</h2>
+          <ul>
+            <li>✓ Testé sur iPhone et Android</li>
+            <li>✓ Taille minimum 2×2 cm</li>
+            <li>✓ Code foncé sur fond clair</li>
+            <li>✓ Format SVG pour l'impression</li>
+            <li>✓ Zone blanche préservée sur tous les côtés</li>
+          </ul>
+
+          <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Créez un nouveau code QR — Gratuit</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Remplacez votre code défaillant. Sans inscription, sans expiration, SVG inclus.</p>
+            <a href="/fr/creer-qr-url/" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Créer un Code QR Gratuitement</a>
+          </div>
+        `,
+        faq: [
+          { q: "Pourquoi mon code QR ne se scanne-t-il pas ?", a: "Les causes les plus fréquentes : contraste insuffisant, taille trop petite (moins de 2 cm), URL trop longue rendant le motif trop dense, surface endommagée, ou utilisation du format PNG pour une grande impression." },
+          { q: "Quelle est la taille minimale d'un code QR ?", a: "Le minimum absolu pour un code QR imprimé est 2×2 cm pour une lecture rapprochée. Pour une affiche lue à 1-2 mètres, utilisez au moins 10×10 cm." },
+          { q: "PNG ou SVG pour l'impression ?", a: "Toujours SVG pour l'impression. Le PNG est pixelisé et devient flou quand on l'agrandit. Le SVG est vectoriel et reste parfaitement net à n'importe quelle taille." },
+          { q: "Qu'est-ce que la zone de tranquillité d'un code QR ?", a: "C'est la bordure blanche entourant le code QR, nécessaire sur les quatre côtés. Sans elle, la caméra ne peut pas détecter où commence et finit le code, provoquant un échec de lecture." }
+        ]
+      },
+      de: {
+        slug: "qr-code-wird-nicht-gescannt",
+        title: "QR-Code wird nicht gescannt: 7 Ursachen und Lösungen",
+        metaDescription: "QR-Code lässt sich nicht scannen? Die 7 häufigsten Ursachen und wie Sie jedes Problem schnell beheben — inklusive Checkliste vor dem Druck.",
+        excerpt: "Ihr QR-Code lässt sich nicht scannen? Die Ursache ist fast immer eine dieser 7 bekannten Fehlerquellen — und jede lässt sich schnell beheben.",
+        content: `
+          <h2>Warum lässt sich Ihr QR-Code nicht scannen?</h2>
+          <p>Sie haben einen QR-Code erstellt und gedruckt — aber kein Smartphone liest ihn. Das ist eines der häufigsten QR-Code-Probleme, und es hat fast immer eine klare Ursache. Hier sind die sieben häufigsten Gründe und ihre Lösungen.</p>
+
+          <h2>1. Zu geringer Kontrast</h2>
+          <p>Die Grundregel für QR-Codes: <strong>dunkler Code auf hellem Hintergrund</strong>. Ein heller Code auf weißem Hintergrund oder ein gelber Code auf cremefarbenem Hintergrund bietet der Kamera keinen ausreichenden Kontrast.</p>
+          <p><strong>Lösung:</strong> Halten Sie den Code dunkel (schwarz, dunkelblau, dunkelgrün) und den Hintergrund hell (weiß oder hellgrau). Verwenden Sie niemals einen farbigen Hintergrund mit ähnlichem Farbton wie der Code.</p>
+
+          <h2>2. Zu kleine Druckgröße</h2>
+          <p>Gedruckte QR-Codes müssen mindestens <strong>2 × 2 cm</strong> groß sein. Darunter kann die Kamera bei normalem Scanabstand nicht genug Details erfassen.</p>
+          <p><strong>Lösung:</strong> Passen Sie die Größe dem Einsatzort an. Visitenkarte: mindestens 2×2 cm. Flyer: 3×3 cm. Plakat: mindestens 10×10 cm.</p>
+
+          <h2>3. URL zu lang — Muster zu dicht</h2>
+          <p>Je mehr Daten ein QR-Code enthält, desto dichter und komplexer wird sein Muster. Ein sehr dichtes Muster wird auf kleinen Drucken oder niedrig auflösenden Displays unleserlich.</p>
+          <p><strong>Lösung:</strong> Kürzen Sie Ihre URL mit einem Link-Shortener oder entfernen Sie unnötige Parameter (UTM-Tags, Session-IDs).</p>
+
+          <h2>4. Beschädigte oder verschmutzte Oberfläche</h2>
+          <p>Gedruckte QR-Codes können mit der Zeit zerkratzt, verblasst oder teilweise verdeckt werden. Selbst Fingerabdrücke können das Scannen erschweren.</p>
+          <p><strong>Lösung:</strong> Laminieren Sie gedruckte Codes mit Mattfolie. Für den Außeneinsatz UV-beständige Druckfarbe verwenden. Verblasste Codes rechtzeitig ersetzen.</p>
+
+          <h2>5. PNG für großen Druck verwendet</h2>
+          <p>PNG ist ein pixelbasiertes Format. Wird eine kleine PNG-Datei für einen großen Druck vergrößert, entstehen unscharfe Kanten — und unscharfe QR-Module können nicht zuverlässig gelesen werden.</p>
+          <p><strong>Lösung:</strong> Laden Sie für Druckmaterialien immer das <strong>SVG-Format</strong> herunter. SVG ist vektorbasiert und lässt sich ohne Qualitätsverlust auf jede Größe skalieren. <a href="/de/url-qr-erstellen/" class="text-indigo-600 font-bold hover:underline">QRGenHub</a> bietet SVG-Download für jeden QR-Code kostenlos an.</p>
+
+          <h2>6. Fehlende Ruhezone (Quiet Zone)</h2>
+          <p>Jeder QR-Code benötigt einen weißen Rand — die sogenannte "Quiet Zone" — von mindestens 4 Modulbreiten an allen vier Seiten. Ohne diesen Rand kann die Kamera die Grenzen des Codes nicht erkennen.</p>
+          <p><strong>Lösung:</strong> Schneiden Sie die weiße Umrandung niemals ab und platzieren Sie keine grafischen Elemente direkt an den Rändern des QR-Codes.</p>
+
+          <h2>7. Altes Gerät oder verschmutztes Kameraobjektiv</h2>
+          <p>Ein verschmiertes oder zerkratztes Objektiv verringert die Scan-Zuverlässigkeit erheblich. Ältere Smartphones unterstützen zudem oft kein natives QR-Scannen über die Kamera-App.</p>
+          <p><strong>Lösung:</strong> Reinigen Sie das Objektiv. Falls die Kamera-App versagt, Google Lens (Android) oder die Fotos-App (iPhone) probieren. Immer auf iOS und Android testen, bevor Sie veröffentlichen.</p>
+
+          <h2>Checkliste vor dem Druck</h2>
+          <ul>
+            <li>✓ Auf iPhone und Android getestet</li>
+            <li>✓ Mindestgröße 2×2 cm eingehalten</li>
+            <li>✓ Dunkler Code auf hellem Hintergrund</li>
+            <li>✓ SVG-Format für den Druck verwendet</li>
+            <li>✓ Weiße Ruhezone auf allen Seiten erhalten</li>
+          </ul>
+
+          <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Neuen QR-Code erstellen — Kostenlos</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Ersetzen Sie Ihren fehlerhaften Code. Keine Anmeldung, kein Ablaufdatum, SVG inklusive.</p>
+            <a href="/de/url-qr-erstellen/" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Jetzt kostenlosen QR-Code erstellen</a>
+          </div>
+        `,
+        faq: [
+          { q: "Warum lässt sich mein QR-Code nicht scannen?", a: "Die häufigsten Ursachen: zu geringer Kontrast, zu kleine Druckgröße (unter 2 cm), zu lange URL mit zu dichtem Muster, beschädigte Oberfläche oder PNG statt SVG für großen Druck verwendet." },
+          { q: "Wie groß muss ein QR-Code mindestens sein?", a: "Das absolute Minimum für gedruckte QR-Codes beträgt 2×2 cm für Nahaufnahmen. Für Plakate, die aus 1-2 Metern gescannt werden, mindestens 10×10 cm verwenden." },
+          { q: "PNG oder SVG für den Druck?", a: "Immer SVG für den Druck. PNG wird beim Vergrößern unscharf. SVG ist vektorbasiert und bleibt bei jeder Größe gestochen scharf — von der Visitenkarte bis zum Plakat." },
+          { q: "Was ist die Ruhezone (Quiet Zone) bei einem QR-Code?", a: "Die Ruhezone ist der weiße Rand rund um den QR-Code, der auf allen vier Seiten mindestens 4 Modulbreiten betragen muss. Ohne sie kann die Kamera die Grenzen des Codes nicht erkennen, was zum Scanfehler führt." }
+        ]
+      },
+      es: {
+        slug: "codigo-qr-no-escanea-soluciones",
+        title: "Código QR No Escanea: 7 Causas y Soluciones Rápidas",
+        metaDescription: "¿Tu código QR no funciona? Descubre las 7 razones más comunes por las que un QR no se escanea y cómo solucionar cada problema antes de imprimir.",
+        excerpt: "¿Tu código QR no se escanea? La causa casi siempre es uno de estos 7 problemas fáciles de corregir — la mayoría en pocos minutos.",
+        content: `
+          <h2>¿Por qué tu código QR no se escanea?</h2>
+          <p>Creaste un código QR, lo imprimiste — y ahora ningún teléfono lo lee. Es uno de los problemas más frustrantes, pero casi siempre tiene una causa clara y una solución sencilla. Aquí están los siete problemas más comunes y cómo resolverlos.</p>
+
+          <h2>1. Contraste insuficiente</h2>
+          <p>La regla de oro: <strong>código oscuro sobre fondo claro</strong>. Un código claro sobre fondo blanco, o un código amarillo sobre fondo crema, no ofrece suficiente contraste para la cámara.</p>
+          <p><strong>Solución:</strong> Mantén el código en tono oscuro (negro, azul marino, verde oscuro) y el fondo claro (blanco o gris pálido). Nunca uses un fondo de color similar al del código.</p>
+
+          <h2>2. Tamaño demasiado pequeño</h2>
+          <p>Un código QR impreso debe medir al menos <strong>2 × 2 cm</strong>. Por debajo de esa medida, la cámara no puede capturar suficiente detalle a distancia normal.</p>
+          <p><strong>Solución:</strong> Adapta el tamaño al uso. Tarjeta de visita: mínimo 2×2 cm. Flyer: 3×3 cm. Cartel: al menos 10×10 cm.</p>
+
+          <h2>3. URL demasiado larga — patrón demasiado denso</h2>
+          <p>Cuantos más datos contiene un código QR, más denso y complejo es su patrón. Un patrón muy denso se vuelve ilegible en impresiones pequeñas.</p>
+          <p><strong>Solución:</strong> Acorta tu URL con un acortador de enlaces o elimina parámetros innecesarios (UTM, IDs de sesión).</p>
+
+          <h2>4. Superficie dañada o sucia</h2>
+          <p>Un código impreso puede rayarse, decolorarse u obstruirse con el tiempo. Incluso las huellas dactilares pueden dificultar la lectura.</p>
+          <p><strong>Solución:</strong> Aplica laminado mate sobre los códigos impresos. Para uso exterior, usa tinta resistente a los rayos UV. Reemplaza los códigos visiblemente decolorados.</p>
+
+          <h2>5. PNG usado para impresión grande</h2>
+          <p>El formato PNG está basado en píxeles. Ampliar un archivo PNG pequeño para una impresión grande produce bordes borrosos — y los módulos QR borrosos no pueden leerse con fiabilidad.</p>
+          <p><strong>Solución:</strong> Descarga siempre el formato <strong>SVG</strong> para materiales impresos. El SVG es vectorial y escala a cualquier tamaño sin perder calidad. <a href="/es/crear-qr-url/" class="text-indigo-600 font-bold hover:underline">QRGenHub</a> ofrece descarga SVG gratis para cada código QR.</p>
+
+          <h2>6. Zona silenciosa ausente</h2>
+          <p>Todo código QR necesita un borde blanco — la "quiet zone" — de al menos 4 anchos de módulo en los cuatro lados. Sin este margen, la cámara no puede localizar dónde empieza y termina el código.</p>
+          <p><strong>Solución:</strong> Nunca recortes el borde blanco del código ni coloques elementos gráficos directamente pegados a sus bordes.</p>
+
+          <h2>7. Teléfono antiguo u objetivo sucio</h2>
+          <p>Un objetivo sucio o rayado reduce notablemente la fiabilidad del escaneo. Algunos móviles antiguos tampoco soportan la lectura QR nativa desde la cámara.</p>
+          <p><strong>Solución:</strong> Limpia el objetivo. Si la app de cámara falla, prueba Google Lens (Android) o la app Fotos (iPhone). Siempre testea en iOS y Android antes de publicar.</p>
+
+          <h2>Lista de verificación antes de imprimir</h2>
+          <ul>
+            <li>✓ Probado en iPhone y Android</li>
+            <li>✓ Tamaño mínimo 2×2 cm</li>
+            <li>✓ Código oscuro sobre fondo claro</li>
+            <li>✓ Formato SVG para impresión</li>
+            <li>✓ Zona blanca preservada en todos los lados</li>
+          </ul>
+
+          <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Crea un nuevo código QR — Gratis</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Reemplaza tu código defectuoso. Sin registro, sin caducidad, SVG incluido.</p>
+            <a href="/es/crear-qr-url/" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Crear Código QR Gratis Ahora</a>
+          </div>
+        `,
+        faq: [
+          { q: "¿Por qué mi código QR no se escanea?", a: "Las causas más comunes: contraste insuficiente, tamaño demasiado pequeño (menos de 2 cm), URL demasiado larga que genera un patrón muy denso, superficie dañada, o uso de PNG en lugar de SVG para impresión grande." },
+          { q: "¿Cuál es el tamaño mínimo de un código QR?", a: "El mínimo absoluto para códigos QR impresos es 2×2 cm para lectura de cerca. Para carteles leídos desde 1-2 metros, usa al menos 10×10 cm." },
+          { q: "¿PNG o SVG para imprimir?", a: "Siempre SVG para impresión. El PNG se pixela al ampliarse. El SVG es vectorial y permanece perfectamente nítido a cualquier tamaño, desde tarjetas hasta vallas publicitarias." },
+          { q: "¿Qué es la zona silenciosa de un código QR?", a: "Es el borde blanco que rodea el código QR, necesario en los cuatro lados. Sin él, la cámara no puede detectar dónde empieza y termina el código, provocando un fallo de lectura." }
+        ]
+      }
+    }
+  }
+,
+  {
+    id: "business-card-qr",
+    category: "Rehber",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800",
+    imageAlt: "Kartvizite QR Kod Ekleme - Profesyonel Kartvizit Tasarımı",
+    author: "Mert Gündoğan",
+    date: "2026-04-18",
+    languages: {
+      tr: {
+        slug: "kartvizite-qr-kod-ekleme",
+        title: "Kartvizite QR Kod Nasıl Eklenir? Adım Adım Rehber",
+        metaDescription: "Kartvizitin arkasına QR kod ekleyerek LinkedIn, portfolio veya iletişim bilgilerinizi tek taramayla paylaşın. Boyut, yerleşim ve tasarım rehberi.",
+        excerpt: "Kartvizitinize bir QR kod eklemek, kendinizi tanıtmanın en hızlı yoludur. LinkedIn'den portfolyoya, vCard'dan web sitenize — tek taramayla her şey.",
+        content: `
+          <h2>Neden Kartvizitinize QR Kod Eklemelisini?</h2>
+          <p>Kartvizitler hâlâ güçlü bir networking aracı — ama sınırlı bir alanları var. QR kod bu sınırı ortadan kaldırır: küçük bir kare, karşınızdaki kişiyi LinkedIn profilinize, portfolyonuza, web sitenize veya tüm iletişim bilgilerinize anında götürür.</p>
+          <p>Araştırmalar QR kodlu kartvizitlerin <strong>%40 daha fazla iletişim bilgisi kaydedilmesine</strong> yol açtığını gösteriyor. Sebebi basit: insanlar bilgileri elle girmek yerine taramayı tercih ediyor.</p>
+
+          <h2>Kartvizit QR Koduna Ne Koymalısınız?</h2>
+          <p>Kartvizitinizin amacına göre farklı QR içerikleri kullanabilirsiniz:</p>
+          <ul>
+            <li><strong>vCard QR Kodu:</strong> Ad, soyad, telefon, e-posta ve şirket bilgilerini doğrudan telefon rehberine kaydeder. En işlevsel seçenek. <a href="/tr/vcard-qr/" class="text-indigo-600 font-bold hover:underline">vCard QR oluşturun →</a></li>
+            <li><strong>LinkedIn Profili (URL QR):</strong> Profesyonel ağınızı büyütmek için ideal. Tarama anında LinkedIn profilinizi açar.</li>
+            <li><strong>Web Sitesi veya Portfolio:</strong> Tasarımcı, fotoğrafçı veya serbest çalışanlar için mükemmel. Çalışmalarınızı anında gösterin.</li>
+            <li><strong>Telefon QR Kodu:</strong> Arama ekranını numaranız yazılı açar. <a href="/tr/tel-qr/" class="text-indigo-600 font-bold hover:underline">Tel QR oluşturun →</a></li>
+          </ul>
+
+          <h2>Kartvizitte Doğru Boyut</h2>
+          <p>Standart kartvizit boyutu 85×54 mm'dir. QR kodunuz için önerilen boyut: <strong>15×15 mm ile 20×20 mm arası</strong>.</p>
+          <ul>
+            <li>15 mm altı → okutma riski artar</li>
+            <li>20 mm üstü → kartvizit tasarımını baskılar</li>
+            <li>En ideal: <strong>18×18 mm</strong>, hem güvenli hem dengeli</li>
+          </ul>
+
+          <h2>Nereye Yerleştirmelisiniz?</h2>
+          <p>Kartvizitlerde QR kod için en çok tercih edilen konumlar:</p>
+          <ul>
+            <li><strong>Arka yüz, sağ alt köşe:</strong> En yaygın ve en doğal tarama pozisyonu.</li>
+            <li><strong>Arka yüz, ortası:</strong> Büyük bir QR kullanacaksanız merkeze koymak daha dengeli görünür.</li>
+            <li><strong>Ön yüz, alt kısım:</strong> QR'ı öne çıkarmak istiyorsanız — ancak tasarımı baskılamamaya dikkat edin.</li>
+          </ul>
+          <p>QR kodun yanına kısa bir metin ekleyin: <em>"Beni kaydet"</em>, <em>"LinkedIn'de bul"</em> veya <em>"Portfolyoma bak"</em>. Bu küçük CTA tarama oranını ciddi ölçüde artırır.</p>
+
+          <h2>Adım Adım Oluşturma Rehberi</h2>
+          <ol>
+            <li><strong>İçeriği seçin:</strong> LinkedIn URL'nizi, web sitenizi veya vCard bilgilerinizi hazırlayın.</li>
+            <li><strong>QRGenHub'a gidin:</strong> <a href="/tr/url-qr/" class="text-indigo-600 font-bold hover:underline">qrgenhub.com</a> — kayıt gerekmez.</li>
+            <li><strong>QR tipini seçin:</strong> URL için URL QR, iletişim bilgileri için vCard QR.</li>
+            <li><strong>Renkleri özelleştirin:</strong> Kartvizitinizin renk paletine uygun renkler seçin.</li>
+            <li><strong>SVG olarak indirin:</strong> Baskı için her zaman SVG — sonsuz büyütme, sıfır kalite kaybı.</li>
+            <li><strong>Test edin:</strong> Tasarımcınıza göndermeden önce hem iPhone hem Android ile tarayın.</li>
+          </ol>
+
+          <h2>Tasarım İpuçları</h2>
+          <ul>
+            <li><strong>Marka renkleri kullanın</strong> ama kontrast kuralını bozmayın — koyu kod, açık arka plan.</li>
+            <li><strong>Logo ekleyebilirsiniz</strong> — QRGenHub hata düzeltme algoritması logolu QR kodların da güvenilir şekilde okunmasını sağlar.</li>
+            <li><strong>Beyaz çerçeveyi koruyun</strong> — QR kodun etrafındaki boşluk (quiet zone) tarama için zorunludur, kesmeyinfirst.</li>
+          </ul>
+
+          <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Kartvizit QR Kodunuzu Oluşturun — Ücretsiz</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Logo ekleyin, renkleri özelleştirin, SVG olarak indirin. Kayıt yok.</p>
+            <a href="/tr/vcard-qr/" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Kartvizit QR Kodu Oluştur</a>
+          </div>
+        `,
+        faq: [
+          { q: "Kartvizite en iyi ne tür QR kod eklenir?", a: "vCard QR kodu en işlevsel seçenektir — adınızı, telefon, e-posta ve şirket bilgilerini doğrudan telefon rehberine kaydeder. LinkedIn URL'si veya portfolio linki de çok tercih edilir." },
+          { q: "Kartvizitte QR kod boyutu ne olmalı?", a: "Standart kartvizit (85×54 mm) için ideal QR boyutu 15-20 mm arası. En uygun boyut 18×18 mm'dir — hem güvenli tarama sağlar hem de tasarımı bozmaz." },
+          { q: "QR kodu kartvizitin neresine koymalıyım?", a: "En yaygın ve pratik yer: arka yüz, sağ alt köşe. Kodun yanına 'Beni kaydet' veya 'LinkedIn'de bul' gibi kısa bir açıklama eklemek tarama oranını artırır." },
+          { q: "Kartvizit QR koduna logo eklenebilir mi?", a: "Evet. QRGenHub logolu QR kodlar oluşturmanıza olanak tanır. Hata düzeltme algoritması (Level H), logo eklense de kodun sorunsuz taranmasını garanti eder." }
+        ]
+      },
+      en: {
+        slug: "qr-code-on-business-card",
+        title: "How to Add a QR Code to Your Business Card",
+        metaDescription: "Add a QR code to your business card and share your LinkedIn, portfolio or contact details in one scan. Size, placement and design guide included.",
+        excerpt: "A QR code on your business card lets people save your details, visit your portfolio, or connect on LinkedIn with a single scan — no typing required.",
+        content: `
+          <h2>Why Add a QR Code to Your Business Card?</h2>
+          <p>Business cards remain one of the most effective networking tools — but they have limited space. A QR code removes that limitation: a small square can take someone directly to your LinkedIn profile, portfolio, website, or full contact details in seconds.</p>
+          <p>Studies show that business cards with QR codes result in <strong>40% more contact saves</strong>. The reason is simple: people prefer scanning to typing.</p>
+
+          <h2>What Should Your Business Card QR Link To?</h2>
+          <ul>
+            <li><strong>vCard QR Code:</strong> Saves your name, phone, email and company info directly to the scanner's address book. Most useful option. <a href="/en/vcard-qr/" class="text-indigo-600 font-bold hover:underline">Create a vCard QR →</a></li>
+            <li><strong>LinkedIn Profile (URL QR):</strong> Ideal for growing your professional network. Opens your LinkedIn instantly on scan.</li>
+            <li><strong>Website or Portfolio:</strong> Perfect for designers, photographers, and freelancers. Show your work immediately.</li>
+            <li><strong>Phone QR Code:</strong> Opens the dialer with your number pre-filled. <a href="/en/tel-qr/" class="text-indigo-600 font-bold hover:underline">Create a phone QR →</a></li>
+          </ul>
+
+          <h2>The Right Size for a Business Card</h2>
+          <p>Standard business card size is 85×54 mm. Recommended QR code size: <strong>between 15×15 mm and 20×20 mm</strong>.</p>
+          <ul>
+            <li>Under 15 mm → scan reliability drops</li>
+            <li>Over 20 mm → dominates the card design</li>
+            <li>Optimal: <strong>18×18 mm</strong> — reliable scanning without overpowering the layout</li>
+          </ul>
+
+          <h2>Where to Place It</h2>
+          <p>The most common and effective placements on a business card:</p>
+          <ul>
+            <li><strong>Back, bottom-right corner:</strong> Most natural scanning position and by far the most common.</li>
+            <li><strong>Back, centered:</strong> Works well if the QR code is your primary visual element.</li>
+            <li><strong>Front, bottom area:</strong> If you want to make the QR code prominent — ensure it does not overwhelm other information.</li>
+          </ul>
+          <p>Add a short label next to the QR: <em>"Save my contact"</em>, <em>"Connect on LinkedIn"</em>, or <em>"See my portfolio"</em>. This small call-to-action significantly increases scan rates.</p>
+
+          <h2>Step-by-Step Creation Guide</h2>
+          <ol>
+            <li><strong>Choose your content:</strong> Prepare your LinkedIn URL, website, or vCard details.</li>
+            <li><strong>Go to QRGenHub:</strong> <a href="/en/url-qr/" class="text-indigo-600 font-bold hover:underline">qrgenhub.com</a> — no signup needed.</li>
+            <li><strong>Select the QR type:</strong> URL QR for a link, vCard QR for contact information.</li>
+            <li><strong>Customise the design:</strong> Match your brand colors and add your logo if desired.</li>
+            <li><strong>Download as SVG:</strong> Always SVG for print — infinite scaling, zero quality loss.</li>
+            <li><strong>Test it:</strong> Scan with both iPhone and Android before sending to the printer.</li>
+          </ol>
+
+          <h2>Design Tips</h2>
+          <ul>
+            <li><strong>Use brand colors</strong> but maintain contrast — dark code on a light background is non-negotiable.</li>
+            <li><strong>You can add a logo</strong> — QRGenHub's error correction algorithm ensures the code remains scannable even with a logo overlay.</li>
+            <li><strong>Preserve the quiet zone</strong> — the white border around the QR code is essential for reliable scanning. Never crop it.</li>
+          </ul>
+
+          <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Create Your Business Card QR Code — Free</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Add your logo, customise colors, download as SVG. No signup required.</p>
+            <a href="/en/vcard-qr/" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Create Business Card QR Code</a>
+          </div>
+        `,
+        faq: [
+          { q: "What should a QR code on a business card link to?", a: "A vCard QR code is the most functional option — it saves your name, phone, email and company info directly to the scanner's contacts. A LinkedIn URL or portfolio link are also popular choices." },
+          { q: "What size should the QR code be on a business card?", a: "For a standard business card (85×54 mm), the ideal QR code size is 15–20 mm. The sweet spot is 18×18 mm — reliable scanning without dominating the design." },
+          { q: "Where should I place the QR code on a business card?", a: "The most common and practical placement is the back, bottom-right corner. Adding a short label such as 'Save my contact' or 'Connect on LinkedIn' next to the code significantly increases scan rates." },
+          { q: "Can I add my logo to a business card QR code?", a: "Yes. QRGenHub lets you embed a logo in the center of any QR code. The error correction algorithm (Level H) ensures the code remains scannable even with a logo overlay." }
+        ]
+      },
+      fr: {
+        slug: "qr-code-carte-de-visite",
+        title: "Ajouter un Code QR sur une Carte de Visite : Guide Complet",
+        metaDescription: "Ajoutez un code QR à votre carte de visite pour partager LinkedIn, portfolio ou contacts en un scan. Guide taille, emplacement et design inclus.",
+        excerpt: "Un code QR sur votre carte de visite permet à vos contacts de sauvegarder vos coordonnées, visiter votre portfolio ou vous rejoindre sur LinkedIn en un seul scan.",
+        content: `
+          <h2>Pourquoi ajouter un code QR sur sa carte de visite ?</h2>
+          <p>Les cartes de visite restent un outil de networking efficace — mais leur espace est limité. Un code QR lève cette contrainte : un petit carré peut diriger quelqu'un vers votre profil LinkedIn, votre portfolio, votre site web ou vos coordonnées complètes en quelques secondes.</p>
+          <p>Les cartes de visite avec code QR génèrent <strong>40 % de sauvegardes de contacts en plus</strong>. La raison est simple : les gens préfèrent scanner plutôt que de saisir manuellement.</p>
+
+          <h2>Que faire pointer votre code QR ?</h2>
+          <ul>
+            <li><strong>Code QR vCard :</strong> Enregistre nom, téléphone, e-mail et société directement dans le carnet de contacts. Option la plus utile. <a href="/fr/qr-vcard/" class="text-indigo-600 font-bold hover:underline">Créer un QR vCard →</a></li>
+            <li><strong>Profil LinkedIn (QR URL) :</strong> Idéal pour développer votre réseau professionnel. Ouvre votre profil instantanément.</li>
+            <li><strong>Site web ou portfolio :</strong> Parfait pour les designers, photographes et freelances. Montrez votre travail immédiatement.</li>
+            <li><strong>Code QR téléphone :</strong> Ouvre le composeur avec votre numéro prérempli. <a href="/fr/qr-telephone/" class="text-indigo-600 font-bold hover:underline">Créer un QR téléphone →</a></li>
+          </ul>
+
+          <h2>La bonne taille pour une carte de visite</h2>
+          <p>La taille standard d'une carte de visite est 85×54 mm. Taille recommandée pour le code QR : <strong>entre 15×15 mm et 20×20 mm</strong>.</p>
+          <ul>
+            <li>En dessous de 15 mm → risque d'échec de scan</li>
+            <li>Au-dessus de 20 mm → domine visuellement la carte</li>
+            <li>Idéal : <strong>18×18 mm</strong> — fiable et équilibré</li>
+          </ul>
+
+          <h2>Où le placer sur la carte ?</h2>
+          <ul>
+            <li><strong>Verso, coin inférieur droit :</strong> Position la plus naturelle pour le scan et la plus courante.</li>
+            <li><strong>Verso, centré :</strong> Adapté si le QR code est l'élément visuel principal.</li>
+            <li><strong>Recto, partie basse :</strong> Pour mettre le QR en avant — veillez à ne pas surcharger le design.</li>
+          </ul>
+          <p>Ajoutez un court libellé à côté du QR : <em>« Enregistrer mon contact »</em>, <em>« Me rejoindre sur LinkedIn »</em> ou <em>« Voir mon portfolio »</em>. Ce petit appel à l'action augmente significativement le taux de scan.</p>
+
+          <h2>Guide de création étape par étape</h2>
+          <ol>
+            <li><strong>Choisissez votre contenu :</strong> Préparez votre URL LinkedIn, votre site ou vos données vCard.</li>
+            <li><strong>Accédez à QRGenHub :</strong> <a href="/fr/creer-qr-url/" class="text-indigo-600 font-bold hover:underline">qrgenhub.com</a> — sans inscription.</li>
+            <li><strong>Sélectionnez le type QR :</strong> QR URL pour un lien, QR vCard pour les coordonnées.</li>
+            <li><strong>Personnalisez le design :</strong> Adaptez les couleurs à votre identité visuelle.</li>
+            <li><strong>Téléchargez en SVG :</strong> Toujours SVG pour l'impression — vectoriel, sans perte de qualité.</li>
+            <li><strong>Testez-le :</strong> Scannez avec un iPhone et un Android avant d'envoyer à l'imprimeur.</li>
+          </ol>
+
+          <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Créez votre QR Code pour carte de visite — Gratuit</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Ajoutez votre logo, personnalisez les couleurs, téléchargez en SVG. Sans inscription.</p>
+            <a href="/fr/qr-vcard/" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Créer un QR Code Carte de Visite</a>
+          </div>
+        `,
+        faq: [
+          { q: "Que doit pointer le code QR d'une carte de visite ?", a: "Le code QR vCard est l'option la plus fonctionnelle — il enregistre nom, téléphone, e-mail et société directement dans le répertoire. Un lien LinkedIn ou portfolio est également très courant." },
+          { q: "Quelle taille pour un code QR sur une carte de visite ?", a: "Pour une carte de visite standard (85×54 mm), la taille idéale est 15–20 mm. Le meilleur compromis est 18×18 mm — scan fiable sans dominer le design." },
+          { q: "Où placer le code QR sur une carte de visite ?", a: "L'emplacement le plus courant est le verso, coin inférieur droit. Ajouter un libellé court comme 'Enregistrer mon contact' à côté du code augmente significativement le taux de scan." },
+          { q: "Peut-on ajouter un logo au code QR d'une carte de visite ?", a: "Oui. QRGenHub permet d'intégrer un logo au centre du code QR. L'algorithme de correction d'erreur (Level H) garantit que le code reste lisible même avec un logo." }
+        ]
+      },
+      de: {
+        slug: "qr-code-auf-visitenkarte",
+        title: "QR-Code auf Visitenkarte: So geht's richtig",
+        metaDescription: "QR-Code auf die Visitenkarte — LinkedIn, Portfolio oder Kontaktdaten per Scan teilen. Anleitung mit Größentabelle, Platzierung und Designtipps.",
+        excerpt: "Ein QR-Code auf Ihrer Visitenkarte ermöglicht es, Kontakte direkt zu speichern, Ihr Portfolio aufzurufen oder LinkedIn zu öffnen — ohne Tippen.",
+        content: `
+          <h2>Warum einen QR-Code auf die Visitenkarte?</h2>
+          <p>Visitenkarten sind nach wie vor ein effektives Networking-Tool — aber ihr Platz ist begrenzt. Ein QR-Code hebt diese Einschränkung auf: Ein kleines Quadrat kann jemanden direkt zu Ihrem LinkedIn-Profil, Portfolio, Ihrer Webseite oder Ihren vollständigen Kontaktdaten führen.</p>
+          <p>Visitenkarten mit QR-Code führen zu <strong>40 % mehr gespeicherten Kontakten</strong>. Der Grund ist einfach: Menschen scannen lieber, als Daten manuell einzutippen.</p>
+
+          <h2>Wohin soll Ihr QR-Code verlinken?</h2>
+          <ul>
+            <li><strong>vCard-QR-Code:</strong> Speichert Name, Telefon, E-Mail und Unternehmen direkt ins Telefonbuch. Die funktionalste Option. <a href="/de/vcard-qr/" class="text-indigo-600 font-bold hover:underline">vCard-QR erstellen →</a></li>
+            <li><strong>LinkedIn-Profil (URL-QR):</strong> Ideal für den Aufbau Ihres professionellen Netzwerks. Öffnet Ihr Profil sofort beim Scan.</li>
+            <li><strong>Webseite oder Portfolio:</strong> Perfekt für Designer, Fotografen und Freelancer.</li>
+            <li><strong>Telefon-QR-Code:</strong> Öffnet den Wähler mit Ihrer vorausgefüllten Nummer. <a href="/de/tel-qr/" class="text-indigo-600 font-bold hover:underline">Telefon-QR erstellen →</a></li>
+          </ul>
+
+          <h2>Die richtige Größe für Visitenkarten</h2>
+          <p>Standardgröße einer Visitenkarte: 85×54 mm. Empfohlene QR-Code-Größe: <strong>15×15 mm bis 20×20 mm</strong>.</p>
+          <ul>
+            <li>Unter 15 mm → Scan-Zuverlässigkeit nimmt ab</li>
+            <li>Über 20 mm → dominiert das Kartendesign</li>
+            <li>Optimal: <strong>18×18 mm</strong> — zuverlässig und ausgewogen</li>
+          </ul>
+
+          <h2>Wo auf der Visitenkarte platzieren?</h2>
+          <ul>
+            <li><strong>Rückseite, untere rechte Ecke:</strong> Die natürlichste Scanposition und mit Abstand am häufigsten.</li>
+            <li><strong>Rückseite, zentriert:</strong> Wenn der QR-Code das visuelle Hauptelement sein soll.</li>
+            <li><strong>Vorderseite, unterer Bereich:</strong> Um den QR prominent zu platzieren — aber ohne das restliche Design zu überwältigen.</li>
+          </ul>
+          <p>Fügen Sie ein kurzes Label neben dem QR hinzu: <em>„Kontakt speichern"</em>, <em>„Auf LinkedIn verbinden"</em> oder <em>„Portfolio ansehen"</em>. Dieser kleine Call-to-Action erhöht die Scan-Rate erheblich.</p>
+
+          <h2>Schritt-für-Schritt-Anleitung</h2>
+          <ol>
+            <li><strong>Inhalt wählen:</strong> LinkedIn-URL, Webseite oder vCard-Daten vorbereiten.</li>
+            <li><strong>QRGenHub aufrufen:</strong> <a href="/de/url-qr-erstellen/" class="text-indigo-600 font-bold hover:underline">qrgenhub.com</a> — ohne Anmeldung.</li>
+            <li><strong>QR-Typ auswählen:</strong> URL-QR für Links, vCard-QR für Kontaktdaten.</li>
+            <li><strong>Design anpassen:</strong> Farben an Ihre Markenidentität anpassen, Logo hinzufügen.</li>
+            <li><strong>Als SVG herunterladen:</strong> Immer SVG für den Druck — vektoriell, keine Qualitätsverluste.</li>
+            <li><strong>Testen:</strong> Vor dem Drucken mit iPhone und Android scannen.</li>
+          </ol>
+
+          <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">QR-Code für Visitenkarte erstellen — Kostenlos</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Logo hinzufügen, Farben anpassen, als SVG herunterladen. Ohne Anmeldung.</p>
+            <a href="/de/vcard-qr/" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Visitenkarten-QR-Code erstellen</a>
+          </div>
+        `,
+        faq: [
+          { q: "Wohin sollte der QR-Code auf einer Visitenkarte verlinken?", a: "Ein vCard-QR-Code ist die funktionalste Option — er speichert Name, Telefon, E-Mail und Unternehmen direkt ins Telefonbuch. Ein LinkedIn-Link oder Portfolio-Link sind ebenfalls sehr beliebt." },
+          { q: "Wie groß sollte der QR-Code auf einer Visitenkarte sein?", a: "Für eine Standardvisitenkarte (85×54 mm) ist die ideale Größe 15–20 mm. Der beste Kompromiss ist 18×18 mm — zuverlässiges Scannen ohne das Design zu dominieren." },
+          { q: "Wo auf der Visitenkarte den QR-Code platzieren?", a: "Die häufigste und praktischste Position ist die Rückseite, untere rechte Ecke. Ein kurzes Label wie 'Kontakt speichern' neben dem Code erhöht die Scan-Rate erheblich." },
+          { q: "Kann ich ein Logo in den Visitenkarten-QR-Code einbetten?", a: "Ja. QRGenHub ermöglicht es, ein Logo in die Mitte des QR-Codes einzubetten. Der Fehlerkorrektur-Algorithmus (Level H) stellt sicher, dass der Code auch mit Logo zuverlässig gescannt werden kann." }
+        ]
+      },
+      es: {
+        slug: "codigo-qr-tarjeta-visita",
+        title: "Cómo Añadir un Código QR en tu Tarjeta de Visita",
+        metaDescription: "Añade un código QR a tu tarjeta de visita y comparte LinkedIn, portfolio o contactos en un scan. Guía de tamaño, ubicación y diseño incluida.",
+        excerpt: "Un código QR en tu tarjeta de visita permite que tus contactos guarden tus datos, visiten tu portfolio o te encuentren en LinkedIn con un solo escaneo.",
+        content: `
+          <h2>¿Por qué añadir un código QR a tu tarjeta de visita?</h2>
+          <p>Las tarjetas de visita siguen siendo una herramienta de networking muy efectiva — pero tienen espacio limitado. Un código QR elimina esa limitación: un pequeño cuadrado puede llevar a alguien directamente a tu perfil de LinkedIn, portfolio, web o datos de contacto completos en segundos.</p>
+          <p>Las tarjetas de visita con código QR generan un <strong>40 % más de contactos guardados</strong>. El motivo es simple: la gente prefiere escanear antes que escribir manualmente.</p>
+
+          <h2>¿A qué debe enlazar tu código QR?</h2>
+          <ul>
+            <li><strong>Código QR vCard:</strong> Guarda nombre, teléfono, email y empresa directamente en la agenda del teléfono. La opción más útil. <a href="/es/qr-vcard/" class="text-indigo-600 font-bold hover:underline">Crear QR vCard →</a></li>
+            <li><strong>Perfil de LinkedIn (QR de URL):</strong> Ideal para hacer crecer tu red profesional. Abre tu perfil instantáneamente al escanear.</li>
+            <li><strong>Web o portfolio:</strong> Perfecto para diseñadores, fotógrafos y freelancers. Muestra tu trabajo de inmediato.</li>
+            <li><strong>Código QR de teléfono:</strong> Abre el marcador con tu número prellenado. <a href="/es/qr-telefono/" class="text-indigo-600 font-bold hover:underline">Crear QR de teléfono →</a></li>
+          </ul>
+
+          <h2>El tamaño correcto en una tarjeta de visita</h2>
+          <p>El tamaño estándar de una tarjeta de visita es 85×54 mm. Tamaño recomendado para el código QR: <strong>entre 15×15 mm y 20×20 mm</strong>.</p>
+          <ul>
+            <li>Por debajo de 15 mm → aumenta el riesgo de fallo de lectura</li>
+            <li>Por encima de 20 mm → domina visualmente la tarjeta</li>
+            <li>Óptimo: <strong>18×18 mm</strong> — lectura fiable y diseño equilibrado</li>
+          </ul>
+
+          <h2>¿Dónde colocarlo en la tarjeta?</h2>
+          <ul>
+            <li><strong>Dorso, esquina inferior derecha:</strong> La posición más natural para escanear y la más habitual.</li>
+            <li><strong>Dorso, centrado:</strong> Adecuado si el código QR es el elemento visual principal.</li>
+            <li><strong>Anverso, parte inferior:</strong> Para destacar el QR — asegúrate de no sobrecargar el diseño.</li>
+          </ul>
+          <p>Añade una etiqueta corta junto al QR: <em>«Guardar contacto»</em>, <em>«Conectar en LinkedIn»</em> o <em>«Ver mi portfolio»</em>. Esta pequeña llamada a la acción aumenta significativamente la tasa de escaneo.</p>
+
+          <h2>Guía de creación paso a paso</h2>
+          <ol>
+            <li><strong>Elige tu contenido:</strong> Prepara tu URL de LinkedIn, web o datos vCard.</li>
+            <li><strong>Ve a QRGenHub:</strong> <a href="/es/crear-qr-url/" class="text-indigo-600 font-bold hover:underline">qrgenhub.com</a> — sin registro.</li>
+            <li><strong>Selecciona el tipo de QR:</strong> QR de URL para un enlace, QR vCard para datos de contacto.</li>
+            <li><strong>Personaliza el diseño:</strong> Ajusta los colores a tu identidad de marca y añade tu logo.</li>
+            <li><strong>Descarga en SVG:</strong> Siempre SVG para impresión — vectorial, sin pérdida de calidad.</li>
+            <li><strong>Pruébalo:</strong> Escanea con iPhone y Android antes de enviarlo a la imprenta.</li>
+          </ol>
+
+          <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Crea tu QR Code para tarjeta de visita — Gratis</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Añade tu logo, personaliza los colores, descarga en SVG. Sin registro.</p>
+            <a href="/es/qr-vcard/" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Crear QR Tarjeta de Visita</a>
+          </div>
+        `,
+        faq: [
+          { q: "¿A qué debe enlazar el código QR de una tarjeta de visita?", a: "El código QR vCard es la opción más funcional — guarda nombre, teléfono, email y empresa directamente en la agenda. Un enlace a LinkedIn o portfolio también es muy popular." },
+          { q: "¿Qué tamaño debe tener el código QR en una tarjeta de visita?", a: "Para una tarjeta estándar (85×54 mm), el tamaño ideal es 15–20 mm. El punto óptimo es 18×18 mm — lectura fiable sin dominar el diseño." },
+          { q: "¿Dónde colocar el código QR en una tarjeta de visita?", a: "La ubicación más habitual y práctica es el dorso, esquina inferior derecha. Añadir una etiqueta corta como 'Guardar contacto' junto al código aumenta significativamente la tasa de escaneo." },
+          { q: "¿Se puede añadir un logo al código QR de una tarjeta de visita?", a: "Sí. QRGenHub permite insertar un logo en el centro del código QR. El algoritmo de corrección de errores (Level H) garantiza que el código siga siendo escaneable incluso con el logo." }
+        ]
+      }
+    }
+  }
+,
+  {
+    id: "qr-code-size-guide",
+    category: "Rehber",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&q=80&w=800",
+    imageAlt: "QR Kod Boyutu Rehberi - Baskı ve Dijital Kullanım",
+    author: "Mert Gündoğan",
+    date: "2026-04-25",
+    languages: {
+      tr: {
+        slug: "qr-kod-boyutu-ne-olmali",
+        title: "QR Kod Boyutu Nasıl Olmalı? Baskı ve Dijital Rehberi",
+        metaDescription: "QR kod için doğru boyut ne? Kartvizit, flyer, afiş ve billboard için minimum boyutlar, tarama mesafesi hesabı ve SVG vs PNG rehberi.",
+        excerpt: "Çok küçük QR kod okutulmaz, çok büyük tasarımı bozar. Kullandığınız materyale göre doğru boyutu bulmak için bu rehberi kullanın.",
+        content: `
+          <h2>QR Kod Boyutu Neden Önemli?</h2>
+          <p>QR kodun boyutu doğrudan tarama başarısını etkiler. Çok küçük bir kod — telefon kamerası yeterli piksel toplayamaz, tarama başarısız olur. Çok büyük bir kod ise tasarım dengesini bozar ve gereksiz alan kaplar.</p>
+          <p>Doğru boyut tek bir değişkene bağlıdır: <strong>tarama mesafesi</strong>. Kodun ne kadar uzaktan okunacağını bilirseniz, ideal boyutu kolayca hesaplayabilirsiniz.</p>
+
+          <h2>Temel Kural: 1/10 Formülü</h2>
+          <p>QR kod boyutlandırmasının evrensel kuralı şudur:</p>
+          <p style="background:#f3f4f6;padding:16px;border-radius:12px;font-weight:bold;text-align:center;">QR Kod Boyutu ≥ Tarama Mesafesi ÷ 10</p>
+          <p>Örnek: Kodun 2 metre uzaktan okunması gerekiyorsa → minimum 20 cm × 20 cm.</p>
+
+          <h2>Materyale Göre Boyut Tablosu</h2>
+          <table style="width:100%;border-collapse:collapse;margin:1rem 0;">
+            <thead><tr style="background:#f3f4f6;"><th style="padding:10px;border:1px solid #d1d5db;text-align:left;">Materyal</th><th style="padding:10px;border:1px solid #d1d5db;text-align:left;">Tarama Mesafesi</th><th style="padding:10px;border:1px solid #d1d5db;text-align:left;">Minimum Boyut</th><th style="padding:10px;border:1px solid #d1d5db;text-align:left;">Önerilen Boyut</th></tr></thead>
+            <tbody>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Kartvizit</td><td style="padding:8px;border:1px solid #d1d5db;">~10 cm</td><td style="padding:8px;border:1px solid #d1d5db;">1 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">2 × 2 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Flyer / Broşür</td><td style="padding:8px;border:1px solid #d1d5db;">20–30 cm</td><td style="padding:8px;border:1px solid #d1d5db;">2 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">3 × 3 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">A4 / Masa başı materyal</td><td style="padding:8px;border:1px solid #d1d5db;">30–50 cm</td><td style="padding:8px;border:1px solid #d1d5db;">3 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">4 × 4 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Afiş / Poster (A3-A1)</td><td style="padding:8px;border:1px solid #d1d5db;">1–2 m</td><td style="padding:8px;border:1px solid #d1d5db;">10 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">15 × 15 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Tabela / Banner</td><td style="padding:8px;border:1px solid #d1d5db;">3–5 m</td><td style="padding:8px;border:1px solid #d1d5db;">30 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">40 × 40 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Billboard</td><td style="padding:8px;border:1px solid #d1d5db;">5–10 m</td><td style="padding:8px;border:1px solid #d1d5db;">50 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">80 × 80 cm</td></tr>
+            </tbody>
+          </table>
+
+          <h2>Dijital Kullanım İçin Boyut</h2>
+          <p>Ekranda gösterilen QR kodlar için piksel bazında minimum boyut <strong>200 × 200 piksel</strong>dir. Ancak retina/yüksek yoğunluklu ekranlar için <strong>400 × 400 piksel</strong> önerilir.</p>
+          <ul>
+            <li><strong>Web sitesi / landing page:</strong> 200–300px arası genellikle yeterli</li>
+            <li><strong>E-posta imzası:</strong> 150–200px — küçük tutun, e-posta istemcisi bozabilir</li>
+            <li><strong>Sosyal medya paylaşımı:</strong> Minimum 400px — akış üzerinden taranabilmesi için</li>
+            <li><strong>Sunum / projeksiyon:</strong> Minimum 600px, büyük ekran için 1000px+</li>
+          </ul>
+
+          <h2>PNG mi, SVG mi?</h2>
+          <p>Boyut seçimiyle doğrudan bağlantılı en kritik karar: format.</p>
+          <ul>
+            <li><strong>PNG:</strong> Piksel tabanlı. Belirli bir boyut için oluşturulur. Büyütülürse bulanıklaşır. Sadece dijital kullanım için uygundur.</li>
+            <li><strong>SVG:</strong> Vektör tabanlı. Boyuttan bağımsız — kartvizit boyutundan billboard boyutuna sıfır kalite kaybıyla büyütülür. Baskı için her zaman SVG kullanın.</li>
+          </ul>
+          <p><a href="/tr/url-qr/" class="text-indigo-600 font-bold hover:underline">QRGenHub</a>'da oluşturduğunuz her QR kod hem PNG hem SVG olarak ücretsiz indirilebilir.</p>
+
+          <h2>Quiet Zone — Unutulan Ama Kritik Alan</h2>
+          <p>QR kodun etrafında mutlaka <strong>4 modül genişliğinde boş beyaz alan</strong> (quiet zone) bırakılmalıdır. Bu alan koda dahil değildir ama tarama için zorunludur. Quiet zone'u keserseniz veya başka öğelerle kapatırsanız, kod boyutu ne olursa olsun okutmaz.</p>
+
+          <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">SVG Dahil Ücretsiz QR Kod Oluşturun</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Her boyut için hazır. PNG ve SVG formatlarını ücretsiz indirin.</p>
+            <a href="/tr/url-qr/" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 QR Kod Oluştur — Ücretsiz</a>
+          </div>
+        `,
+        faq: [
+          { q: "QR kod minimum boyutu ne olmalı?", a: "Baskı için minimum 2×2 cm (kartvizit gibi yakın mesafe kullanımı için). Afiş için minimum 10×10 cm. Genel kural: QR boyutu ≥ tarama mesafesi ÷ 10." },
+          { q: "Büyük baskı için PNG mi SVG mi kullanmalıyım?", a: "Baskı için her zaman SVG. PNG piksel tabanlıdır ve büyütüldüğünde bulanıklaşır. SVG vektöreldir ve sonsuz büyütme ile sıfır kalite kaybı sağlar." },
+          { q: "Ekranda gösterilen QR kod için kaç piksel önerilir?", a: "Web ve dijital kullanım için minimum 200×200 piksel. Retina ekranlar ve sosyal medya için 400×400 piksel önerilir. Sunum/projeksiyon için 600px ve üzeri." },
+          { q: "Quiet zone nedir ve neden önemli?", a: "Quiet zone, QR kodun etrafındaki boş beyaz kenardır. Minimum 4 modül genişliğinde olmalıdır. Bu alan olmadan kamera kodun başlangıç ve bitiş noktasını tespit edemez, tarama başarısız olur." }
+        ]
+      },
+      en: {
+        slug: "qr-code-size-guide",
+        title: "QR Code Size Guide: Minimum Sizes for Print and Digital",
+        metaDescription: "What size should a QR code be? Complete size chart for business cards, flyers, posters and billboards — plus the 1/10 rule and PNG vs SVG guide.",
+        excerpt: "Too small and it won't scan. Too large and it overwhelms the design. Use this guide to find the right QR code size for every material and use case.",
+        content: `
+          <h2>Why QR Code Size Matters</h2>
+          <p>QR code size directly determines scan reliability. Too small, and the camera cannot capture enough detail. Too large, and it dominates the design without adding value. The right size depends on one factor: <strong>scanning distance</strong>.</p>
+
+          <h2>The 1/10 Rule</h2>
+          <p>The universal rule for QR code sizing:</p>
+          <p style="background:#f3f4f6;padding:16px;border-radius:12px;font-weight:bold;text-align:center;">QR Code Size ≥ Scanning Distance ÷ 10</p>
+          <p>Example: If your code will be scanned from 2 metres away, it needs to be at least 20 cm × 20 cm.</p>
+
+          <h2>Size Chart by Material</h2>
+          <table style="width:100%;border-collapse:collapse;margin:1rem 0;">
+            <thead><tr style="background:#f3f4f6;"><th style="padding:10px;border:1px solid #d1d5db;text-align:left;">Material</th><th style="padding:10px;border:1px solid #d1d5db;text-align:left;">Scan Distance</th><th style="padding:10px;border:1px solid #d1d5db;text-align:left;">Minimum Size</th><th style="padding:10px;border:1px solid #d1d5db;text-align:left;">Recommended</th></tr></thead>
+            <tbody>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Business card</td><td style="padding:8px;border:1px solid #d1d5db;">~10 cm</td><td style="padding:8px;border:1px solid #d1d5db;">1 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">2 × 2 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Flyer / Brochure</td><td style="padding:8px;border:1px solid #d1d5db;">20–30 cm</td><td style="padding:8px;border:1px solid #d1d5db;">2 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">3 × 3 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">A4 / Desk material</td><td style="padding:8px;border:1px solid #d1d5db;">30–50 cm</td><td style="padding:8px;border:1px solid #d1d5db;">3 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">4 × 4 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Poster (A3–A1)</td><td style="padding:8px;border:1px solid #d1d5db;">1–2 m</td><td style="padding:8px;border:1px solid #d1d5db;">10 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">15 × 15 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Sign / Banner</td><td style="padding:8px;border:1px solid #d1d5db;">3–5 m</td><td style="padding:8px;border:1px solid #d1d5db;">30 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">40 × 40 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Billboard</td><td style="padding:8px;border:1px solid #d1d5db;">5–10 m</td><td style="padding:8px;border:1px solid #d1d5db;">50 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">80 × 80 cm</td></tr>
+            </tbody>
+          </table>
+
+          <h2>Digital Use: Pixel Sizes</h2>
+          <p>For QR codes displayed on screens, the minimum size is <strong>200 × 200 pixels</strong>. For retina and high-density displays, use at least <strong>400 × 400 pixels</strong>.</p>
+          <ul>
+            <li><strong>Website / landing page:</strong> 200–300px is usually sufficient</li>
+            <li><strong>Email signature:</strong> 150–200px — keep it small, email clients may distort larger images</li>
+            <li><strong>Social media post:</strong> Minimum 400px — must be scannable in-feed</li>
+            <li><strong>Presentation / projection:</strong> Minimum 600px, 1000px+ for large screens</li>
+          </ul>
+
+          <h2>PNG vs SVG: Which Format?</h2>
+          <p>The most important decision closely related to size:</p>
+          <ul>
+            <li><strong>PNG:</strong> Pixel-based. Fixed at a specific size. Becomes blurry when enlarged. Fine for digital use only.</li>
+            <li><strong>SVG:</strong> Vector-based. Size-independent — scales from business card to billboard with zero quality loss. Always use SVG for print.</li>
+          </ul>
+          <p>Every QR code created on <a href="/en/url-qr/" class="text-indigo-600 font-bold hover:underline">QRGenHub</a> can be downloaded in both PNG and SVG at no cost.</p>
+
+          <h2>The Quiet Zone: Small But Critical</h2>
+          <p>Every QR code must have a clear white border — the quiet zone — of at least <strong>4 module widths</strong> on all four sides. This is not part of the code itself, but it is essential for scanning. Remove it or cover it, and the code will fail to scan regardless of size.</p>
+
+          <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Create Your QR Code — Free, SVG Included</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Ready for any size. Download PNG and SVG formats for free.</p>
+            <a href="/en/url-qr/" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Create QR Code Free</a>
+          </div>
+        `,
+        faq: [
+          { q: "What is the minimum size for a QR code?", a: "For print, the absolute minimum is 2×2 cm for close-range use (business cards). For posters scanned from 1–2 metres, use at least 10×10 cm. General rule: QR size ≥ scanning distance ÷ 10." },
+          { q: "Should I use PNG or SVG for large print?", a: "Always SVG for print. PNG is pixel-based and blurs when enlarged. SVG is vector-based and scales to any size — from a business card to a billboard — with zero quality loss." },
+          { q: "How many pixels should a QR code be for a website?", a: "Minimum 200×200 pixels for standard displays. For retina screens and social media, use at least 400×400 pixels. For presentations or projection screens, 600px or above." },
+          { q: "What is the quiet zone on a QR code?", a: "The quiet zone is the white border around the QR code. It must be at least 4 module-widths wide on all four sides. Without it, the camera cannot detect the code boundaries and scanning fails." }
+        ]
+      },
+      fr: {
+        slug: "taille-code-qr-guide",
+        title: "Taille d'un Code QR : Guide Complet pour Impression et Web",
+        metaDescription: "Quelle taille pour un code QR ? Tableau complet pour carte de visite, flyer, affiche et billboard — règle des 1/10 et guide PNG vs SVG inclus.",
+        excerpt: "Trop petit, il ne se scanne pas. Trop grand, il écrase le design. Ce guide vous aide à trouver la bonne taille selon votre support.",
+        content: `
+          <h2>Pourquoi la taille du code QR est-elle importante ?</h2>
+          <p>La taille d'un code QR détermine directement la fiabilité du scan. Trop petit, la caméra ne capture pas assez de détails. Trop grand, il domine le design sans apporter de valeur. La bonne taille dépend d'un seul facteur : <strong>la distance de scan</strong>.</p>
+
+          <h2>La règle du 1/10</h2>
+          <p>La règle universelle pour dimensionner un code QR :</p>
+          <p style="background:#f3f4f6;padding:16px;border-radius:12px;font-weight:bold;text-align:center;">Taille QR ≥ Distance de scan ÷ 10</p>
+          <p>Exemple : si le code doit être scanné à 2 mètres, il doit faire au moins 20 cm × 20 cm.</p>
+
+          <h2>Tableau des tailles par support</h2>
+          <table style="width:100%;border-collapse:collapse;margin:1rem 0;">
+            <thead><tr style="background:#f3f4f6;"><th style="padding:10px;border:1px solid #d1d5db;text-align:left;">Support</th><th style="padding:10px;border:1px solid #d1d5db;text-align:left;">Distance de scan</th><th style="padding:10px;border:1px solid #d1d5db;text-align:left;">Taille minimale</th><th style="padding:10px;border:1px solid #d1d5db;text-align:left;">Recommandé</th></tr></thead>
+            <tbody>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Carte de visite</td><td style="padding:8px;border:1px solid #d1d5db;">~10 cm</td><td style="padding:8px;border:1px solid #d1d5db;">1 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">2 × 2 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Flyer / Brochure</td><td style="padding:8px;border:1px solid #d1d5db;">20–30 cm</td><td style="padding:8px;border:1px solid #d1d5db;">2 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">3 × 3 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">A4 / Document bureau</td><td style="padding:8px;border:1px solid #d1d5db;">30–50 cm</td><td style="padding:8px;border:1px solid #d1d5db;">3 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">4 × 4 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Affiche (A3–A1)</td><td style="padding:8px;border:1px solid #d1d5db;">1–2 m</td><td style="padding:8px;border:1px solid #d1d5db;">10 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">15 × 15 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Enseigne / Banner</td><td style="padding:8px;border:1px solid #d1d5db;">3–5 m</td><td style="padding:8px;border:1px solid #d1d5db;">30 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">40 × 40 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Panneau publicitaire</td><td style="padding:8px;border:1px solid #d1d5db;">5–10 m</td><td style="padding:8px;border:1px solid #d1d5db;">50 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">80 × 80 cm</td></tr>
+            </tbody>
+          </table>
+
+          <h2>Utilisation numérique : tailles en pixels</h2>
+          <ul>
+            <li><strong>Site web / landing page :</strong> 200–300 px suffisent généralement</li>
+            <li><strong>Signature e-mail :</strong> 150–200 px — restez petit, les clients mail peuvent déformer les grandes images</li>
+            <li><strong>Publication réseaux sociaux :</strong> Minimum 400 px — doit être scannable dans le fil</li>
+            <li><strong>Présentation / projection :</strong> Minimum 600 px, 1000 px+ pour les grands écrans</li>
+          </ul>
+
+          <h2>PNG ou SVG : quel format choisir ?</h2>
+          <ul>
+            <li><strong>PNG :</strong> Basé sur les pixels. Fixé à une taille donnée. Devient flou quand on l'agrandit. Convient uniquement pour le numérique.</li>
+            <li><strong>SVG :</strong> Vectoriel. Indépendant de la taille — de la carte de visite au panneau publicitaire sans perte de qualité. Toujours SVG pour l'impression.</li>
+          </ul>
+          <p>Chaque code QR créé sur <a href="/fr/creer-qr-url/" class="text-indigo-600 font-bold hover:underline">QRGenHub</a> peut être téléchargé en PNG et SVG gratuitement.</p>
+
+          <h2>La zone de tranquillité : petite mais critique</h2>
+          <p>Tout code QR doit avoir une bordure blanche — la quiet zone — d'au moins <strong>4 largeurs de module</strong> sur les quatre côtés. Sans elle, la caméra ne peut pas détecter les limites du code et le scan échoue, quelle que soit la taille.</p>
+
+          <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Créez votre Code QR — Gratuit, SVG inclus</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Prêt pour toutes les tailles. Téléchargez PNG et SVG gratuitement.</p>
+            <a href="/fr/creer-qr-url/" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Créer un Code QR Gratuit</a>
+          </div>
+        `,
+        faq: [
+          { q: "Quelle est la taille minimale d'un code QR ?", a: "Pour l'impression, le minimum absolu est 2×2 cm pour une utilisation rapprochée (cartes de visite). Pour les affiches lues à 1–2 mètres, utilisez au moins 10×10 cm. Règle générale : taille QR ≥ distance de scan ÷ 10." },
+          { q: "PNG ou SVG pour une grande impression ?", a: "Toujours SVG pour l'impression. Le PNG est pixelisé et devient flou quand on l'agrandit. Le SVG est vectoriel et s'adapte à n'importe quelle taille sans perte de qualité." },
+          { q: "Combien de pixels pour un code QR sur un site web ?", a: "Minimum 200×200 pixels pour les écrans standard. Pour les écrans retina et les réseaux sociaux, utilisez au moins 400×400 pixels. Pour les présentations, 600 px ou plus." },
+          { q: "Qu'est-ce que la zone de tranquillité d'un code QR ?", a: "C'est la bordure blanche entourant le code QR, nécessaire sur les quatre côtés (minimum 4 largeurs de module). Sans elle, la caméra ne peut pas détecter les limites du code et le scan échoue." }
+        ]
+      },
+      de: {
+        slug: "qr-code-groesse-guide",
+        title: "QR-Code Größe: Der vollständige Leitfaden für Druck und Web",
+        metaDescription: "Wie groß muss ein QR-Code sein? Größentabelle für Visitenkarte, Flyer, Plakat und Billboard — 1/10-Regel und PNG vs. SVG-Leitfaden inklusive.",
+        excerpt: "Zu klein und er wird nicht gescannt. Zu groß und er überwältigt das Design. Dieser Leitfaden hilft Ihnen, die richtige Größe für jedes Material zu finden.",
+        content: `
+          <h2>Warum die Größe eines QR-Codes entscheidend ist</h2>
+          <p>Die Größe eines QR-Codes bestimmt direkt die Scan-Zuverlässigkeit. Zu klein, und die Kamera erfasst nicht genug Details. Zu groß, und er dominiert das Design. Die richtige Größe hängt von einem einzigen Faktor ab: dem <strong>Scan-Abstand</strong>.</p>
+
+          <h2>Die 1/10-Regel</h2>
+          <p>Die universelle Regel für die QR-Code-Dimensionierung:</p>
+          <p style="background:#f3f4f6;padding:16px;border-radius:12px;font-weight:bold;text-align:center;">QR-Code-Größe ≥ Scan-Abstand ÷ 10</p>
+          <p>Beispiel: Wenn Ihr Code aus 2 Metern Entfernung gescannt werden soll, muss er mindestens 20 cm × 20 cm groß sein.</p>
+
+          <h2>Größentabelle nach Material</h2>
+          <table style="width:100%;border-collapse:collapse;margin:1rem 0;">
+            <thead><tr style="background:#f3f4f6;"><th style="padding:10px;border:1px solid #d1d5db;text-align:left;">Material</th><th style="padding:10px;border:1px solid #d1d5db;text-align:left;">Scan-Abstand</th><th style="padding:10px;border:1px solid #d1d5db;text-align:left;">Mindestgröße</th><th style="padding:10px;border:1px solid #d1d5db;text-align:left;">Empfohlen</th></tr></thead>
+            <tbody>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Visitenkarte</td><td style="padding:8px;border:1px solid #d1d5db;">~10 cm</td><td style="padding:8px;border:1px solid #d1d5db;">1 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">2 × 2 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Flyer / Broschüre</td><td style="padding:8px;border:1px solid #d1d5db;">20–30 cm</td><td style="padding:8px;border:1px solid #d1d5db;">2 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">3 × 3 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">A4 / Tischaufsteller</td><td style="padding:8px;border:1px solid #d1d5db;">30–50 cm</td><td style="padding:8px;border:1px solid #d1d5db;">3 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">4 × 4 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Plakat (A3–A1)</td><td style="padding:8px;border:1px solid #d1d5db;">1–2 m</td><td style="padding:8px;border:1px solid #d1d5db;">10 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">15 × 15 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Schild / Banner</td><td style="padding:8px;border:1px solid #d1d5db;">3–5 m</td><td style="padding:8px;border:1px solid #d1d5db;">30 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">40 × 40 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Großflächenwerbung</td><td style="padding:8px;border:1px solid #d1d5db;">5–10 m</td><td style="padding:8px;border:1px solid #d1d5db;">50 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">80 × 80 cm</td></tr>
+            </tbody>
+          </table>
+
+          <h2>Digitale Nutzung: Pixelgrößen</h2>
+          <ul>
+            <li><strong>Webseite / Landing Page:</strong> 200–300 px sind in der Regel ausreichend</li>
+            <li><strong>E-Mail-Signatur:</strong> 150–200 px — klein halten, E-Mail-Clients können größere Bilder verzerren</li>
+            <li><strong>Social-Media-Post:</strong> Mindestens 400 px — muss im Feed scannbar sein</li>
+            <li><strong>Präsentation / Projektion:</strong> Mindestens 600 px, 1000 px+ für große Bildschirme</li>
+          </ul>
+
+          <h2>PNG oder SVG: Welches Format?</h2>
+          <ul>
+            <li><strong>PNG:</strong> Pixelbasiert. Auf eine bestimmte Größe festgelegt. Wird beim Vergrößern unscharf. Nur für digitale Nutzung geeignet.</li>
+            <li><strong>SVG:</strong> Vektorbasiert. Größenunabhängig — von der Visitenkarte bis zum Billboard ohne Qualitätsverlust. Immer SVG für den Druck.</li>
+          </ul>
+          <p>Jeder QR-Code, der auf <a href="/de/url-qr-erstellen/" class="text-indigo-600 font-bold hover:underline">QRGenHub</a> erstellt wird, kann kostenlos in PNG und SVG heruntergeladen werden.</p>
+
+          <h2>Die Ruhezone: klein, aber kritisch</h2>
+          <p>Jeder QR-Code benötigt einen weißen Rand — die Ruhezone — von mindestens <strong>4 Modulbreiten</strong> an allen vier Seiten. Ohne sie kann die Kamera die Grenzen des Codes nicht erkennen, und der Scan schlägt fehl — unabhängig von der Größe.</p>
+
+          <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">QR-Code erstellen — Kostenlos, SVG inklusive</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Für jede Größe geeignet. PNG und SVG kostenlos herunterladen.</p>
+            <a href="/de/url-qr-erstellen/" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Kostenlosen QR-Code erstellen</a>
+          </div>
+        `,
+        faq: [
+          { q: "Wie groß muss ein QR-Code mindestens sein?", a: "Für den Druck beträgt das absolute Minimum 2×2 cm für Nahaufnahmen (Visitenkarten). Für Plakate, die aus 1–2 Metern gescannt werden, mindestens 10×10 cm. Grundregel: QR-Größe ≥ Scan-Abstand ÷ 10." },
+          { q: "PNG oder SVG für großen Druck?", a: "Immer SVG für den Druck. PNG wird beim Vergrößern unscharf. SVG ist vektorbasiert und bleibt bei jeder Größe gestochen scharf — von der Visitenkarte bis zur Großflächenwerbung." },
+          { q: "Wie viele Pixel sollte ein QR-Code für eine Webseite haben?", a: "Mindestens 200×200 Pixel für Standardbildschirme. Für Retina-Displays und Social Media mindestens 400×400 Pixel. Für Präsentationen 600 Pixel oder mehr." },
+          { q: "Was ist die Ruhezone (Quiet Zone) bei einem QR-Code?", a: "Die Ruhezone ist der weiße Rand rund um den QR-Code — mindestens 4 Modulbreiten auf allen vier Seiten. Ohne sie kann die Kamera die Grenzen des Codes nicht erkennen und der Scan schlägt fehl." }
+        ]
+      },
+      es: {
+        slug: "tamano-codigo-qr-guia",
+        title: "Tamaño del Código QR: Guía Completa para Impresión y Web",
+        metaDescription: "¿Qué tamaño debe tener un código QR? Tabla completa para tarjeta, flyer, cartel y valla — regla 1/10 y guía PNG vs SVG incluida.",
+        excerpt: "Demasiado pequeño y no se escanea. Demasiado grande y domina el diseño. Usa esta guía para encontrar el tamaño correcto según tu material.",
+        content: `
+          <h2>¿Por qué importa el tamaño del código QR?</h2>
+          <p>El tamaño de un código QR determina directamente la fiabilidad del escaneo. Demasiado pequeño, la cámara no captura suficiente detalle. Demasiado grande, domina el diseño. El tamaño correcto depende de un único factor: la <strong>distancia de escaneo</strong>.</p>
+
+          <h2>La regla del 1/10</h2>
+          <p>La regla universal para dimensionar un código QR:</p>
+          <p style="background:#f3f4f6;padding:16px;border-radius:12px;font-weight:bold;text-align:center;">Tamaño QR ≥ Distancia de escaneo ÷ 10</p>
+          <p>Ejemplo: si el código se va a escanear desde 2 metros de distancia, debe medir al menos 20 cm × 20 cm.</p>
+
+          <h2>Tabla de tamaños por material</h2>
+          <table style="width:100%;border-collapse:collapse;margin:1rem 0;">
+            <thead><tr style="background:#f3f4f6;"><th style="padding:10px;border:1px solid #d1d5db;text-align:left;">Material</th><th style="padding:10px;border:1px solid #d1d5db;text-align:left;">Distancia escaneo</th><th style="padding:10px;border:1px solid #d1d5db;text-align:left;">Tamaño mínimo</th><th style="padding:10px;border:1px solid #d1d5db;text-align:left;">Recomendado</th></tr></thead>
+            <tbody>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Tarjeta de visita</td><td style="padding:8px;border:1px solid #d1d5db;">~10 cm</td><td style="padding:8px;border:1px solid #d1d5db;">1 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">2 × 2 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Flyer / Folleto</td><td style="padding:8px;border:1px solid #d1d5db;">20–30 cm</td><td style="padding:8px;border:1px solid #d1d5db;">2 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">3 × 3 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">A4 / Material de escritorio</td><td style="padding:8px;border:1px solid #d1d5db;">30–50 cm</td><td style="padding:8px;border:1px solid #d1d5db;">3 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">4 × 4 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Cartel (A3–A1)</td><td style="padding:8px;border:1px solid #d1d5db;">1–2 m</td><td style="padding:8px;border:1px solid #d1d5db;">10 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">15 × 15 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Señal / Banner</td><td style="padding:8px;border:1px solid #d1d5db;">3–5 m</td><td style="padding:8px;border:1px solid #d1d5db;">30 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">40 × 40 cm</td></tr>
+              <tr><td style="padding:8px;border:1px solid #d1d5db;">Valla publicitaria</td><td style="padding:8px;border:1px solid #d1d5db;">5–10 m</td><td style="padding:8px;border:1px solid #d1d5db;">50 cm</td><td style="padding:8px;border:1px solid #d1d5db;font-weight:bold;">80 × 80 cm</td></tr>
+            </tbody>
+          </table>
+
+          <h2>Uso digital: tamaños en píxeles</h2>
+          <ul>
+            <li><strong>Web / landing page:</strong> 200–300 px suele ser suficiente</li>
+            <li><strong>Firma de correo:</strong> 150–200 px — mantenlo pequeño, los clientes de email pueden distorsionar imágenes grandes</li>
+            <li><strong>Publicación en redes sociales:</strong> Mínimo 400 px — debe ser escaneable en el feed</li>
+            <li><strong>Presentación / proyección:</strong> Mínimo 600 px, 1000 px+ para pantallas grandes</li>
+          </ul>
+
+          <h2>¿PNG o SVG?</h2>
+          <ul>
+            <li><strong>PNG:</strong> Basado en píxeles. Fijo a un tamaño determinado. Se pixela al ampliar. Solo apto para uso digital.</li>
+            <li><strong>SVG:</strong> Vectorial. Independiente del tamaño — de la tarjeta de visita a la valla sin pérdida de calidad. Siempre SVG para imprimir.</li>
+          </ul>
+          <p>Cada código QR creado en <a href="/es/crear-qr-url/" class="text-indigo-600 font-bold hover:underline">QRGenHub</a> puede descargarse en PNG y SVG de forma gratuita.</p>
+
+          <h2>La zona silenciosa: pequeña pero crítica</h2>
+          <p>Todo código QR debe tener un borde blanco — la quiet zone — de al menos <strong>4 anchos de módulo</strong> en los cuatro lados. Sin ella, la cámara no puede detectar los límites del código y el escaneo falla, independientemente del tamaño.</p>
+
+          <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Crea tu Código QR — Gratis, SVG incluido</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Listo para cualquier tamaño. Descarga PNG y SVG gratis.</p>
+            <a href="/es/crear-qr-url/" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Crear Código QR Gratis</a>
+          </div>
+        `,
+        faq: [
+          { q: "¿Cuál es el tamaño mínimo de un código QR?", a: "Para impresión, el mínimo absoluto es 2×2 cm para uso de cerca (tarjetas de visita). Para carteles leídos a 1–2 metros, usa al menos 10×10 cm. Regla general: tamaño QR ≥ distancia de escaneo ÷ 10." },
+          { q: "¿PNG o SVG para impresión grande?", a: "Siempre SVG para impresión. El PNG se pixela al ampliarse. El SVG es vectorial y permanece perfectamente nítido a cualquier tamaño, desde tarjetas hasta vallas publicitarias." },
+          { q: "¿Cuántos píxeles debe tener un código QR para una web?", a: "Mínimo 200×200 píxeles para pantallas estándar. Para pantallas retina y redes sociales, usa al menos 400×400 px. Para presentaciones, 600 px o más." },
+          { q: "¿Qué es la zona silenciosa de un código QR?", a: "Es el borde blanco que rodea el código QR, necesario en los cuatro lados (mínimo 4 anchos de módulo). Sin ella, la cámara no puede detectar los límites del código y el escaneo falla." }
+        ]
+      }
+    }
+  }
+,
+  {
+    id: "sms-qr-guide",
+    category: "Rehber",
+    image: "https://images.unsplash.com/photo-1611746869696-d09bce200020?auto=format&fit=crop&q=80&w=800",
+    imageAlt: "SMS QR Kodu ile Akıllı Telefonda Önceden Doldurulmuş Mesaj",
+    author: "Mert Gündoğan",
+    date: "2026-05-16",
+    languages: {
+      tr: {
+        slug: "sms-qr-kodu-nasil-olusturulur",
+        title: "SMS QR Kodu Nedir ve Nasıl Oluşturulur? (2026 Rehberi)",
+        metaDescription: "SMS QR kodu oluşturmayı öğrenin. Tek taramayla önceden doldurulmuş mesaj gönderen QR kodlar işletmeler için neden ideal? Ücretsiz rehber.",
+        excerpt: "Müşterileriniz tek bir taramayla size SMS atsın — numara aramak yok, mesaj yazmak yok. SMS QR kodunu dakikalar içinde ücretsiz oluşturun.",
+        content: `
+          <h2>SMS QR Kodu Nedir?</h2>
+          <p>SMS QR kodu, tarandığında telefonun mesaj uygulamasını açan ve alıcı numarasıyla mesaj metnini <strong>otomatik olarak dolduran</strong> özel bir QR kodudur. Kullanıcının yapması gereken tek şey "Gönder" butonuna dokunmaktır — numara aramak yok, mesaj yazmak yok.</p>
+          <p>Teknik olarak kod, <code>smsto:+905XXXXXXXXX:Mesaj metni</code> formatında bir bağlantı içerir. Bu standart, iOS ve Android'de ek uygulama gerektirmeksizin çalışır. Tüm modern akıllı telefonlar bu protokolü destekler.</p>
+          <p>SMS QR kodunuzu <a href="/tr/sms-qr/" class="text-indigo-600 font-bold hover:underline">QRGenHub SMS QR oluşturucusu</a> ile saniyeler içinde, ücretsiz ve kayıt gerektirmeden oluşturabilirsiniz.</p>
+
+          <h2>SMS QR Kodunun 5 Temel Kullanım Alanı</h2>
+          <ul>
+            <li><strong>Müşteri geri bildirimi:</strong> "Hizmetimizi beğendiniz mi?" yazan önceden doldurulmuş bir mesaj. Müşteri tek tıkla gönderir, siz anında feedback alırsınız.</li>
+            <li><strong>Rezervasyon ve randevu:</strong> Restoran, kuaför veya klinikler için "Rezervasyon yapmak istiyorum" mesajı. Telefon açmak zorunda kalmadan iletişim başlar.</li>
+            <li><strong>Kampanya ve promosyon:</strong> "INDIRIM10 kodunu göndererek %10 indirim kazan" gibi kampanyalar. Tarama ile katılım anında gerçekleşir.</li>
+            <li><strong>Acil iletişim:</strong> Güvenlik şirketleri, apartman yönetimleri veya etkinlik organizatörleri için anlık bildirim sistemleri.</li>
+            <li><strong>Destek hattı:</strong> "Destek talebi oluşturmak istiyorum" mesajıyla müşteri hizmetleri sürecini başlatın — müşteri beklemeye almadan.</li>
+          </ul>
+
+          <h2>SMS QR Kodu Nasıl Oluşturulur? Adım Adım</h2>
+          <ol>
+            <li><strong>QRGenHub SMS QR sayfasına gidin:</strong> <a href="/tr/sms-qr/" class="text-indigo-600 font-bold hover:underline">qrgenhub.com/tr/sms-qr/</a> adresini açın.</li>
+            <li><strong>Telefon numarasını girin:</strong> Uluslararası format kullanın — örneğin <code>+905551234567</code>. Başında + ve ülke kodu olmadan gönderim sorunu yaşanabilir.</li>
+            <li><strong>Varsayılan mesajı yazın:</strong> Kısa ve net tutun. Kullanıcı isterse düzenleyebilir ama çoğu kişi olduğu gibi gönderir.</li>
+            <li><strong>Tasarımı özelleştirin:</strong> Logonuzu ekleyin, marka renklerinizi seçin. Tarama oranı kişiselleştirilmiş kodlarda %30'a kadar artıyor.</li>
+            <li><strong>Test edin:</strong> Yayına almadan önce hem iPhone hem Android ile tarayın. Mesaj uygulamasının doğru açıldığını doğrulayın.</li>
+            <li><strong>İndirin:</strong> Dijital kullanım için PNG, baskı için SVG formatını seçin.</li>
+          </ol>
+
+          <h2>Varsayılan Mesaj Yazarken Dikkat Edilecekler</h2>
+          <ul>
+            <li><strong>Kısa tutun:</strong> 50-80 karakter ideal. Uzun mesajlar bazı cihazlarda kesilir.</li>
+            <li><strong>Eylem odaklı yazın:</strong> "Bilgi almak istiyorum" yerine "Fiyat teklifi istiyorum — [ürün adı]" daha etkili.</li>
+            <li><strong>Özel karakterlerden kaçının:</strong> &, #, % gibi karakterler bazı cihazlarda sorun çıkarabilir.</li>
+            <li><strong>Her zaman test edin:</strong> Farklı cihazlarda ve farklı SMS uygulamalarında test etmeden yayına almayın.</li>
+          </ul>
+
+          <h2>SMS QR vs Diğer QR Türleri: Hangisini Seçmeli?</h2>
+          <ul>
+            <li><strong>SMS QR:</strong> Anlık iki yönlü iletişim başlatmak için. Müşteri geri bildirim, rezervasyon, kampanya katılımı.</li>
+            <li><strong>Telefon QR:</strong> Doğrudan arama başlatmak için. Çağrı merkezi veya acil durum hatları.</li>
+            <li><strong>Email QR:</strong> Daha uzun iletişimler için. Belge talepleri, detaylı sorular.</li>
+            <li><strong>URL QR:</strong> Web sayfasına yönlendirme için. Menü, katalog, sosyal medya.</li>
+          </ul>
+          <p>SMS QR kodlarının avantajı internet bağlantısı gerektirmemesidir — sadece GSM şebekesi yeterlidir. Bu nedenle düşük sinyal alınan alanlarda bile çalışır.</p>
+
+          <p>QR kod oluşturma konusunda daha fazla bilgi için <a href="/tr/blog/qr-kod-nasil-olusturulur/" class="text-indigo-600 font-bold hover:underline">kapsamlı QR kod oluşturma rehberimize</a> göz atabilirsiniz.</p>
+
+          <div class="bg-blue-50 p-6 rounded-2xl my-8 border border-blue-100 dark:bg-blue-900/30 dark:border-blue-800">
+            <h4 class="text-blue-800 dark:text-blue-300 font-bold mb-2">SMS QR Kodunuzu Şimdi Oluşturun</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Ücretsiz, kayıt gerektirmez, 60 saniyede hazır.</p>
+            <a href="/tr/sms-qr/" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors">👉 SMS QR Kodunu Oluştur</a>
+          </div>
+        `,
+        faq: [
+          { q: "SMS QR kodu internet olmadan çalışır mı?", a: "Evet. SMS QR kodu GSM şebekesi üzerinden çalışır, internet bağlantısı gerekmez. Bu nedenle Wi-Fi olmayan ortamlarda da güvenilir şekilde çalışır." },
+          { q: "Varsayılan mesajı kullanıcı değiştirebilir mi?", a: "Evet. Mesaj uygulaması açıldığında metin düzenlenebilir durumdadır. Kullanıcı isterse değiştirebilir, istemezse olduğu gibi gönderebilir." },
+          { q: "SMS QR kodu tüm telefonlarda çalışır mı?", a: "Evet. SMSTO protokolü iOS ve Android'de tüm modern cihazlarda yerel olarak desteklenir. Ek uygulama gerekmez." },
+          { q: "Kaç karakter mesaj yazabilirim?", a: "Teknik olarak uzun mesajlar yazılabilir ama 160 karakter altında tutmanızı öneririz. Bazı cihazlar uzun metinleri kesiyor veya yanlış gösterebiliyor." },
+          { q: "SMS QR kodu oluşturmak ücretli mi?", a: "Hayır. QRGenHub'da SMS QR kodu oluşturmak tamamen ücretsizdir — kayıt gerekmez, süre sınırı yoktur, sınırsız indirme yapabilirsiniz." }
+        ]
+      },
+      en: {
+        slug: "sms-qr-code-guide",
+        title: "SMS QR Code: What It Is and How to Create One (2026)",
+        metaDescription: "Learn what an SMS QR code is and how to create one free. One scan opens a pre-filled text message — perfect for businesses, feedback, and campaigns.",
+        excerpt: "Let customers text you with a single scan — no number searching, no typing. Create your SMS QR code in minutes, completely free.",
+        content: `
+          <h2>What Is an SMS QR Code?</h2>
+          <p>An SMS QR code is a type of QR code that, when scanned, opens the phone's messaging app with the recipient number and message text <strong>already filled in</strong>. The user only needs to tap "Send" — no number lookup, no typing required.</p>
+          <p>Technically, the code stores a link in the format <code>smsto:+1XXXXXXXXXX:Message text</code>. This standard is natively supported on iOS and Android without any additional apps. Every modern smartphone recognizes it automatically.</p>
+          <p>Create your SMS QR code with the <a href="/en/sms-qr/" class="text-indigo-600 font-bold hover:underline">QRGenHub SMS QR generator</a> — free, no signup, ready in seconds.</p>
+
+          <h2>5 Powerful Use Cases for SMS QR Codes</h2>
+          <ul>
+            <li><strong>Customer feedback:</strong> Pre-fill "I'd like to leave feedback about my visit." Customers tap send in one second — you get instant, frictionless reviews.</li>
+            <li><strong>Reservations and appointments:</strong> "I'd like to make a reservation for [date]." Restaurants, clinics, and salons can start the booking conversation without a phone call.</li>
+            <li><strong>Campaigns and promotions:</strong> "Send OFFER20 to receive 20% off your next purchase." Scan-to-enter campaigns with zero friction for the customer.</li>
+            <li><strong>Support requests:</strong> "I need help with [product name]." Customers initiate support without waiting on hold — your team receives structured requests.</li>
+            <li><strong>Emergency contact:</strong> Security services, building managers, and event organizers use SMS QR for rapid incident reporting on-site.</li>
+          </ul>
+
+          <h2>How to Create an SMS QR Code — Step by Step</h2>
+          <ol>
+            <li><strong>Go to the QRGenHub SMS QR page:</strong> Open <a href="/en/sms-qr/" class="text-indigo-600 font-bold hover:underline">qrgenhub.com/en/sms-qr/</a>.</li>
+            <li><strong>Enter the phone number:</strong> Use international format — for example <code>+12025551234</code>. Always include the country code to ensure delivery across networks.</li>
+            <li><strong>Write the default message:</strong> Keep it short and action-oriented. Most users will send it as-is, so make it specific and useful.</li>
+            <li><strong>Customize the design:</strong> Add your logo and choose brand colors. Personalized QR codes see up to 30% higher scan rates.</li>
+            <li><strong>Test before publishing:</strong> Scan on both iPhone and Android to confirm the messaging app opens correctly with the right number and text.</li>
+            <li><strong>Download:</strong> PNG for digital use, SVG for print materials at any size.</li>
+          </ol>
+
+          <h2>Tips for Writing an Effective Default Message</h2>
+          <ul>
+            <li><strong>Keep it under 80 characters:</strong> Longer messages may be truncated on some devices or split into multiple SMS segments.</li>
+            <li><strong>Be action-specific:</strong> "I want a price quote for [product]" works better than "Hello, I have a question."</li>
+            <li><strong>Avoid special characters:</strong> Characters like &, #, and % can cause encoding issues on some SMS apps.</li>
+            <li><strong>Always test on real devices:</strong> Different SMS apps handle pre-filled messages slightly differently — test before you print.</li>
+          </ul>
+
+          <h2>SMS QR vs Other QR Types: Which Should You Use?</h2>
+          <ul>
+            <li><strong>SMS QR:</strong> Two-way instant communication. Best for feedback, reservations, and campaign opt-ins.</li>
+            <li><strong>Phone QR:</strong> Direct call initiation. Best for call centers and urgent contact lines.</li>
+            <li><strong>Email QR:</strong> Longer-form communication. Best for document requests and detailed inquiries.</li>
+            <li><strong>URL QR:</strong> Web redirect. Best for menus, catalogs, and social media profiles.</li>
+          </ul>
+          <p>The key advantage of SMS QR codes is that they work <strong>without an internet connection</strong> — only a cellular signal is required. This makes them reliable in venues with poor Wi-Fi coverage.</p>
+
+          <p>Want to learn more about QR code creation? Our <a href="/en/blog/how-to-create-qr-code/" class="text-indigo-600 font-bold hover:underline">complete QR code creation guide</a> covers everything from design to optimal print sizes.</p>
+
+          <div class="bg-blue-50 p-6 rounded-2xl my-8 border border-blue-100 dark:bg-blue-900/30 dark:border-blue-800">
+            <h4 class="text-blue-800 dark:text-blue-300 font-bold mb-2">Create Your SMS QR Code Now</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Free, no signup required, ready in 60 seconds.</p>
+            <a href="/en/sms-qr/" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors">👉 Create SMS QR Code</a>
+          </div>
+        `,
+        faq: [
+          { q: "Does an SMS QR code work without internet?", a: "Yes. SMS QR codes work over the cellular network — no internet connection required. This makes them reliable even in venues with no Wi-Fi." },
+          { q: "Can the user change the pre-filled message?", a: "Yes. When the messaging app opens, the text is editable. Users can send it as-is or modify it before sending." },
+          { q: "Do SMS QR codes work on all phones?", a: "Yes. The SMSTO protocol is natively supported on iOS and Android on all modern devices. No additional app is required." },
+          { q: "How long can the default message be?", a: "Technically there is no hard limit, but we recommend staying under 160 characters. Some devices truncate longer messages or split them into multiple SMS segments." },
+          { q: "Is creating an SMS QR code free?", a: "Yes, completely. QRGenHub generates SMS QR codes at no cost — no account, no subscription, unlimited downloads." }
+        ]
+      },
+      de: {
+        slug: "sms-qr-code-erstellen",
+        title: "SMS QR-Code erstellen — Kostenlose Anleitung 2026",
+        metaDescription: "SMS QR-Code kostenlos erstellen. Ein Scan öffnet eine vorausgefüllte SMS — ideal für Kundenfeedback, Reservierungen und Marketing. Ohne Anmeldung.",
+        excerpt: "Lassen Sie Kunden Ihnen mit einem einzigen Scan eine SMS schicken — kein Nummernsuchen, kein Tippen. In Minuten kostenlos erstellen.",
+        content: `
+          <h2>Was ist ein SMS QR-Code?</h2>
+          <p>Ein SMS QR-Code ist ein QR-Code, der beim Scannen die Nachrichten-App des Smartphones öffnet und Empfängernummer sowie Nachrichtentext <strong>automatisch ausfüllt</strong>. Der Nutzer muss nur noch auf "Senden" tippen — kein Nummersuchen, kein Tippen.</p>
+          <p>Technisch speichert der Code einen Link im Format <code>smsto:+49XXXXXXXXX:Nachrichtentext</code>. Dieses Protokoll wird von iOS und Android nativ ohne zusätzliche Apps unterstützt. Alle modernen Smartphones erkennen es automatisch.</p>
+          <p>Erstellen Sie Ihren SMS QR-Code mit dem <a href="/de/sms-qr/" class="text-indigo-600 font-bold hover:underline">QRGenHub SMS QR-Generator</a> — kostenlos, ohne Anmeldung, in Sekunden fertig.</p>
+
+          <h2>5 Einsatzmöglichkeiten für SMS QR-Codes</h2>
+          <ul>
+            <li><strong>Kundenfeedback:</strong> Vorausgefüllte Nachricht: "Ich möchte Feedback zu meinem Besuch hinterlassen." Kunden tippen einmal auf Senden — Sie erhalten sofortige Rückmeldung.</li>
+            <li><strong>Reservierungen und Termine:</strong> "Ich möchte einen Tisch für [Datum] reservieren." Restaurants, Arztpraxen und Salons starten das Gespräch ohne Telefonanruf.</li>
+            <li><strong>Kampagnen und Aktionen:</strong> "RABATT20 senden für 20% Nachlass." Scan-to-enter-Aktionen ohne jede Hürde für den Kunden.</li>
+            <li><strong>Support-Anfragen:</strong> "Ich benötige Hilfe mit [Produkt]." Kunden starten den Support-Prozess ohne Warteschleife — Ihr Team erhält strukturierte Anfragen.</li>
+            <li><strong>Notfallkontakt:</strong> Sicherheitsdienste, Hausverwaltungen und Veranstaltungsorganisatoren nutzen SMS QR-Codes für schnelle Meldungen vor Ort.</li>
+          </ul>
+
+          <h2>SMS QR-Code erstellen — Schritt für Schritt</h2>
+          <ol>
+            <li><strong>QRGenHub SMS QR-Seite öffnen:</strong> Gehen Sie zu <a href="/de/sms-qr/" class="text-indigo-600 font-bold hover:underline">qrgenhub.com/de/sms-qr/</a>.</li>
+            <li><strong>Telefonnummer eingeben:</strong> Internationales Format verwenden — z.B. <code>+4915XXXXXXXX</code>. Immer mit Ländervorwahl, damit die Zustellung über alle Netze funktioniert.</li>
+            <li><strong>Standardnachricht schreiben:</strong> Kurz und präzise halten. Die meisten Nutzer senden sie unverändert — machen Sie sie daher spezifisch und hilfreich.</li>
+            <li><strong>Design anpassen:</strong> Logo einfügen und Markenfarben wählen. Personalisierte QR-Codes erzielen bis zu 30% höhere Scan-Raten.</li>
+            <li><strong>Testen:</strong> Vor der Veröffentlichung auf iPhone und Android scannen, um sicherzustellen, dass die Nachrichten-App korrekt öffnet.</li>
+            <li><strong>Herunterladen:</strong> PNG für digitale Nutzung, SVG für Druckmaterialien in beliebiger Größe.</li>
+          </ol>
+
+          <h2>Tipps für eine effektive Standardnachricht</h2>
+          <ul>
+            <li><strong>Unter 80 Zeichen bleiben:</strong> Längere Nachrichten können auf manchen Geräten abgeschnitten werden.</li>
+            <li><strong>Handlungsorientiert formulieren:</strong> "Ich möchte ein Angebot für [Produkt]" funktioniert besser als "Hallo, ich habe eine Frage."</li>
+            <li><strong>Sonderzeichen vermeiden:</strong> Zeichen wie &, # und % können auf manchen SMS-Apps Kodierungsprobleme verursachen.</li>
+            <li><strong>Immer auf echten Geräten testen:</strong> Verschiedene SMS-Apps verarbeiten vorausgefüllte Nachrichten unterschiedlich — testen Sie vor dem Druck.</li>
+          </ul>
+
+          <p>Neu bei QR-Codes? Unsere <a href="/de/blog/wie-man-einen-qr-code-erstellt/" class="text-indigo-600 font-bold hover:underline">Schritt-für-Schritt-Anleitung zur QR-Code-Erstellung</a> erklärt alles — von der Erstellung bis zur optimalen Druckgröße.</p>
+
+          <div class="bg-blue-50 p-6 rounded-2xl my-8 border border-blue-100 dark:bg-blue-900/30 dark:border-blue-800">
+            <h4 class="text-blue-800 dark:text-blue-300 font-bold mb-2">Jetzt SMS QR-Code erstellen</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Kostenlos, ohne Anmeldung, in 60 Sekunden fertig.</p>
+            <a href="/de/sms-qr/" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors">👉 SMS QR-Code erstellen</a>
+          </div>
+        `,
+        faq: [
+          { q: "Funktioniert ein SMS QR-Code ohne Internet?", a: "Ja. SMS QR-Codes funktionieren über das Mobilfunknetz — keine Internetverbindung erforderlich. Ideal für Orte mit schlechtem WLAN." },
+          { q: "Kann der Nutzer die vorausgefüllte Nachricht ändern?", a: "Ja. Wenn die Nachrichten-App öffnet, ist der Text bearbeitbar. Nutzer können ihn unverändert senden oder vor dem Abschicken anpassen." },
+          { q: "Funktionieren SMS QR-Codes auf allen Smartphones?", a: "Ja. Das SMSTO-Protokoll wird von iOS und Android auf allen modernen Geräten nativ unterstützt. Keine zusätzliche App erforderlich." },
+          { q: "Ist die Erstellung eines SMS QR-Codes kostenlos?", a: "Ja, vollständig kostenlos. QRGenHub erstellt SMS QR-Codes ohne Kosten — kein Konto, kein Abo, unbegrenzte Downloads." }
+        ]
+      },
+      fr: {
+        slug: "creer-code-qr-sms",
+        title: "Créer un Code QR SMS Gratuit — Guide Complet 2026",
+        metaDescription: "Créez un code QR SMS en secondes. Un scan ouvre un message pré-rempli sur n'importe quel smartphone. Gratuit, sans inscription, sans expiration.",
+        excerpt: "Permettez à vos clients de vous envoyer un SMS d'un seul scan — sans chercher le numéro, sans taper. Créez votre QR SMS gratuitement en quelques minutes.",
+        content: `
+          <h2>Qu'est-ce qu'un code QR SMS ?</h2>
+          <p>Un code QR SMS est un code QR qui, lorsqu'il est scanné, ouvre l'application de messagerie du smartphone avec le numéro du destinataire et le texte du message <strong>déjà remplis</strong>. L'utilisateur n'a qu'à appuyer sur "Envoyer" — pas de recherche de numéro, pas de saisie.</p>
+          <p>Techniquement, le code stocke un lien au format <code>smsto:+33XXXXXXXXX:Texte du message</code>. Ce protocole est pris en charge nativement sur iOS et Android sans application supplémentaire. Tous les smartphones modernes le reconnaissent automatiquement.</p>
+          <p>Créez votre code QR SMS avec le <a href="/fr/qr-sms/" class="text-indigo-600 font-bold hover:underline">générateur QR SMS de QRGenHub</a> — gratuit, sans inscription, prêt en quelques secondes.</p>
+
+          <h2>5 cas d'usage puissants pour les codes QR SMS</h2>
+          <ul>
+            <li><strong>Feedback client :</strong> Message pré-rempli : "Je souhaite laisser un avis sur ma visite." Le client appuie sur Envoyer en une seconde — vous recevez des retours instantanés.</li>
+            <li><strong>Réservations et rendez-vous :</strong> "Je souhaite réserver pour [date]." Restaurants, cabinets médicaux et salons démarrent la conversation sans appel téléphonique.</li>
+            <li><strong>Campagnes et promotions :</strong> "Envoyer PROMO20 pour recevoir 20% de réduction." Campagnes d'inscription par scan sans aucune friction pour le client.</li>
+            <li><strong>Demandes de support :</strong> "J'ai besoin d'aide avec [produit]." Les clients initient le support sans attente — votre équipe reçoit des demandes structurées.</li>
+            <li><strong>Contact d'urgence :</strong> Services de sécurité, gestionnaires d'immeubles et organisateurs d'événements utilisent les QR SMS pour des signalements rapides sur site.</li>
+          </ul>
+
+          <h2>Comment créer un code QR SMS — Étape par étape</h2>
+          <ol>
+            <li><strong>Accédez à la page QR SMS de QRGenHub :</strong> Ouvrez <a href="/fr/qr-sms/" class="text-indigo-600 font-bold hover:underline">qrgenhub.com/fr/qr-sms/</a>.</li>
+            <li><strong>Entrez le numéro de téléphone :</strong> Utilisez le format international — par exemple <code>+33600000000</code>. Incluez toujours l'indicatif pays.</li>
+            <li><strong>Rédigez le message par défaut :</strong> Soyez bref et précis. La plupart des utilisateurs l'enverront tel quel — rendez-le spécifique et utile.</li>
+            <li><strong>Personnalisez le design :</strong> Ajoutez votre logo et choisissez vos couleurs. Les codes QR personnalisés obtiennent jusqu'à 30% de scans supplémentaires.</li>
+            <li><strong>Testez avant de publier :</strong> Scannez sur iPhone et Android pour confirmer que l'application de messagerie s'ouvre correctement.</li>
+            <li><strong>Téléchargez :</strong> PNG pour le digital, SVG pour l'impression à n'importe quelle taille.</li>
+          </ol>
+
+          <h2>QR SMS vs autres types de QR : lequel choisir ?</h2>
+          <ul>
+            <li><strong>QR SMS :</strong> Communication instantanée bidirectionnelle. Idéal pour les retours, réservations et campagnes.</li>
+            <li><strong>QR Téléphone :</strong> Appel direct. Idéal pour les centres d'appels et lignes d'urgence.</li>
+            <li><strong>QR E-mail :</strong> Communication plus longue. Idéal pour les demandes de documents et questions détaillées.</li>
+            <li><strong>QR URL :</strong> Redirection web. Idéal pour les menus, catalogues et réseaux sociaux.</li>
+          </ul>
+          <p>L'avantage clé des codes QR SMS est qu'ils fonctionnent <strong>sans connexion internet</strong> — seul le réseau mobile est nécessaire. Fiables même dans les lieux sans Wi-Fi.</p>
+
+          <p>Vous débutez avec les codes QR ? Notre <a href="/fr/blog/qr-code-carte-de-visite/" class="text-indigo-600 font-bold hover:underline">guide complet des codes QR</a> couvre tout, du design aux tailles d'impression optimales.</p>
+
+          <div class="bg-blue-50 p-6 rounded-2xl my-8 border border-blue-100 dark:bg-blue-900/30 dark:border-blue-800">
+            <h4 class="text-blue-800 dark:text-blue-300 font-bold mb-2">Créez votre code QR SMS maintenant</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Gratuit, sans inscription, prêt en 60 secondes.</p>
+            <a href="/fr/qr-sms/" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors">👉 Créer mon Code QR SMS</a>
+          </div>
+        `,
+        faq: [
+          { q: "Un code QR SMS fonctionne-t-il sans internet ?", a: "Oui. Les codes QR SMS fonctionnent via le réseau mobile — aucune connexion internet requise. Idéal pour les lieux sans Wi-Fi fiable." },
+          { q: "L'utilisateur peut-il modifier le message pré-rempli ?", a: "Oui. Quand l'application de messagerie s'ouvre, le texte est modifiable. L'utilisateur peut l'envoyer tel quel ou le modifier avant l'envoi." },
+          { q: "Les codes QR SMS fonctionnent-ils sur tous les téléphones ?", a: "Oui. Le protocole SMSTO est pris en charge nativement sur iOS et Android sur tous les appareils modernes. Aucune application supplémentaire n'est nécessaire." },
+          { q: "La création d'un code QR SMS est-elle gratuite ?", a: "Oui, entièrement. QRGenHub génère des codes QR SMS sans frais — pas de compte, pas d'abonnement, téléchargements illimités." }
+        ]
+      },
+      es: {
+        slug: "crear-codigo-qr-sms",
+        title: "Crear Código QR para SMS Gratis — Guía Completa 2026",
+        metaDescription: "Crea un código QR SMS en segundos. Un escaneo abre un mensaje de texto predefinido en cualquier smartphone. Gratis, sin registro, sin caducidad.",
+        excerpt: "Permite que tus clientes te envíen un SMS con un solo escaneo — sin buscar el número, sin escribir. Crea tu QR SMS gratis en minutos.",
+        content: `
+          <h2>¿Qué es un código QR SMS?</h2>
+          <p>Un código QR SMS es un código QR que, al escanearse, abre la aplicación de mensajes del smartphone con el número del destinatario y el texto del mensaje <strong>ya rellenados</strong>. El usuario solo tiene que pulsar "Enviar" — sin buscar número, sin escribir nada.</p>
+          <p>Técnicamente, el código almacena un enlace en el formato <code>smsto:+34XXXXXXXXX:Texto del mensaje</code>. Este protocolo está soportado de forma nativa en iOS y Android sin aplicaciones adicionales. Todos los smartphones modernos lo reconocen automáticamente.</p>
+          <p>Cree su código QR SMS con el <a href="/es/qr-sms/" class="text-indigo-600 font-bold hover:underline">generador QR SMS de QRGenHub</a> — gratis, sin registro, listo en segundos.</p>
+
+          <h2>5 casos de uso para los códigos QR SMS</h2>
+          <ul>
+            <li><strong>Feedback de clientes:</strong> Mensaje pre-relleno: "Quiero dejar una opinión sobre mi visita." El cliente pulsa enviar en un segundo — usted recibe comentarios al instante.</li>
+            <li><strong>Reservas y citas:</strong> "Quiero reservar para [fecha]." Restaurantes, clínicas y salones inician la conversación sin llamada telefónica.</li>
+            <li><strong>Campañas y promociones:</strong> "Enviar OFERTA20 para recibir un 20% de descuento." Campañas de participación por escaneo sin ninguna fricción para el cliente.</li>
+            <li><strong>Solicitudes de soporte:</strong> "Necesito ayuda con [producto]." Los clientes inician el soporte sin esperas — su equipo recibe solicitudes estructuradas.</li>
+            <li><strong>Contacto de emergencia:</strong> Servicios de seguridad, administradores de edificios y organizadores de eventos usan QR SMS para notificaciones rápidas in situ.</li>
+          </ul>
+
+          <h2>Cómo crear un código QR SMS — Paso a paso</h2>
+          <ol>
+            <li><strong>Acceda a la página QR SMS de QRGenHub:</strong> Abra <a href="/es/qr-sms/" class="text-indigo-600 font-bold hover:underline">qrgenhub.com/es/qr-sms/</a>.</li>
+            <li><strong>Introduzca el número de teléfono:</strong> Use formato internacional — por ejemplo <code>+34600000000</code>. Incluya siempre el prefijo del país.</li>
+            <li><strong>Escriba el mensaje predeterminado:</strong> Sea breve y específico. La mayoría de usuarios lo enviarán tal cual — hágalo útil y concreto.</li>
+            <li><strong>Personalice el diseño:</strong> Añada su logo y elija colores de marca. Los códigos QR personalizados obtienen hasta un 30% más de escaneos.</li>
+            <li><strong>Pruebe antes de publicar:</strong> Escanee en iPhone y Android para confirmar que la aplicación de mensajes se abre correctamente.</li>
+            <li><strong>Descargue:</strong> PNG para uso digital, SVG para materiales impresos a cualquier tamaño.</li>
+          </ol>
+
+          <h2>QR SMS vs otros tipos de QR: ¿cuál elegir?</h2>
+          <ul>
+            <li><strong>QR SMS:</strong> Comunicación bidireccional instantánea. Ideal para opiniones, reservas y campañas.</li>
+            <li><strong>QR Teléfono:</strong> Llamada directa. Ideal para centros de llamadas y líneas de urgencia.</li>
+            <li><strong>QR Email:</strong> Comunicación más larga. Ideal para solicitudes de documentos y consultas detalladas.</li>
+            <li><strong>QR URL:</strong> Redirección web. Ideal para menús, catálogos y redes sociales.</li>
+          </ul>
+          <p>La ventaja clave de los códigos QR SMS es que funcionan <strong>sin conexión a internet</strong> — solo se necesita señal móvil. Fiables incluso en lugares sin Wi-Fi.</p>
+
+          <p>¿Nuevo en los códigos QR? Nuestra <a href="/es/blog/como-crear-un-codigo-qr/" class="text-indigo-600 font-bold hover:underline">guía completa de creación de códigos QR</a> cubre todo, desde el diseño hasta los tamaños de impresión óptimos.</p>
+
+          <div class="bg-blue-50 p-6 rounded-2xl my-8 border border-blue-100 dark:bg-blue-900/30 dark:border-blue-800">
+            <h4 class="text-blue-800 dark:text-blue-300 font-bold mb-2">Cree su código QR SMS ahora</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Gratis, sin registro, listo en 60 segundos.</p>
+            <a href="/es/qr-sms/" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-blue-700 transition-colors">👉 Crear Código QR SMS</a>
+          </div>
+        `,
+        faq: [
+          { q: "¿El código QR SMS funciona sin internet?", a: "Sí. Los códigos QR SMS funcionan a través de la red móvil — no se necesita conexión a internet. Fiables incluso en lugares sin Wi-Fi." },
+          { q: "¿Puede el usuario cambiar el mensaje predefinido?", a: "Sí. Cuando se abre la aplicación de mensajes, el texto es editable. El usuario puede enviarlo tal cual o modificarlo antes de enviarlo." },
+          { q: "¿Los códigos QR SMS funcionan en todos los teléfonos?", a: "Sí. El protocolo SMSTO está soportado de forma nativa en iOS y Android en todos los dispositivos modernos. No se necesita ninguna aplicación adicional." },
+          { q: "¿Es gratuito crear un código QR SMS?", a: "Sí, completamente. QRGenHub genera códigos QR SMS sin coste — sin cuenta, sin suscripción, descargas ilimitadas." }
         ]
       }
     }
