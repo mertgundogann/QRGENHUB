@@ -153,11 +153,11 @@ const SEO = ({ title, description, image, structuredData, additionalStructuredDa
           {JSON.stringify(structuredData)}
         </script>
       )}
-      {additionalStructuredData && (
-        <script type="application/ld+json">
-          {JSON.stringify(additionalStructuredData)}
+      {additionalStructuredData && (Array.isArray(additionalStructuredData) ? additionalStructuredData : [additionalStructuredData]).map((schema, i) => (
+        <script key={i} type="application/ld+json">
+          {JSON.stringify(schema)}
         </script>
-      )}
+      ))}
       {webAppSchema && (
         <script type="application/ld+json">
           {JSON.stringify(webAppSchema)}

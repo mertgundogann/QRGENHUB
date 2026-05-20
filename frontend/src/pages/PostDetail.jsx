@@ -98,7 +98,7 @@ const PostDetail = () => {
     "headline": langContent.title,
     "image": [post.image],
     "datePublished": post.date,
-    "dateModified": new Date().toISOString().split('T')[0],
+    "dateModified": post.date,
     "author": {
       "@type": "Organization",
       "name": "QRGenHub Team",
@@ -133,6 +133,20 @@ const PostDetail = () => {
     }))
   } : null;
 
+  const howToSchema = langContent.howToSteps && langContent.howToSteps.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": langContent.title,
+    "step": langContent.howToSteps.map((step, index) => ({
+      "@type": "HowToStep",
+      "position": index + 1,
+      "name": step.name,
+      "text": step.text
+    }))
+  } : null;
+
+  const additionalSchemas = [faqSchema, howToSchema].filter(Boolean);
+
   return (
     <div className="w-full min-h-screen transition-colors duration-300 bg-white dark:bg-gray-900 pb-20">
       <SEO
@@ -141,7 +155,7 @@ const PostDetail = () => {
         image={post.image}
         localizedSlugs={post.languages}
         structuredData={articleSchema}
-        additionalStructuredData={faqSchema}
+        additionalStructuredData={additionalSchemas}
       />
 
       <div className="max-w-4xl mx-auto px-4 py-12">

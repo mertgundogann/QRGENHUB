@@ -67,6 +67,13 @@
           { q: "Wi-Fi şifrem QR kodu oluştururken güvende mi?", a: "Evet. Şifreniz yalnızca tarayıcınızda işlenir ve sunucularımıza hiçbir zaman gönderilmez. Tüm QR oluşturma işlemi cihazınızda gerçekleşir." },
           { q: "iPhone Wi-Fi QR kodunu okuyabiliyor mu?", a: "Evet. iOS 11 ve üzeri sürümlerde iPhone'un kamera uygulaması Wi-Fi QR kodlarını otomatik olarak tanır ve 'Wi-Fi Ağına Katıl' bildirimi gösterir. Ek uygulama indirmeye gerek yoktur." },
           { q: "Hangi şifreleme türünü seçmeliyim?", a: "Ev ve işyeri yönlendiricileri için WPA/WPA2 seçin — modern ağların %99'unu kapsar. WEP yalnızca çok eski donanımlar için, 'Yok' ise şifresiz açık ağlar için geçerlidir." }
+        ],
+        howToSteps: [
+          { name: "Ağ adını (SSID) girin", text: "Modeminizin arkasındaki veya telefon Wi-Fi listenizdeki ismi birebir yazın. Büyük-küçük harf duyarlıdır." },
+          { name: "Şifreleme türünü seçin", text: "Ev ve işyeri ağlarının %99'u WPA/WPA2 kullanır. Emin değilseniz bu seçeneği tercih edin." },
+          { name: "Şifrenizi girin", text: "Şifreniz yalnızca tarayıcınızda işlenir, sunucularımıza gönderilmez." },
+          { name: "Tasarımı özelleştirin", text: "İsteğe bağlı: logonuzu ekleyin, marka renklerinizi kullanın." },
+          { name: "İndirin", text: "Web için PNG, baskı için SVG formatında ücretsiz indirin." }
         ]
       },
       en: {
@@ -80,7 +87,7 @@
           <p>Wi-Fi QR Codes solve this problem permanently. A two-second scan and your guest is online — without you saying a single character of your password.</p>
 
           <h2>What Is a Wi-Fi QR Code, Technically?</h2>
-          <p>A Wi-Fi QR code encodes your network credentials — SSID (network name), encryption type, and password — in a standardized WPA/WPA2 format defined by the IEEE 802.11 specification. When a smartphone scans the code, the operating system recognizes this format automatically and offers to join the network — no third-party app required. Your password is processed entirely in your browser and never stored on our servers.</p>
+          <p>A Wi-Fi QR code encodes your network credentials — SSID (network name), encryption type, and password — in a standardized WPA/WPA2 format defined by the <a href="https://www.wi-fi.org/discover-wi-fi/wi-fi-certified" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-bold hover:underline">IEEE 802.11 specification</a>. When a smartphone scans the code, the operating system recognizes this format automatically and offers to join the network — no third-party app required. Your password is processed entirely in your browser and never stored on our servers.</p>
 
           <h3>4 Key Benefits of Wi-Fi QR Codes</h3>
           <ul>
@@ -129,6 +136,13 @@
           { q: "Is my Wi-Fi password safe when generating the QR code?", a: "Yes. Your password is processed entirely in your browser and never sent to our servers. The entire QR generation happens locally on your device." },
           { q: "Does an iPhone scan Wi-Fi QR codes?", a: "Yes. On iOS 11 and later, the built-in Camera app automatically recognises Wi-Fi QR codes and shows a 'Join Network' notification. No third-party app needed." },
           { q: "What encryption type should I choose?", a: "Select WPA/WPA2 for home and business routers — this covers over 99% of modern networks. Only choose WEP for very old hardware, or 'None' for open networks with no password." }
+        ],
+        howToSteps: [
+          { name: "Enter your SSID (network name)", text: "Type the exact network name as it appears in your router settings or Wi-Fi list — it is case-sensitive." },
+          { name: "Select your encryption type", text: "Choose WPA/WPA2 for virtually all modern home and business networks." },
+          { name: "Enter your password", text: "Your password is processed only in your browser and never sent to QRGenHub servers." },
+          { name: "Customize the design (optional)", text: "Add your logo and choose brand colors to match your venue." },
+          { name: "Download", text: "Download PNG for digital display or SVG for print materials — both are free." }
         ]
       },
       fr: {
@@ -387,6 +401,13 @@
           { q: "QR koduma logo ekleyebilir miyim?", a: "Evet. QRGenHub, QR kodunuzun ortasına logo eklemenize ve renkleri özelleştirmenize olanak tanır. Hata düzeltme algoritması, logolu kodun güvenilir şekilde taranmasını sağlar." },
           { q: "PNG mi SVG mi indirmeliyim?", a: "Web sitesi, e-posta ve sosyal medya için PNG yeterlidir. Broşür, afiş veya kartvizit gibi baskı materyalleri için her zaman SVG seçin — bu vektör format kalite kaybı olmadan her boyuta ölçeklenir." },
           { q: "QR kodu oluştururken verilerim kaydediliyor mu?", a: "Hayır. QRGenHub'da girdiğiniz veriler yalnızca tarayıcınızda işlenir, sunucularımızda saklanmaz. URL'leriniz, Wi-Fi şifreleriniz ve iletişim bilgileriniz tamamen gizli kalır." }
+        ],
+        howToSteps: [
+          { name: "QR tipini seçin", text: "URL, Wi-Fi, telefon numarası, e-posta, vCard veya düz metin seçeneklerinden kodunuzun içereceği türü belirleyin." },
+          { name: "İçeriğinizi girin", text: "URL yapıştırın veya ilgili alanları doldurun. URL için başında https:// olduğundan emin olun." },
+          { name: "Tasarımı özelleştirin", text: "Logonuzu merkeze ekleyin, marka renklerinizi kullanın. Koyu kod, açık arka plan — yüksek kontrast zorunludur." },
+          { name: "İndirmeden önce test edin", text: "Yerleşik önizleme ile hem iOS hem Android üzerinde kodun doğru tarandığını doğrulayın." },
+          { name: "Doğru formatta indirin", text: "Dijital kullanım için PNG, baskı için SVG seçin. SVG kalite kaybı olmadan sınırsız büyütülebilir." }
         ]
       },
       en: {
@@ -449,6 +470,13 @@
           { q: "Can I embed a logo in my QR code?", a: "Yes. QRGenHub lets you add your own logo to the centre of the QR code and customise colours. The error-correction algorithm ensures the code remains reliably scannable even with a logo." },
           { q: "Should I download PNG or SVG?", a: "PNG is sufficient for digital use (websites, email, social media). For print materials like flyers, posters or business cards, always choose SVG — this vector format scales to any size without quality loss." },
           { q: "Is my data stored when creating a QR code?", a: "No. Your inputs are processed exclusively in your browser and never stored on our servers. Your URLs, Wi-Fi passwords and contact details remain completely private." }
+        ],
+        howToSteps: [
+          { name: "Choose your QR type", text: "Select what your code will contain — a URL, Wi-Fi credentials, a phone number, an email, a vCard, or plain text." },
+          { name: "Enter your content", text: "Paste your URL or fill in the relevant fields. For URLs, always include https:// at the beginning." },
+          { name: "Customize your design", text: "Add your logo to the center and choose brand colors. Always maintain high contrast: dark code on a light background." },
+          { name: "Test before downloading", text: "Use the built-in preview to verify the code scans correctly on both iOS and Android." },
+          { name: "Download in the right format", text: "Choose PNG for digital use, SVG for print. SVG scales to any size without quality loss." }
         ]
       },
       fr: {
@@ -3177,7 +3205,7 @@
 
           <h2>7. Eski Telefon veya Kirli Kamera Lensi</h2>
           <p>Telefon kamerasının lensi kirli, çizili veya odaklama sistemi zayıfsa QR okutma güçleşir. Ayrıca bazı eski telefon modelleri kamera uygulamasından doğrudan QR okutmayı desteklemez.</p>
-          <p><strong>Çözüm:</strong> Lensi temizleyin. Kamera uygulaması çalışmıyorsa Google Lens veya iPhone'da Fotoğraflar uygulamasını deneyin. Sorun devam ediyorsa farklı bir telefonla test edin.</p>
+          <p><strong>Çözüm:</strong> Lensi temizleyin. Kamera uygulaması çalışmıyorsa <a href="https://lens.google.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-bold hover:underline">Google Lens</a> veya iPhone'da Fotoğraflar uygulamasını deneyin. Sorun devam ediyorsa farklı bir telefonla test edin.</p>
 
           <h2>Baskı Öncesi Test Listesi</h2>
           <ul>
@@ -3236,7 +3264,7 @@
 
           <h2>7. Old Phone or Dirty Camera Lens</h2>
           <p>A smudged or scratched camera lens significantly reduces scan reliability. Some older phones also do not support native QR scanning through the camera app.</p>
-          <p><strong>Fix:</strong> Clean the lens. If the native camera app fails, try Google Lens (Android) or the Photos app (iPhone). Always test on both iOS and Android before publishing.</p>
+          <p><strong>Fix:</strong> Clean the lens. If the native camera app fails, try <a href="https://lens.google.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-bold hover:underline">Google Lens</a> (Android) or the Photos app (iPhone). Always test on both iOS and Android before publishing.</p>
 
           <h2>Pre-Print Checklist</h2>
           <ul>
@@ -3295,7 +3323,7 @@
 
           <h2>7. Téléphone ancien ou objectif sale</h2>
           <p>Un objectif sale ou rayé réduit considérablement la fiabilité du scan. Certains anciens modèles ne supportent pas non plus la lecture QR native via l'appareil photo.</p>
-          <p><strong>Solution :</strong> Nettoyez l'objectif. Si l'appli photo échoue, essayez Google Lens ou l'appli Photos sur iPhone. Testez toujours sur iOS et Android avant publication.</p>
+          <p><strong>Solution :</strong> Nettoyez l'objectif. Si l'appli photo échoue, essayez <a href="https://lens.google.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-bold hover:underline">Google Lens</a> ou l'appli Photos sur iPhone. Testez toujours sur iOS et Android avant publication.</p>
 
           <h2>Liste de contrôle avant impression</h2>
           <ul>
@@ -3354,7 +3382,7 @@
 
           <h2>7. Altes Gerät oder verschmutztes Kameraobjektiv</h2>
           <p>Ein verschmiertes oder zerkratztes Objektiv verringert die Scan-Zuverlässigkeit erheblich. Ältere Smartphones unterstützen zudem oft kein natives QR-Scannen über die Kamera-App.</p>
-          <p><strong>Lösung:</strong> Reinigen Sie das Objektiv. Falls die Kamera-App versagt, Google Lens (Android) oder die Fotos-App (iPhone) probieren. Immer auf iOS und Android testen, bevor Sie veröffentlichen.</p>
+          <p><strong>Lösung:</strong> Reinigen Sie das Objektiv. Falls die Kamera-App versagt, <a href="https://lens.google.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-bold hover:underline">Google Lens</a> (Android) oder die Fotos-App (iPhone) probieren. Immer auf iOS und Android testen, bevor Sie veröffentlichen.</p>
 
           <h2>Checkliste vor dem Druck</h2>
           <ul>
@@ -3413,7 +3441,7 @@
 
           <h2>7. Teléfono antiguo u objetivo sucio</h2>
           <p>Un objetivo sucio o rayado reduce notablemente la fiabilidad del escaneo. Algunos móviles antiguos tampoco soportan la lectura QR nativa desde la cámara.</p>
-          <p><strong>Solución:</strong> Limpia el objetivo. Si la app de cámara falla, prueba Google Lens (Android) o la app Fotos (iPhone). Siempre testea en iOS y Android antes de publicar.</p>
+          <p><strong>Solución:</strong> Limpia el objetivo. Si la app de cámara falla, prueba <a href="https://lens.google.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-bold hover:underline">Google Lens</a> (Android) o la app Fotos (iPhone). Siempre testea en iOS y Android antes de publicar.</p>
 
           <h2>Lista de verificación antes de imprimir</h2>
           <ul>
