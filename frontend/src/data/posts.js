@@ -429,7 +429,7 @@
             <li><strong>Always test on real devices:</strong> Test on both an iPhone and an Android phone before publishing or printing.</li>
           </ul>
 
-          <h2>3 FAQ questions</h2>
+          <h2>Frequently Asked Questions</h2>
           <h3>Is QRGenHub really free?</h3>
           <p>Yes, completely. You can create, customize, and download unlimited QR codes without creating an account or providing a credit card.</p>
           <h3>How long does a QR code last?</h3>
