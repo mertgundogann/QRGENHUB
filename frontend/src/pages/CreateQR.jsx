@@ -59,7 +59,7 @@ const CreateQR = ({ defaultType }) => {
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": t('faq_items', { returnObjects: true }).map(item => ({
+  "mainEntity": (t('faq_items', { returnObjects: true }) || []).map(item => ({
     "@type": "Question",
     "name": item.q,
     "acceptedAnswer": {
@@ -163,11 +163,10 @@ const faqSchema = {
       setQr(res.data.qr);
     } catch (err) {
       if (axios.isCancel(err)) {
-        console.log("Request canceled:", err.message);
-        return; 
+        return;
       }
 
-      console.error("Backend Connection Error:", err);
+
       if (err.response?.status === 429) {
         toast.error(t('ERR_TOO_MANY_REQUESTS') || "Too many requests!");
       } else {
@@ -308,7 +307,6 @@ const faqSchema = {
       a.download = `qrgen-${type}.svg`;
       a.click();
     } catch (err) {
-      console.error('SVG generation error:', err);
       toast.error('SVG export failed. Please try PNG.');
     }
   };
