@@ -3082,50 +3082,67 @@
       },
       fr: {
         slug: "creer-code-qr-numero-telephone",
-        title: "Créer un Code QR pour Numéro de Téléphone (Gratuit) : Un Scan pour Appeler",
-        metaDescription: "Transformez votre numéro de téléphone en code QR scannable. Vos clients appellent en un scan depuis cartes de visite, affiches et sites web. Gratuit.",
-        excerpt: "Permettez à vos clients de vous appeler en un seul scan. Transformez n'importe quel numéro en QR code pour vos cartes et affiches — entièrement gratuit.",
+        title: "Créer un Code QR de Numéro de Téléphone Gratuit : Un Scan pour Appeler",
+        metaDescription: "Créez gratuitement le code QR de votre numéro de téléphone. Vos clients appellent en un scan depuis cartes de visite, affiches ou votre site. Sans inscription.",
+        excerpt: "Transformez votre numéro de téléphone en code QR scannable, gratuitement et sans inscription. Vos clients appellent d'un seul scan — depuis une carte de visite, une affiche ou votre site web.",
         content: `
-          <h2>Qu'est-ce qu'un Code QR de Téléphone ?</h2>
-          <p>Un <strong>code QR de téléphone</strong> est un code-barres 2D qui encode un numéro via le protocole <code>tel:</code>. Lorsqu'on le scanne avec un smartphone, l'application d'appel s'ouvre avec votre numéro prérempli — il suffit d'appuyer sur "Appeler".</p>
-          <p>Fini les erreurs de composition, les appels manqués et la frustration. Utilisez notre <a href="/fr/qr-telephone" class="text-indigo-600 font-bold hover:underline">générateur de QR téléphonique gratuit</a> pour créer le vôtre en quelques secondes, sans inscription.</p>
+          <h2>Qu'est-ce qu'un Code QR de Numéro de Téléphone ?</h2>
+          <p>Un <strong>code QR de numéro de téléphone</strong> est un code-barres 2D qui encode votre numéro via le protocole <code>tel:</code>. Lorsqu'on le scanne, l'application d'appel s'ouvre avec votre numéro déjà renseigné — il suffit d'appuyer sur "Appeler". Aucune erreur de saisie, aucun appel manqué.</p>
+          <p>Créer votre code QR de téléphone est <strong>entièrement gratuit</strong> sur QRGenHub — sans inscription, sans filigrane, téléchargement PNG et SVG inclus.</p>
 
-          <h3>Où utiliser un Code QR de Téléphone ?</h3>
-          <ul>
-            <li><strong>Cartes de visite :</strong> Ajoutez le QR à côté de votre numéro — vos contacts appellent sans taper.</li>
-            <li><strong>Vitrines et affiches :</strong> Collez-le en vitrine pour que les passants vous contactent immédiatement.</li>
-            <li><strong>Site web :</strong> Placez-le à côté de "Appelez-nous" pour que les visiteurs bureau scannent avec leur mobile.</li>
-            <li><strong>Emballages produits :</strong> Rendez votre service client accessible directement sur la boîte.</li>
-            <li><strong>Signature e-mail :</strong> Un QR dans votre signature permet au destinataire de vous appeler d'un seul scan.</li>
-          </ul>
-
-          <h3>Comment créer un Code QR de Téléphone (Étape par étape)</h3>
+          <h2>Comment Créer son Code QR de Téléphone (Étape par Étape)</h2>
           <ol>
-            <li><strong>Accédez à l'outil :</strong> Rendez-vous sur <a href="/fr/qr-telephone" class="text-indigo-600 font-bold hover:underline">qrgenhub.com/fr/qr-telephone</a>.</li>
-            <li><strong>Entrez votre numéro :</strong> Utilisez le format international. Exemple pour la France : <code>+33600000000</code>.</li>
-            <li><strong>Générez :</strong> Cliquez — votre code QR est prêt instantanément.</li>
-            <li><strong>Téléchargez :</strong> Enregistrez en PNG et ajoutez-le à votre carte, flyer ou site.</li>
+            <li><strong>Accédez à l'outil :</strong> Rendez-vous sur <a href="/fr/telephone-qr/" class="text-indigo-600 font-bold hover:underline">QRGenHub — Générateur QR Téléphone</a>. Sans inscription.</li>
+            <li><strong>Entrez votre numéro :</strong> Utilisez le format international pour une compatibilité maximale. Exemple pour la France : <code>+33600000000</code>.</li>
+            <li><strong>Personnalisez le design :</strong> Ajoutez votre logo et choisissez les couleurs de votre charte graphique.</li>
+            <li><strong>Téléchargez gratuitement :</strong> PNG pour le web et les réseaux sociaux, SVG pour l'impression sans perte de qualité.</li>
           </ol>
 
-          <h3>L'importance du format international</h3>
+          <h2>Pourquoi le Format International est Indispensable</h2>
+          <p>L'erreur la plus fréquente est d'entrer le numéro en format local. Résultat : le QR ne fonctionne pas sur les téléphones d'autres pays.</p>
           <ul>
-            <li>✅ <strong>Correct :</strong> <code>+33600000000</code></li>
-            <li>❌ <strong>Incorrect :</strong> <code>0600000000</code></li>
+            <li>✅ <strong>Correct :</strong> <code>+33600000000</code> (France), <code>+32600000000</code> (Belgique)</li>
+            <li>❌ <strong>Incorrect :</strong> <code>0600000000</code>, <code>06 00 00 00 00</code></li>
+          </ul>
+          <p>Le signe <code>+</code> au début est l'indicatif de pays international. Sans lui, le QR peut échouer hors de votre pays d'origine.</p>
+
+          <h2>Où Utiliser votre Code QR de Téléphone ?</h2>
+          <ul>
+            <li><strong>Cartes de visite :</strong> Placez le QR à côté de votre numéro — vos contacts appellent sans taper.</li>
+            <li><strong>Vitrines et affiches :</strong> Les passants peuvent vous contacter immédiatement, sans noter quoi que ce soit.</li>
+            <li><strong>Site web et landing pages :</strong> Placez-le à côté de "Appelez-nous" pour que les visiteurs desktop scannent avec leur mobile.</li>
+            <li><strong>Emballages produits :</strong> Rendez votre service client accessible directement sur la boîte.</li>
+            <li><strong>Signature e-mail :</strong> Le destinataire vous appelle en un seul scan.</li>
+            <li><strong>Menus de restaurant :</strong> Pour les réservations ou commandes directes par téléphone.</li>
           </ul>
 
-          <h3>QR Téléphone vs. QR vCard : Quelle différence ?</h3>
+          <h2>Comment Scanner un Code QR Téléphone ?</h2>
+          <p>Aucune application supplémentaire n'est nécessaire :</p>
           <ul>
-            <li><strong>QR Téléphone :</strong> Ouvre le composeur immédiatement. Simple et direct.</li>
-            <li><strong>QR vCard :</strong> Enregistre toutes vos coordonnées (nom, numéro, email, société) dans le répertoire.</li>
+            <li><strong>iPhone (iOS 11+) :</strong> Ouvrez l'appareil photo natif et pointez-le vers le code. Une notification d'appel apparaît automatiquement.</li>
+            <li><strong>Android :</strong> La plupart des modèles récents lisent le QR directement depuis l'appareil photo. Sinon, utilisez Google Lens.</li>
           </ul>
-          <p>Utilisez le QR téléphone pour un appel rapide. Utilisez le <a href="/fr/qr-vcard" class="text-indigo-600 font-bold hover:underline">QR vCard</a> pour partager toutes vos informations.</p>
+
+          <h2>QR Téléphone vs. QR vCard : Lequel Choisir ?</h2>
+          <ul>
+            <li><strong>QR Téléphone :</strong> Ouvre le composeur immédiatement. Idéal pour les appels rapides et les affiches.</li>
+            <li><strong>QR vCard :</strong> Enregistre nom, numéro, email et société directement dans le répertoire. Mieux adapté aux cartes de visite complètes.</li>
+          </ul>
+          <p>Vous souhaitez partager toutes vos coordonnées ? Utilisez plutôt le <a href="/fr/qr-vcard/" class="text-indigo-600 font-bold hover:underline">générateur de QR vCard</a>.</p>
 
           <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
-            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Créez le vôtre — Gratuit</h4>
-            <p class="mb-4 text-gray-600 dark:text-gray-300">Transformez n'importe quel numéro en QR code scannable en secondes.</p>
-            <a href="/fr/qr-telephone" title="Générateur de QR téléphonique gratuit" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Créer mon Code QR Téléphone gratuitement</a>
+            <h4 class="text-indigo-800 dark:text-indigo-300 font-bold mb-2">Créez votre code QR téléphone — Gratuit</h4>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">Sans inscription, sans filigrane. PNG et SVG inclus.</p>
+            <a href="/fr/telephone-qr/" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-indigo-700 transition-colors">👉 Créer mon Code QR Téléphone gratuitement</a>
           </div>
-        `
+        `,
+        faq: [
+          { q: "Comment créer un code QR de mon numéro de téléphone gratuitement ?", a: "Rendez-vous sur QRGenHub, sélectionnez l'outil QR Téléphone, entrez votre numéro au format international (ex : +33600000000) et téléchargez le QR en PNG ou SVG. C'est entièrement gratuit et ne nécessite aucune inscription." },
+          { q: "Dans quel format dois-je entrer mon numéro de téléphone ?", a: "Toujours au format international : le code pays avec le signe + suivi du numéro. Exemple pour la France : +33600000000. Sans le préfixe international, le code peut ne pas fonctionner sur des smartphones d'autres pays." },
+          { q: "Le code QR téléphone fonctionne-t-il sur iPhone et Android ?", a: "Oui. Sur iPhone avec iOS 11 ou supérieur, l'appareil photo natif reconnaît le QR et affiche une notification pour appeler. Sur Android, la plupart des modèles récents le lisent directement depuis l'appareil photo ou via Google Lens." },
+          { q: "Quelle différence entre un QR téléphone et un QR vCard ?", a: "Le QR téléphone ouvre directement le composeur avec votre numéro. Le QR vCard enregistre toutes vos coordonnées (nom, téléphone, email, société) dans le répertoire. Pour un appel rapide, choisissez le QR téléphone. Pour partager toutes vos données, choisissez le QR vCard." },
+          { q: "Puis-je ajouter mon logo au code QR de mon téléphone ?", a: "Oui. QRGenHub permet de personnaliser la couleur et d'ajouter un logo au centre du QR. L'algorithme de correction d'erreur garantit que le code reste scannable même avec un logo." }
+        ]
       },
       de: {
         slug: "telefonnummer-qr-code-erstellen",
@@ -3247,48 +3264,67 @@
       },
       en: {
         slug: "qr-code-not-scanning-fix",
-        title: "QR Code Not Scanning? 7 Causes and Easy Fixes",
-        metaDescription: "QR code not working? Discover the 7 most common reasons a QR code fails to scan and how to fix each one fast — before you print.",
-        excerpt: "Your QR code won't scan? The cause is almost always one of these 7 fixable problems — most can be resolved in minutes.",
+        title: "Phone Not Scanning QR Code? 7 Causes and Fixes (iPhone & Android)",
+        metaDescription: "Why won't your phone scan QR codes? Discover the 7 most common causes and exactly how to fix each — for iPhone and Android. Fast solutions before you reprint.",
+        excerpt: "Your phone won't scan a QR code? The cause is almost always one of these 7 fixable problems — most resolved in under 2 minutes, on any phone.",
         content: `
-          <h2>Why Won't Your QR Code Scan?</h2>
-          <p>You created a QR code, printed it — and now no phone will read it. This is one of the most frustrating QR code problems, but it's almost always caused by one of a handful of fixable issues. Here are the seven most common causes and their solutions.</p>
+          <h2>Why Won't Your Phone Scan QR Codes?</h2>
+          <p>Your phone refuses to read a QR code — either one you created, or one you're trying to scan. This is one of the most frustrating QR problems, but it almost always comes down to one of seven well-defined causes. Below is each cause with its exact fix, for both iPhone and Android.</p>
 
-          <h2>1. Low Contrast</h2>
-          <p>The golden rule of QR codes: <strong>dark code on a light background</strong>. A light-colored code on a white background, or a yellow code on a cream background, gives the camera nothing to distinguish between the code and the surface.</p>
-          <p><strong>Fix:</strong> Keep the foreground (code) dark — black, dark navy, or dark green — and the background light (white or pale grey). Never use a colored background with a similar-tone code.</p>
+          <h2>1. Low Contrast Between Code and Background</h2>
+          <p>The golden rule of QR codes: <strong>dark code on a light background</strong>. A light-colored code on a white background, or a yellow code on a cream background, gives the phone camera nothing to distinguish between the code pattern and the surface.</p>
+          <p><strong>Fix:</strong> Keep the code dark — black, dark navy, or dark green — and the background light (white or pale grey). Never place a similar-tone code on a colored background.</p>
 
-          <h2>2. Too Small to Scan</h2>
-          <p>Printed QR codes must be at least <strong>2 × 2 cm</strong>. Below that size, phone cameras cannot capture enough detail at normal scanning distances, and the scan fails.</p>
-          <p><strong>Fix:</strong> Match the size to the use case. Business card: 2×2 cm minimum. Flyer: 3×3 cm. Poster: at least 10×10 cm.</p>
+          <h2>2. QR Code Too Small for the Scanning Distance</h2>
+          <p>Printed QR codes must be at least <strong>2 × 2 cm</strong> for close-range scanning. Below that size, phone cameras cannot resolve the individual modules (the small squares that make up the pattern), and the scan fails regardless of the phone model.</p>
+          <p><strong>Fix:</strong> Scale to the use case. Business card: 2×2 cm minimum. Flyer: 3×3 cm. Poster: at least 10×10 cm.</p>
 
-          <h2>3. URL Too Long — Code Too Dense</h2>
-          <p>More data in a QR code means a denser, more complex pattern. A very dense pattern becomes unreadable on small prints or low-resolution displays.</p>
-          <p><strong>Fix:</strong> Shorten your URL. Use a URL shortener or remove unnecessary tracking parameters (UTM strings, session IDs) to reduce code complexity.</p>
+          <h2>3. URL Too Long — Pattern Too Dense</h2>
+          <p>More data in a QR code means a denser, more complex pattern. A very dense pattern becomes unreadable on small prints or low-resolution displays — your phone camera simply can't decode it fast enough.</p>
+          <p><strong>Fix:</strong> Shorten your URL. Remove unnecessary tracking parameters (UTM strings, session IDs) or use a URL shortener to reduce code complexity and density.</p>
 
-          <h2>4. Damaged or Dirty Surface</h2>
-          <p>A printed QR code can be scratched, faded, or partially obscured over time. Even fingerprints can interfere with scanning.</p>
-          <p><strong>Fix:</strong> Apply a matte laminate over printed codes. For outdoor use, specify UV-resistant ink. Replace codes that have visibly faded.</p>
+          <h2>4. Damaged or Dirty Code Surface</h2>
+          <p>A printed QR code can be scratched, faded, or partially obscured over time. Even a fingerprint smear over a small code can cause scan failure.</p>
+          <p><strong>Fix:</strong> Apply a matte laminate over printed codes. For outdoor use, specify UV-resistant ink. Replace codes that have visibly faded or been damaged.</p>
 
-          <h2>5. PNG Used for Large Print</h2>
-          <p>PNG is pixel-based. Enlarging a small PNG image for a large print produces blurry edges — and blurry QR code modules cannot be read reliably.</p>
+          <h2>5. PNG File Used for Large-Format Print</h2>
+          <p>PNG is pixel-based. Enlarging a small PNG produces blurry module edges — and blurry modules cannot be reliably decoded by any phone camera.</p>
           <p><strong>Fix:</strong> Always download <strong>SVG format</strong> for printed materials. SVG is vector-based and scales to any size without quality loss. <a href="/en/url-qr/" class="text-indigo-600 font-bold hover:underline">QRGenHub</a> provides SVG download for every QR code at no cost.</p>
 
-          <h2>6. Missing Quiet Zone</h2>
-          <p>Every QR code requires a clear white border — called the "quiet zone" — of at least 4 module widths around all four sides. Without this border, the camera cannot locate where the code begins and ends.</p>
-          <p><strong>Fix:</strong> Never crop the quiet zone or place content directly against the edge of a QR code. Always preserve the white border in your design.</p>
+          <h2>6. Missing Quiet Zone (White Border)</h2>
+          <p>Every QR code requires a clear white border — the "quiet zone" — of at least 4 module widths on all four sides. Without it, the phone camera cannot locate where the code begins and ends, so it never attempts to decode.</p>
+          <p><strong>Fix:</strong> Never crop the quiet zone or place design elements directly against the edge of the code. Always preserve the white margin.</p>
 
-          <h2>7. Old Phone or Dirty Camera Lens</h2>
-          <p>A smudged or scratched camera lens significantly reduces scan reliability. Some older phones also do not support native QR scanning through the camera app.</p>
-          <p><strong>Fix:</strong> Clean the lens. If the native camera app fails, try <a href="https://lens.google.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-bold hover:underline">Google Lens</a> (Android) or the Photos app (iPhone). Always test on both iOS and Android before publishing.</p>
+          <h2>7. Phone Camera App Not Supporting QR Scanning</h2>
+          <p>A smudged or scratched camera lens significantly reduces scan reliability. Some older Android models also require a third-party app to read QR codes, as native scanning was not added until Android 8.0.</p>
+          <p><strong>Fix:</strong> Clean the camera lens first. If the native camera app still fails, try <a href="https://lens.google.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 font-bold hover:underline">Google Lens</a> (Android) or the iPhone Photos app. Test on a second device to rule out a phone-specific issue.</p>
+
+          <h2>iPhone Not Scanning QR Codes: Quick Fix</h2>
+          <p>If your iPhone specifically won't scan, run through this checklist:</p>
+          <ul>
+            <li><strong>iOS version:</strong> Native QR scanning requires iOS 11 or later. Check Settings → General → Software Update.</li>
+            <li><strong>Camera permission:</strong> Settings → Camera → make sure "Scan QR Codes" is toggled on.</li>
+            <li><strong>Focus distance:</strong> Hold the phone 15–30 cm from the code. Too close or too far both cause failure.</li>
+            <li><strong>Case cover:</strong> Some thick phone cases obstruct the camera field of view — remove the case and retry.</li>
+          </ul>
+
+          <h2>Android Not Scanning QR Codes: Quick Fix</h2>
+          <p>If your Android phone won't read the code:</p>
+          <ul>
+            <li><strong>Android version:</strong> Native camera QR scanning requires Android 8.0+. Older devices need a dedicated app.</li>
+            <li><strong>Google Lens:</strong> Open the Camera app and tap the Google Lens icon — it is more reliable than basic camera scanning on many models.</li>
+            <li><strong>Samsung devices:</strong> On Samsung, open Camera → tap the QR icon in the viewfinder toolbar (may need to enable it in Camera settings).</li>
+            <li><strong>Lens cleanliness:</strong> Android phones tend to accumulate smudges faster — wipe the lens with a microfibre cloth before testing.</li>
+          </ul>
 
           <h2>Pre-Print Checklist</h2>
           <ul>
             <li>✓ Tested on both iPhone and Android</li>
-            <li>✓ Minimum 2×2 cm size</li>
-            <li>✓ Dark code on light background</li>
-            <li>✓ SVG format for print</li>
-            <li>✓ Quiet zone preserved around all edges</li>
+            <li>✓ Minimum 2×2 cm print size</li>
+            <li>✓ Dark code on light background — high contrast</li>
+            <li>✓ SVG format downloaded for print</li>
+            <li>✓ Quiet zone (white border) preserved on all sides</li>
+            <li>✓ URL shortened if code pattern looks very dense</li>
           </ul>
 
           <div class="bg-indigo-50 p-6 rounded-2xl my-8 border border-indigo-100 dark:bg-indigo-900/30 dark:border-indigo-800">
@@ -3298,10 +3334,12 @@
           </div>
         `,
         faq: [
-          { q: "Why won't my QR code scan?", a: "The most common causes are: low contrast between code and background, size too small (under 2cm), URL too long making the pattern too dense, damaged or dirty print surface, or using PNG instead of SVG for large prints." },
-          { q: "What is the minimum size for a QR code to scan reliably?", a: "The absolute minimum for printed QR codes is 2×2 cm for close-range scanning (business cards). For posters scanned from 1-2 metres, use at least 10×10 cm." },
-          { q: "Should I download PNG or SVG for printing?", a: "Always SVG for print. PNG is pixel-based and blurs when enlarged. SVG is vector-based and remains perfectly sharp at any size — from business cards to billboards." },
-          { q: "What is a quiet zone on a QR code?", a: "The quiet zone is the white border surrounding a QR code. It must be at least 4 module-widths wide on all sides. Without it, the camera cannot detect where the code starts and ends, causing scan failure." }
+          { q: "Why won't my phone scan a QR code?", a: "The most common causes are: low contrast (code and background too similar in color), code printed too small (under 2cm), URL too long making the pattern too dense, damaged print surface, or PNG used for large-format print. Start by testing on a second phone to rule out a device issue." },
+          { q: "Why won't my iPhone scan a QR code?", a: "Check that you are running iOS 11 or later, and that 'Scan QR Codes' is enabled in Settings → Camera. Hold the phone 15–30 cm from the code. If the Camera app fails, try the Photos app or Google Lens instead." },
+          { q: "Why won't my Android phone read QR codes?", a: "Native QR scanning requires Android 8.0 or later. On older devices, use Google Lens or a dedicated QR app. On Samsung phones, enable the QR icon in the Camera app toolbar. Always clean the camera lens before testing." },
+          { q: "What is the minimum size for a QR code to scan reliably?", a: "The absolute minimum for printed QR codes is 2×2 cm for close-range scanning (business cards). For posters scanned from 1–2 metres, use at least 10×10 cm. General rule: QR size ≥ scanning distance ÷ 10." },
+          { q: "Should I download PNG or SVG for printing?", a: "Always SVG for print. PNG blurs when enlarged, making the code unreadable. SVG is vector-based and stays sharp at any size — from a business card to a billboard." },
+          { q: "What is the quiet zone on a QR code?", a: "The quiet zone is the white border around the QR code. It must be at least 4 module-widths wide on all sides. Without it, the phone camera cannot detect where the code starts and ends, causing scan failure." }
         ]
       },
       fr: {
